@@ -1,0 +1,5 @@
+outs:
+- md5: 3be61d74398a310ce314ffd0033572c3
+  size: 45946247
+  hash: md5
+  path: base_financiera_preliminar.csv
