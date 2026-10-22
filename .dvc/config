@@ -1,0 +1,4 @@
+[core]
+    remote = almacenamiento_local
+['remote "almacenamiento_local"']
+    url = C:\Users\User\Desktop\FINRISK_DVC_REMOTE
