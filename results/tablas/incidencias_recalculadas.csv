@@ -1,0 +1,9 @@
+tipo_incidencia,registros,porcentaje,incidencia,porcentaje_recalculado
+con_candidatos_en_conflicto,713,0.4,Candidatos contables en conflicto,0.40358642862803257
+activo_total_no_positivo_o_faltante,864,0.49,Activo no positivo o faltante,0.4890584492771671
+balance_no_cuadra_o_sin_dato,1116,0.63,Balance fuera de tolerancia o sin dato,0.6317004969830075
+patrimonio_negativo,7748,4.39,Patrimonio negativo,4.385676927082744
+endeudamiento_mayor_a_1,7748,4.39,Endeudamiento mayor al 100 %,4.385676927082744
+ingresos_no_positivos_o_faltantes,13203,7.47,Ingresos no positivos o faltantes,7.47342442801671
+sin_cuatro_indicadores,14593,8.26,Sin los cuatro indicadores,8.260219849886226
+liquidez_corriente_mayor_a_10,23629,13.37,Liquidez corriente mayor a 10 veces,13.374956131909931

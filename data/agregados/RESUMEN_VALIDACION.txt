@@ -1,0 +1,15 @@
+FINRISK Colombia | Etapa 4 - consolidacion preliminar
+ATENCION: No usar esta base para entrenar sin revisar los conflictos y la variable objetivo.
+
+{'fuente': 'SITUACION', 'filas_leidas': 19638408, 'conceptos_candidatos': 4475823, 'filas_periodo_actual': 1507002, 'filas_guardadas': 1507002, 'omitidas_nit_valor': 0}
+{'fuente': 'RESULTADOS', 'filas_leidas': 8091357, 'conceptos_candidatos': 3472074, 'filas_periodo_actual': 1196115, 'filas_guardadas': 1196115, 'omitidas_nit_valor': 0}
+
+Periodos incluidos: 2019-2024
+Empresas unicas: 37,231
+Registros empresa-anio: 176,666
+Registros con 4 indicadores: 162,073
+Registros con balances cuadrados (1%): 175,550
+Combinaciones NIT-anio con conflicto: 713
+Indicadores con candidatos en disputa: 6,117
+Revisar prioridad de informes individuales/separados, taxonomias y cifras anormales.
+No se ha verificado ni calculado la etiqueta de insolvencia futura.

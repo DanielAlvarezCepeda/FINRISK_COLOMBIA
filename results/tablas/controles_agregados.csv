@@ -1,0 +1,9 @@
+control,cumple
+Porcentaje anual: cuatro_indicadores,True
+Porcentaje anual: balances_cuadrados,True
+Porcentaje anual: con_discrepancia,True
+Porcentaje anual: filas_validas_descriptivo,True
+n de estadísticos = muestra estricta del año,True
+Orden de percentiles y extremos,True
+Media dentro de los extremos,True
+Porcentaje de incidencias sobre todas las empresa-año,True

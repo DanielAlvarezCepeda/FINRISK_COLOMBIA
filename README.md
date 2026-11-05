@@ -96,3 +96,121 @@ variable objetivo de insolvencia futura.
 
 Las predicciones no deben utilizarse como diagnósticos
 financieros definitivos.
+
+## 9. Revisión de la primera entrega: notebook y mockup
+
+La revisión posterior a la retroalimentación del profesor se reúne en la rama
+`correcciones/entrega1-20261105`, para revisión del equipo antes de su integración
+a `main`. El código de procesamiento y la configuración DVC existentes se conservan.
+
+Accesos de esta revisión:
+
+- [Notebook ejecutado de exploración](notebooks/01_EDA_FINRISK.ipynb).
+- [Mockup actualizado](dashboard/index.html). Para usarlo, abrir el archivo local con Chrome o Edge.
+- [Insumos agregados](data/agregados/) y [resultados reproducibles](results/).
+- [Dependencias del notebook](requirements.txt).
+
+La pregunta se concreta en la proporción de eventos de insolvencia formal
+detectados y la proporción de alertas correctas para priorizar la revisión
+crediticia. El horizonte propuesto es de doce meses posteriores a la evaluación,
+condicionado a validar fechas de admisión, disponibilidad de información y seguimiento.
+
+El notebook explora seis insumos agregados y conserva salidas de trece celdas
+de código ejecutadas, ocho controles iniciales, nueve tablas CSV y cinco figuras.
+La revisión añade retención anual del filtro descriptivo, una matriz que conecta
+hallazgos con preparación y límites, y un protocolo predictivo propuesto.
+
+El mockup separa la respuesta individual de la evaluación global del modelo.
+Los escenarios simbólicos de prioridad son ilustrativos; no calculan probabilidades
+ni aprueban o rechazan crédito. AP, sensibilidad y precisión de alertas están
+propuestas para evaluación futura. La etiqueta histórica y el modelo aún no
+están validados, y no se presentan métricas predictivas calculadas.
+
+## 10. Trabajar desde un clon local
+
+El repositorio es privado: el usuario debe tener acceso en GitHub. Para obtener
+esta revisión por primera vez, ejecutar desde la carpeta donde se guardan los proyectos:
+
+```powershell
+git clone https://github.com/DanielAlvarezCepeda/FINRISK_COLOMBIA.git
+cd FINRISK_COLOMBIA
+git switch correcciones/entrega1-20261105
+```
+
+Si el repositorio ya está clonado, abrir una terminal en su raíz y revisar el estado
+local antes de actualizar. Para consultar esta rama sin cambios locales pendientes:
+
+```powershell
+git status
+git fetch origin
+git switch correcciones/entrega1-20261105
+```
+
+Las rutas siguientes parten de la raíz `FINRISK_COLOMBIA`, donde está este README.
+No es necesario extraer el ZIP anterior ni entrar en una carpeta adicional `FINRISK/`.
+
+### Preparar y ejecutar el notebook en Windows
+
+Entorno probado: Python 3.12. Los comandos usan el ejecutable del entorno para
+evitar depender de la activación de scripts de PowerShell:
+
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m pip install jupyterlab
+.\.venv\Scripts\python.exe -m jupyterlab
+```
+
+Abrir `notebooks/01_EDA_FINRISK.ipynb`, seleccionar el Python del entorno `.venv`
+y ejecutar todas las celdas. También puede abrirse en VS Code con la extensión
+de Jupyter, seleccionando ese mismo entorno.
+
+El notebook localiza `data/agregados/` tanto desde la raíz como desde `notebooks/`.
+Lee los seis insumos incluidos, sin descargarlos ni modificarlos, y escribe las
+tablas y figuras en `results/`. No se necesita recuperar la base DVC para esta
+exploración de agregados.
+
+### Archivos incorporados para la exploración
+
+```text
+notebooks/01_EDA_FINRISK.ipynb     Notebook principal
+data/agregados/                  Cuatro CSV y dos TXT originales del avance
+data/privados/                   Entrada individual opcional, excluida de Git
+src/auditoria_microdatos.py      Auditoría individual opcional
+results/tablas/                  Nueve tablas reproducibles
+results/figuras/                 Cinco figuras
+results/manifiesto_ejecucion.json
+requirements.txt                Dependencias del notebook
+```
+
+## 11. Agregados, datos individuales y DVC
+
+Los agregados describen el panel financiero preliminar de 2019-2024. Su exploración
+no reproduce íntegramente la consolidación original ni permite reconstruir filas
+individuales, asignar clases de insolvencia o estimar el desempeño de un modelo.
+El filtro descriptivo estricto no se trasladará automáticamente al entrenamiento.
+
+La base individual continúa referenciada en
+`data/processed/base_financiera_preliminar.csv.dvc`. El remoto DVC actualmente
+configurado apunta a una ruta local del equipo de origen
+(`C:\Users\User\Desktop\FINRISK_DVC_REMOTE`); esa ruta no se vuelve accesible
+en otro computador por clonar Git. El equipo debe acordar una recuperación
+verificable antes de ejecutar análisis que requieran el CSV individual.
+No se cambió el remoto ni se incorporó una copia del CSV a Git.
+
+La auditoría individual opcional del notebook busca
+`data/privados/base_financiera_preliminar.csv`. Esa entrada no está incluida en
+esta revisión; su código y resultados no deben confundirse con comprobaciones
+realizadas sobre microdatos. Si el equipo obtiene la base, debe validar su
+procedencia, esquema y correspondencia antes de habilitar esa sección.
+
+Esta publicación reúne el EDA y el mockup en el repositorio principal del equipo.
+La [publicación previa complementaria de Joaquín](https://github.com/joaquinrovi/FINRISK/tree/main/FINRISK)
+se conserva como antecedente; las instrucciones de esta revisión corresponden
+a la raíz del repositorio `DanielAlvarezCepeda/FINRISK_COLOMBIA`.
+
+Antes de modelar, quedan por acordar la elegibilidad del evento, las fechas de
+evaluación y disponibilidad, el seguimiento completo, las particiones temporales,
+el umbral de alerta y los mínimos operativos de sensibilidad, precisión y capacidad
+de revisión. La importancia de variables complementará la explicación, sin
+sustituir la evaluación predictiva.

@@ -1,0 +1,23 @@
+FINRISK Colombia - Etapa 5 | Auditoria y analisis descriptivo
+
+Archivo: base_financiera_preliminar.csv
+Filas empresa-anio: 176,666
+Empresas distintas: 37,231
+Rango de anios: 2019 a 2024
+Con cuatro indicadores: 162,073 (91.74%)
+Balances al 1%: 175,550 (99.37%)
+Con discrepancia: 713 (0.4%)
+Filas aptas para ANALISIS DESCRIPTIVO ESTRICTO: 161,411 (91.37%)
+Discrepancias en indicadores: 6117
+NIT-anio con alguna discrepancia: 713
+Observaciones con cociente min/max proximo a 1:1000 (SENAL PARA AUDITAR, NO CORREGIR AUTOMATICAMENTE): 271
+
+ADVERTENCIAS:
+- No hay variable objetivo ni etiqueta historica de insolvencia en este procesamiento.
+- La base no permite afirmar que una empresa estuvo libre de insolvencia.
+- Las diferencias de escala cercanas a 1:1000 requieren contrastar el punto de entrada,
+  radicado, concepto y unidad de reporte ANTES de modificar importes.
+- El filtro descriptivo puede excluir observaciones de empresas en crisis;
+  NO utilizarlo directamente como filtro para entrenar ni inferir poblaciones.
+- Los graficos describen periodos/reportes, NO la probabilidad de insolvencia.
+- Mantenga por separado los datos originales, el procesamiento y los productos de visualizacion.
