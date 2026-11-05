@@ -3,3 +3,9 @@
 .venv/
 .env
 data/raw/
+
+# Notebook y datos individuales opcionales
+.ipynb_checkpoints/
+data/privados/**
+!data/privados/.gitkeep
+!data/privados/README.md

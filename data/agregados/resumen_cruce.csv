@@ -1,0 +1,22 @@
+﻿indicador;valor
+Archivos financieros analizados;2
+Archivos mensuales insolvencia en carpeta (NO acumulados);9
+Archivo insolvencia usado;Base-Soporte-Insolvencia-2026-CORTE-OCTUBRE(BaseSoporteOCTUBRE06102026).csv
+Registros en insolvencia corte seleccionado;5699
+NIT unicos en insolvencia corte;5697
+Registros con fecha auto admision textual;5699
+Registros con ano auto admision identificable;5699
+Registros con ano apertura/celebracion identificable;5698
+NIT unicos en ambos archivos financieros;44483
+NIT insolvencia presentes en ambos estados financieros;2772
+Cruces con algun estado financiero de FECHA_CORTE previa al ano apertura (preliminar);1756
+Cruces con FECHA_CORTE 1-3 anos antes del ano apertura (preliminar);1624
+Cruces sin ano de apertura identificable;0
+Estados_Financieros_NIIF-_Estado_de_Resultado_Integral_20261020.csv - filas validas;8091357
+Estados_Financieros_NIIF-_Estado_de_Resultado_Integral_20261020.csv - filas incompletas;0
+Estados_Financieros_NIIF-_Estado_de_Resultado_Integral_20261020.csv - NIT unicos;44497
+Estados_Financieros_NIIF-_Estado_de_Resultado_Integral_20261020.csv - NIT coincidentes insolvencia;2772
+Estados_Financieros_NIIF-_Estado_de_Situación_Financiera_20261020.csv - filas validas;19638408
+Estados_Financieros_NIIF-_Estado_de_Situación_Financiera_20261020.csv - filas incompletas;0
+Estados_Financieros_NIIF-_Estado_de_Situación_Financiera_20261020.csv - NIT unicos;44485
+Estados_Financieros_NIIF-_Estado_de_Situación_Financiera_20261020.csv - NIT coincidentes insolvencia;2772

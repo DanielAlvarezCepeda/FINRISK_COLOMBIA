@@ -1,0 +1,11 @@
+# Conservar los bytes de los insumos cuyos SHA256 registra el notebook.
+/data/agregados/* -text -whitespace
+
+# Normalizar solo los archivos de texto incorporados en esta revisión.
+/dashboard/index.html text eol=lf
+/notebooks/*.ipynb text eol=lf
+/requirements.txt text eol=lf
+/results/tablas/*.csv text eol=lf
+/results/manifiesto_ejecucion.json text eol=lf
+/src/auditoria_microdatos.py text eol=lf
+/src/__init__.py text eol=lf

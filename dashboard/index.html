@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#10192f">
-<title>FINRISK Colombia | Maqueta del tablero</title>
+<title>FINRISK Colombia | Consulta de insolvencia y análisis financiero</title>
 <style>
 :root { --navy:#10192f;--dark:#18213c;--ink:#172541;--muted:#65758e;--light:#f3f6fb;--white:#fff;--border:#e0e7f1;--teal:#16b4aa;--tealDark:#087f79;--blue:#446be8;--orange:#eaa451;--rose:#d86d79;--shadow:0 13px 38px rgba(22,41,78,.065);}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--light);color:var(--ink);font-family: 'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Arial,sans-serif;font-size:14px;line-height:1.48}button,select{font:inherit}button{cursor:pointer}button:focus-visible,select:focus-visible{outline:3px solid #8adbd7;outline-offset:2px}.app{display:flex;min-height:100vh}.sidebar{background:var(--navy);width:248px;flex-shrink:0;color:#c7d3e8;position:fixed;top:0;bottom:0;left:0;z-index:20;display:flex;flex-direction:column}.brand{display:flex;align-items:center;gap:12px;padding:29px 24px 26px;color:white}.brand-icon{width:43px;height:43px;display:grid;place-items:center;border-radius:13px;font-weight:900;font-size:25px;letter-spacing:-2px;background:linear-gradient(155deg,#39dac2,#1998b5);box-shadow:0 12px 24px rgba(14,196,175,.15)}.brand b{font-size:16px;letter-spacing:.09em;color:#fff}.brand small{display:block;color:#91a4c2;font-size:11px;letter-spacing:.1em;margin-top:2px}.side-label{padding:9px 24px;color:#657c9f;letter-spacing:.16em;font-size:10px;font-weight:800;margin-top:8px}.nav{padding:3px 10px}.nav button{width:100%;border:0;background:transparent;color:#9baec9;padding:13px 14px;border-radius:11px;display:flex;gap:12px;align-items:center;text-align:left;margin:3px 0;font-size:13px;font-weight:600}.nav button:hover{color:white;background:#202e4e}.nav button.active{background:#1d3d51;color:#e9fffb;box-shadow:inset 3px 0 0 var(--teal)}.nav-icon{width:19px;text-align:center;display:inline-block;font-size:17px}.side-bottom{margin-top:auto;padding:18px 20px 25px}.side-note{padding:16px;background:#1a2946;border:1px solid #30405e;border-radius:12px;font-size:12px;line-height:1.6;color:#a7b9d4}.side-note span{display:inline-block;height:6px;width:6px;background:var(--teal);border-radius:50%;margin-right:8px}.side-note b{color:#e4f8f3}.main{margin-left:248px;width:calc(100% - 248px)}.topbar{height:75px;background:rgba(255,255,255,.96);display:flex;align-items:center;justify-content:space-between;gap:15px;border-bottom:1px solid var(--border);padding:0 38px}.breadcrumbs{font-weight:600;color:#71809c;font-size:13px}.breadcrumbs strong{color:var(--ink)}.top-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.pill{display:inline-flex;gap:7px;align-items:center;border-radius:100px;padding:7px 12px;background:#eaf7f5;color:#078b7d;font-weight:700;font-size:11px;white-space:nowrap}.pill::before{content:'';width:7px;height:7px;border-radius:50%;background:#12b7a7}.sub-pill{background:#eff3ff;color:#4865ae}.sub-pill::before{background:#6687ff}.print{border:1px solid var(--border);background:white;border-radius:9px;color:#334b6b;padding:9px 13px;font-weight:700}.content{max-width:1550px;margin:auto;padding:27px 38px 55px}.hero{background:linear-gradient(110deg,#14243e 0%,#192f53 54%,#145564 100%);color:#fff;border-radius:19px;box-shadow:0 17px 28px rgba(24,49,83,.12);padding:28px 32px 31px;position:relative;overflow:hidden;display:flex;justify-content:space-between;gap:15px}.hero:after{content:'';position:absolute;width:380px;height:380px;border:1px solid rgba(255,255,255,.14);border-radius:50%;right:-100px;top:-230px;box-shadow:0 0 0 66px rgba(255,255,255,.025),0 0 0 136px rgba(255,255,255,.018)}.hero small{text-transform:uppercase;letter-spacing:.18em;color:#8ce9dd;font-size:10px;font-weight:800}.hero h1{margin:8px 0 7px;font-size:27px;letter-spacing:-.04em;font-weight:800}.hero p{font-size:13px;max-width:680px;line-height:1.6;margin:0;color:#c2d4df}.hero-note{z-index:1;margin:auto 2px auto 0;display:flex;gap:8px;align-items:center;color:#d0e4ee;border:1px solid rgba(195,244,240,.2);background:rgba(255,255,255,.04);padding:11px 14px;border-radius:10px;white-space:nowrap;font-size:12px}.controlrow{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin:24px 0 18px}.section-title{font-size:19px;letter-spacing:-.035em;margin:0;font-weight:800}.section-subtitle{color:var(--muted);font-size:12px;margin-top:4px}.select-wrap{display:flex;align-items:center;gap:10px;color:#61718b;font-size:12px;font-weight:700}.select-wrap select{border:1px solid #dce5ef;border-radius:10px;background:white;padding:10px 36px 10px 13px;color:#172541;min-width:126px;font-weight:700;box-shadow:var(--shadow)}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-bottom:19px}.card,.panel{border:1px solid var(--border);background:#fff;border-radius:16px;box-shadow:var(--shadow)}.card{padding:19px 20px 17px;min-height:128px;position:relative;overflow:hidden}.card-label{color:#6f7f95;font-size:12px;font-weight:650}.card-value{font-size:29px;line-height:1.2;margin-top:14px;font-weight:800;letter-spacing:-.045em;color:#1d2c48}.card-footer{color:#8292a6;margin-top:7px;font-size:11px}.card-icon{position:absolute;right:16px;top:16px;width:31px;height:31px;border-radius:9px;background:#e8f9f6;color:#10a797;display:grid;place-items:center;font-size:16px}.card:nth-child(2) .card-icon{background:#edf2ff;color:var(--blue)}.card:nth-child(3) .card-icon{background:#fef4e6;color:#de983d}.card:nth-child(4) .card-icon{background:#f0f0ff;color:#8c78dc}.grid{display:grid;grid-template-columns:1.65fr 1fr;gap:18px;margin-bottom:20px}.panel{padding:22px 22px 18px;min-width:0}.panel-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:15px}.panel h3{margin:0;font-size:15px;font-weight:800;letter-spacing:-.02em}.panel small{display:block;margin-top:4px;font-size:11px;color:#8592a7}.panel-tag{background:#f0f7fc;color:#4c6f9f;border-radius:8px;padding:7px 9px;font-weight:800;font-size:10px;white-space:nowrap}.chart{min-height:230px;width:100%;position:relative}.chart svg{display:block;width:100%;height:auto;overflow:visible}.svg-grid{stroke:#e7edf5;stroke-width:1}.svg-label{fill:#8793a7;font-size:11px;font-weight:600}.svg-bar{fill:#3a77cb;transition:fill .2s,opacity .2s}.svg-bar.active{fill:#14aba1}.svg-bar:hover{fill:#096f89}.legend{display:flex;gap:16px;flex-wrap:wrap;color:#62758e;font-size:11px;margin-top:12px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;vertical-align:middle;margin-right:6px}.summary-text{color:#62748d;font-size:12px;line-height:1.65;margin:14px 0 0}.quality-row{display:grid;grid-template-columns:110px auto;gap:21px;align-items:center;min-height:189px}.ring{border-radius:50%;width:108px;height:108px;display:grid;place-items:center;background:conic-gradient(var(--teal) calc(var(--pct) * 1%),#e9eff6 0)}.ring:before{content:'';position:absolute;width:78px;height:78px;background:white;border-radius:50%}.ring .inside{z-index:1;font-weight:850;font-size:18px;color:#0c8e85}.ring small{display:block;font-size:10px;text-align:center;color:#728099;font-weight:500}.quality-stats{display:grid;gap:14px}.quality-stats strong{display:block;font-size:17px;color:#1b2c4b}.quality-stats span{display:block;font-size:11px;color:#7688a1}.notice{background:#fff9ed;border:1px solid #f7e1b5;color:#946a30;padding:12px 14px;border-radius:10px;font-size:12px;line-height:1.55;display:flex;gap:10px}.notice b{color:#835817}.micro{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.tabcontent{display:none}.tabcontent.active{display:block;animation:fadein .25s ease}@keyframes fadein{from{opacity:.6;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}.metricline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-bottom:18px}.metric-card{padding:16px;border:1px solid var(--border);background:#fff;border-radius:13px}.metric-card span{font-size:11px;color:#7788a1}.metric-card b{display:block;font-size:22px;margin-top:6px}.tabs-inline{display:flex;flex-wrap:wrap;gap:8px}.tabs-inline button{border:1px solid #d9e3ee;border-radius:8px;background:white;color:#5f7390;padding:8px 12px;font-size:11px;font-weight:750}.tabs-inline button.selected{background:#183b59;border-color:#183b59;color:white}.report-table{width:100%;border-collapse:collapse;font-size:12px}.report-table th{color:#6b7e94;text-align:right;font-size:10px;letter-spacing:.05em;text-transform:uppercase;background:#f6f8fc;padding:12px 8px;border-bottom:1px solid #e9eef5}.report-table td{padding:13px 8px;text-align:right;border-bottom:1px solid #eff3f8;color:#30405c}.report-table th:first-child,.report-table td:first-child{text-align:left}.report-table tr.highlight td{background:#edf9f7;font-weight:800;color:#095e58}.report-table tbody tr:last-child td{border-bottom:0}.table-wrap{overflow-x:auto}.box-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:18px}.info-box{padding:18px;border-radius:13px;background:white;border:1px solid var(--border)}.info-box b{font-size:23px;display:block}.info-box span{font-size:11px;color:#72809a}.list-note{margin:0;padding:0;list-style:none}.list-note li{padding:12px 0;border-bottom:1px solid #edf2f7;color:#62748b;font-size:12px}.list-note li::before{content:'◦';color:#15b6aa;font-weight:900;margin-right:12px;font-size:16px}.list-note li:last-child{border:0}.locked{border:1px dashed #b9c8dc;background:#f9fbfe;border-radius:15px;min-height:288px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:28px;margin-top:12px}.lock-icon{font-size:27px;display:grid;place-items:center;width:64px;height:64px;background:#e6f8f5;border-radius:20px;margin-bottom:14px}.locked h3{margin:0 0 6px;font-size:19px}.locked p{max-width:560px;margin:0;color:#6e7f99;font-size:13px;line-height:1.65}.form-placeholder{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;width:100%;max-width:650px;margin:20px auto 0}.form-placeholder label{text-align:left;color:#6f7f99;font-size:11px;font-weight:650}.form-placeholder input{display:block;border:1px solid #e1e8f1;border-radius:8px;padding:10px;width:100%;margin-top:5px;background:#f1f4f8;color:#8794a5}.disabled{background:#cbd5e1;color:#fff;border:0;border-radius:9px;padding:10px 20px;font-weight:750;margin-top:18px;cursor:not-allowed}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.step{background:white;border:1px solid var(--border);border-radius:13px;padding:16px}.step strong{display:block;font-size:12px;color:#263958}.step p{color:#7989a0;margin:6px 0 0;font-size:11px}.foot{display:flex;justify-content:space-between;gap:15px;margin:30px 0 5px;color:#8b9aaf;font-size:11px}.section-note{margin:0 0 18px}.callout{padding:15px;background:#eef8fa;border:1px solid #d7edef;border-radius:12px;font-size:12px;color:#4a687c;line-height:1.6;margin-top:15px}.callout b{color:#096f77}.chartline{stroke-linejoin:round;stroke-linecap:round;stroke-width:3;fill:none}.chartpoint{stroke:white;stroke-width:2}.stat-strong{color:#168d84}.tag-warning{color:#ae7b37}.screen-reader{position:absolute;left:-9999px}.sidebar-toggle{display:none}.source-row{margin-top:12px;font-size:10px;color:#9da9bb}.source-row a{color:inherit}.chart-header{display:flex;justify-content:space-between;align-items:center;gap:10px}.separator{width:1px;background:#dce5ef;height:22px}.hide-mobile{}
@@ -12,6 +12,104 @@
 @media(max-width:780px){.sidebar{width:244px;transform:translateX(-100%);transition:transform .2s ease;box-shadow:10px 0 25px rgba(0,0,0,.08)}.sidebar.open{transform:translateX(0)}.main{margin:0;width:100%}.topbar{height:auto;min-height:64px;padding:12px 18px}.sidebar-toggle{display:inline-flex;border:0;background:#eef3f8;color:#172c45;width:35px;height:35px;border-radius:9px;align-items:center;justify-content:center;font-size:18px}.breadcrumbs{flex:1}.top-actions{gap:4px}.top-actions .sub-pill,.top-actions .print{display:none}.content{padding:18px}.hero{padding:22px}.hero h1{font-size:22px}.cards,.metricline,.box-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.foot{display:block}.panel{padding:18px 16px}.quality-row{grid-template-columns:95px auto}.ring{width:94px;height:94px}.ring:before{width:67px;height:67px}}
 @media(max-width:450px){.cards,.metricline,.box-grid,.steps,.form-placeholder{grid-template-columns:1fr}.card{min-height:116px}.card-value{font-size:26px}.hero h1{font-size:21px}.hero p{font-size:12px}.controlrow{align-items:flex-start}.quality-row{grid-template-columns:1fr}.ring{margin:auto}.quality-stats{text-align:center}.chart{min-height:170px}.topbar .pill{display:none}}
 @media print{.sidebar,.topbar,.sidebar-toggle,.controlrow select,.print,.top-actions{display:none!important}.main{margin:0;width:100%}.content{padding:0}.tabcontent{display:block!important;page-break-inside:avoid}.hero{box-shadow:none}.panel,.card{box-shadow:none;break-inside:avoid}.foot{margin-top:10px}@page{size:A4 landscape;margin:12mm}}
+
+
+[hidden]{display:none!important}
+input{font:inherit}
+.descriptive-context{margin:-8px 0 18px;color:var(--muted);font-size:12px;max-width:850px}
+.metric-period{color:#415b75;font-size:12px;margin:0 0 12px;line-height:1.6}
+.quality-global-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+#risk-root .risk-chart-skeleton{background:#f8fafc;border:1px dashed #c4d2e1;border-radius:10px;padding:14px;margin:14px 0 18px}
+#risk-root .risk-chart-skeleton p{font-size:12px;font-weight:700;margin:0 0 12px;color:#48627b}
+#risk-root .risk-chart-skeleton>div{display:grid;grid-template-columns:minmax(90px,1fr) minmax(80px,1.2fr);gap:10px;align-items:center;font-size:11px;color:#60748a}
+#risk-root .risk-chart-skeleton i{font-style:normal;background:#edf2f7;border:1px dashed #c8d4e2;border-radius:4px;padding:5px 8px;text-align:center;color:#6d7f93}
+#risk-root .risk-chart-skeleton small{display:block;margin-top:12px;font-size:10px;color:#6b7f93}
+@media(max-width:1100px){.quality-global-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:450px){.quality-global-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* Componente aislado: no modifica los estilos globales del tablero. */
+#risk-root { --risk-ink:#172541; --risk-muted:#526680; --risk-border:#dce5ef; --risk-teal:#087f79; color:var(--risk-ink); line-height:1.5; }
+#risk-root *, #risk-root *::before, #risk-root *::after { box-sizing:border-box; }
+#risk-root [hidden] { display:none!important; }
+#risk-root .risk-header { display:flex; justify-content:space-between; align-items:flex-start; gap:22px; margin:0 0 20px; }
+#risk-root .risk-header h3 { margin:0 0 6px; font-size:23px; letter-spacing:-.025em; }
+#risk-root .risk-header p { margin:0; max-width:720px; color:var(--risk-muted); }
+#risk-root .risk-header .risk-eyebrow { margin:0 0 5px; color:var(--risk-teal); font-size:11px; text-transform:uppercase; font-weight:800; letter-spacing:.1em; }
+#risk-root .risk-privacy { max-width:245px; color:#086760; font-size:12px; border-left:3px solid #16b4aa; padding:4px 0 4px 12px; flex-shrink:0; }
+#risk-root .risk-layout { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(280px,.9fr); gap:20px; align-items:start; }
+#risk-root .risk-card { background:#fff; border:1px solid var(--risk-border); border-radius:15px; padding:22px; min-width:0; box-shadow:0 10px 28px rgba(22,41,78,.045); }
+#risk-root h4 { margin:0; font-size:17px; letter-spacing:-.015em; }
+#risk-root h5 { margin:20px 0 9px; font-size:15px; }
+#risk-root .risk-form-heading, #risk-root .risk-comparison-heading { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:10px; }
+#risk-root .risk-tag { display:inline-block; border-radius:7px; background:#eaf5f4; color:#076e67; font-size:11px; font-weight:750; padding:5px 9px; }
+#risk-root .risk-help { color:var(--risk-muted); font-size:12px; margin:8px 0; overflow-wrap:anywhere; }
+#risk-root .risk-fieldset { margin:20px 0 0; padding:16px 0 0; border:0; border-top:1px solid var(--risk-border); min-width:0; }
+#risk-root legend { float:none; padding:0 10px 0 0; font-weight:750; font-size:13px; width:auto; }
+#risk-root .risk-fields { display:grid; gap:14px; margin-top:10px; }
+#risk-root .risk-fields-two { grid-template-columns:repeat(2,minmax(0,1fr)); }
+#risk-root .risk-field-wide { grid-column:1/-1; }
+#risk-root .risk-field label { display:block; margin-bottom:6px; font-size:12px; font-weight:700; color:#304560; }
+#risk-root input, #risk-root select { width:100%; min-width:0; border:1px solid #b9c8da; border-radius:8px; background:#fff; color:var(--risk-ink); padding:10px 11px; font:inherit; font-size:14px; min-height:43px; }
+#risk-root input::placeholder { color:#72829a; }
+#risk-root input:focus-visible, #risk-root select:focus-visible, #risk-root button:focus-visible, #risk-root a:focus-visible { outline:3px solid #71c8c3; outline-offset:3px; }
+#risk-root [aria-invalid="true"] { border-color:#a33143; box-shadow:0 0 0 1px #a33143; }
+#risk-root .risk-field-error { display:block; margin-top:5px; color:#973047; font-size:12px; }
+#risk-root .risk-field-error:empty { display:none; }
+#risk-root .risk-error-summary { margin:16px 0; padding:12px 14px; background:#fff3f4; border:1px solid #dc9fab; border-radius:9px; color:#84223a; font-size:12px; }
+#risk-root .risk-error-summary p { margin:0 0 5px; font-weight:750; }
+#risk-root .risk-error-summary ul { margin:0; padding-left:19px; }
+#risk-root .risk-error-summary a { color:inherit; text-decoration:underline; }
+#risk-root .risk-button { border:1px solid transparent; border-radius:8px; padding:10px 14px; font:inherit; font-size:12px; font-weight:750; cursor:pointer; min-height:40px; line-height:1.4; }
+#risk-root .risk-button-primary { background:#087f79; color:#fff; }
+#risk-root .risk-button-primary:hover { background:#056660; }
+#risk-root .risk-button-secondary { background:#f0f6fb; border-color:#cbd8e7; color:#224866; }
+#risk-root .risk-button-secondary:hover { background:#e4eef7; }
+#risk-root .risk-button-quiet { background:#fff; border-color:#cbd8e7; color:#36516e; }
+#risk-root .risk-button-quiet:hover { background:#f3f6fb; }
+#risk-root .risk-utilities { display:flex; gap:8px; flex-wrap:wrap; margin:14px 0 0; }
+#risk-root .risk-example { padding:11px 13px; background:#f1f6fc; border-left:3px solid #597eac; color:#365474; font-size:12px; margin:12px 0; }
+#risk-root .risk-range-toolbar { display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap; margin-top:8px; }
+#risk-root .risk-submit-row { display:flex; align-items:center; gap:14px; margin-top:22px; padding-top:17px; border-top:1px solid var(--risk-border); }
+#risk-root .risk-submit-row .risk-help { flex:1; }
+#risk-root .risk-pending { background:#f1f6fa; border:1px solid #d7e4ed; border-radius:10px; padding:15px; margin:16px 0; }
+#risk-root .risk-pending strong { display:block; color:#244a64; font-size:16px; }
+#risk-root .risk-pending p { color:#526980; font-size:12px; margin:7px 0 0; }
+#risk-root .risk-small-title { font-size:12px; color:var(--risk-muted); margin-bottom:8px; }
+#risk-root .risk-scheme { display:flex; align-items:center; gap:12px; }
+#risk-root .risk-scheme span:not(.risk-scheme-or) { border:1px dashed #aabace; border-radius:8px; background:#fafbfd; color:#5d6f86; min-width:75px; padding:10px 18px; text-align:center; font-weight:700; }
+#risk-root .risk-scheme-or { color:#687b92; font-size:12px; }
+#risk-root .risk-stale { border-left:3px solid #be7b24; padding:9px 12px; background:#fff7e9; color:#795019; font-size:12px; margin:12px 0; }
+#risk-root[data-state="stale"] .risk-result .risk-tag, #risk-root[data-state="stale"] #risk-peer-status { background:#fff1d8; color:#805419; }
+#risk-root .risk-summary-list { margin:0; font-size:12px; }
+#risk-root .risk-summary-list > div { display:grid; grid-template-columns:1fr 1.1fr; gap:14px; padding:10px 0; border-bottom:1px solid #eaf0f5; }
+#risk-root .risk-summary-list dt { color:#5b6f87; }
+#risk-root .risk-summary-list dd { margin:0; font-weight:650; overflow-wrap:anywhere; }
+#risk-root .risk-comparison { margin-top:27px; }
+#risk-root .risk-peer-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:16px; }
+#risk-root .risk-peer h5 { margin:0 0 4px; }
+#risk-root .risk-peer-count { color:#5d728a; font-size:12px; margin:0 0 15px; }
+#risk-root .risk-table-wrap { overflow-x:auto; }
+#risk-root table { width:100%; border-collapse:collapse; font-size:12px; }
+#risk-root caption { text-align:left; color:#5e7189; padding:0 0 9px; font-size:11px; }
+#risk-root th, #risk-root td { text-align:right; padding:10px 7px; border-bottom:1px solid #e6edf5; vertical-align:top; }
+#risk-root thead th { background:#f4f7fb; color:#4d637e; font-size:11px; }
+#risk-root th:first-child { text-align:left; }
+#risk-root tbody th { font-weight:600; }
+#risk-root td { color:#3d546f; }
+#risk-root td:last-child { color:#64778e; }
+#risk-root .risk-sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+@media(max-width:1100px) { #risk-root .risk-layout { grid-template-columns:1fr; } #risk-root .risk-result { max-width:none; } }
+@media(max-width:780px) { #risk-root .risk-header { flex-direction:column; gap:12px; } #risk-root .risk-privacy { max-width:none; } #risk-root .risk-peer-grid { grid-template-columns:1fr; } #risk-root .risk-card { padding:18px 16px; } }
+@media(max-width:480px) { #risk-root .risk-fields-two { grid-template-columns:1fr; } #risk-root .risk-submit-row { flex-direction:column; align-items:stretch; gap:6px; } #risk-root .risk-button-primary { width:100%; } #risk-root .risk-summary-list > div { grid-template-columns:1fr; gap:3px; } }
+@media print { #risk-root .risk-utilities, #risk-root .risk-submit-row, #risk-root #risk-reset-range { display:none; } #risk-root .risk-layout, #risk-root .risk-peer-grid { display:block; } #risk-root .risk-card { box-shadow:none; margin-bottom:16px; break-inside:avoid; } }
+
+
+/* Correcciones de la primera entrega: pregunta, decisión y evaluación. */
+.business-answer{border:1px solid #b7dbd8;background:#f0faf8;border-radius:16px;padding:22px 24px;margin:0 0 20px}.business-answer h3{margin:0 0 8px;font-size:18px}.business-answer p{font-size:13px;color:#3d6171;margin:8px 0;max-width:1020px}.business-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.business-actions button,.business-demo-button{border:1px solid #8fbfb9;background:#fff;border-radius:8px;padding:10px 14px;color:#155e59;font:inherit;font-size:12px;font-weight:700}.business-actions button:first-child{background:#087f79;color:#fff;border-color:#087f79}.business-eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:800;color:#087f79;margin-bottom:5px}.evaluation-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}.evaluation-grid article{background:#fff;border:1px solid var(--border);border-radius:13px;padding:18px}.evaluation-grid h3{font-size:14px;margin:0 0 8px}.evaluation-grid strong{display:block;font-size:21px;color:#385674;margin:10px 0}.evaluation-grid p{font-size:12px;color:#526680}.evaluation-grid .formula{font-size:12px;color:#23585c;font-weight:700}.evaluation-table th,.evaluation-table td{text-align:left!important;vertical-align:top}.evaluation-table td{line-height:1.6}.evaluation-future{font-size:12px;color:#536a7c;line-height:1.65}.eval-question{font-size:14px;color:#253f59;margin-top:8px}.design-label{display:inline-flex;background:#fff0cf;border:1px solid #edce8a;color:#80580c;border-radius:7px;padding:5px 9px;font-size:11px;font-weight:800;letter-spacing:.02em}.business-decision{margin:0 0 20px;padding:20px 22px;border:1px solid #adcfc9;background:#f0faf7;border-radius:13px}.business-decision h4{margin:8px 0!important;font-size:18px!important}.business-decision p{font-size:13px;max-width:950px;color:#416674}.business-result-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}.business-result-stat{padding:14px;background:#fff;border:1px solid #d2e4e1;border-radius:10px}.business-result-stat span{display:block;font-size:11px;color:#5f7688}.business-result-stat strong{display:block;font-size:17px;color:#244c5a;margin-top:7px}.business-demo{border:1px solid #ebd29d;background:#fffaf0;border-radius:12px;padding:18px;margin:20px 0}.business-demo p{font-size:12px;color:#766446;margin:8px 0}.business-demo-controls{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.business-demo-button[aria-pressed=true]{background:#805913;color:#fff;border-color:#805913}.business-demo-output{padding:15px;border-radius:8px;background:#fff;border:1px solid #ead8b4}.business-demo-output b{display:block;color:#5e491e;font-size:15px;margin:5px 0}.business-demo-output span{color:#735f3c;font-size:12px}.business-pending-brief{font-size:12px;color:#526680;margin:10px 0}.risk-readiness{padding:11px 13px;border-radius:9px;background:#f5f8fc;border:1px solid #d7e3ef;color:#48627a;font-size:12px}
+@media(max-width:1100px){.evaluation-grid{grid-template-columns:1fr}.business-result-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.business-result-grid{grid-template-columns:1fr}.business-answer,.business-decision{padding:18px 16px}.business-demo-controls{flex-direction:column}.business-demo-button{text-align:left}}
+
 </style>
 </head>
 <body>
@@ -24,33 +122,166 @@
    <button data-tab="indicadores"><span class="nav-icon">⌁</span>Indicadores financieros</button>
    <button data-tab="calidad"><span class="nav-icon">◈</span>Calidad y cobertura</button>
    <button data-tab="prediccion"><span class="nav-icon">◎</span>Modelo predictivo</button>
+   <button data-tab="evaluacion"><span class="nav-icon">✓</span>Evaluación del modelo</button>
  </nav>
- <div class="side-bottom"><div class="side-note"><span></span><b>Avance académico · Entrega 1</b><br>Maqueta funcional de navegación, con datos descriptivos reales.<br><br>La predicción aún no está desarrollada.</div></div>
+ <div class="side-bottom"><div class="side-note"><span></span><b>Avance académico · Entrega 1</b><br>Datos descriptivos reales y consulta interactiva de diseño.<br><br>Predicción real y evaluación pendientes. Escenarios de decisión claramente ilustrativos.</div></div>
 </aside>
 <main class="main">
- <header class="topbar"><button class="sidebar-toggle" id="menu" aria-label="Abrir menú">☰</button><div class="breadcrumbs">Maestría · Despliegue de soluciones analíticas &nbsp;›&nbsp; <strong>FINRISK</strong></div><div class="top-actions"><span class="pill">Análisis exploratorio</span><span class="pill sub-pill">Maqueta · Octubre 2026</span><button class="print" onclick="window.print()">⎙ &nbsp;Imprimir vista</button></div></header>
+ <header class="topbar"><button class="sidebar-toggle" id="menu" aria-label="Abrir menú" aria-controls="side" aria-expanded="false">☰</button><div class="breadcrumbs">Maestría · Despliegue de soluciones analíticas &nbsp;›&nbsp; <strong>FINRISK</strong></div><div class="top-actions"><span class="pill">Análisis exploratorio</span><span class="pill sub-pill">Correcciones · Noviembre 2026</span><button class="print" onclick="window.print()">⎙ &nbsp;Imprimir vista</button></div></header>
  <div class="content">
-  <section class="hero"><div><small>Prototipo académico / Colombia</small><h1>Inteligencia financiera para anticipar riesgos</h1><p>Exploración de estados financieros de empresas colombianas reportantes a la Superintendencia de Sociedades, como base para un futuro modelo de riesgo de ingreso a insolvencia.</p></div><div class="hero-note">◈ &nbsp; Datos históricos 2019–2024</div></section>
-  <div class="controlrow"><div><h2 id="current-title" class="section-title">Resumen ejecutivo</h2><div id="current-desc" class="section-subtitle">Cobertura, calidad y principales señales del conjunto de datos.</div></div><label class="select-wrap">Año de referencia <select id="year"><option value="all">2019–2024</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option></select></label></div>
-  <div class="cards" aria-label="Indicadores principales">
+  <section class="hero"><div><small>Prototipo académico / Colombia</small><h1>Evaluación de insolvencia empresarial</h1><p>Análisis financiero y diseño de una consulta para apoyar al analista bancario ante un posible ingreso a un proceso formal de insolvencia.</p></div><div class="hero-note">◈ &nbsp; Datos históricos 2019–2024</div></section>
+  <div class="controlrow"><div><h2 id="current-title" class="section-title">Resumen ejecutivo</h2><div id="current-desc" class="section-subtitle">Cobertura, calidad y principales señales del conjunto de datos.</div></div><label class="select-wrap" id="year-control">Año destacado <select id="year" aria-describedby="descriptive-context"><option value="all">2019–2024</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option></select></label></div>
+  <p class="descriptive-context" id="descriptive-context">Las tarjetas siguen el año destacado. Los gráficos conservan la serie 2019–2024 y resaltan ese ejercicio.</p>
+  <div class="cards" id="descriptive-kpis" aria-label="Indicadores principales">
    <div class="card"><span class="card-label" id="kpi1-label">Empresas distintas</span><span class="card-icon">▥</span><div class="card-value" id="kpi1">37.231</div><div class="card-footer" id="kpi1-foot">Identificadas en 2019–2024</div></div>
    <div class="card"><span class="card-label" id="kpi2-label">Observaciones empresa-año</span><span class="card-icon">▤</span><div class="card-value" id="kpi2">176.666</div><div class="card-footer" id="kpi2-foot">No equivale a empresas únicas</div></div>
    <div class="card"><span class="card-label" id="kpi3-label">Aptas para análisis estricto</span><span class="card-icon">✓</span><div class="card-value" id="kpi3">161.411</div><div class="card-footer" id="kpi3-foot">Filtro exclusivamente descriptivo</div></div>
    <div class="card"><span class="card-label" id="kpi4-label">Cobertura descriptiva</span><span class="card-icon">◷</span><div class="card-value" id="kpi4">91,37 %</div><div class="card-footer" id="kpi4-foot">Sobre observaciones empresa-año</div></div>
   </div>
   <section id="resumen" class="tabcontent active">
+   <article id="business-entry" class="business-answer" aria-labelledby="business-entry-title">
+     <div class="business-eyebrow">De la pregunta a la decisión</div><h3 id="business-entry-title">¿Cómo ayuda FINRISK a priorizar la revisión crediticia?</h3>
+     <p>El diseño propone estimar el ingreso a insolvencia formal en los próximos doce meses y comparar el resultado con un umbral acordado. Una alerta orientaría la revisión y el seguimiento por un analista.</p>
+     <p><b>La respuesta individual se encuentra en Modelo predictivo.</b> La capacidad de detectar eventos y la proporción de alertas correctas se comprobarán por separado en Evaluación del modelo. Los gráficos financieros de este resumen describen la base disponible.</p>
+     <div class="business-actions"><button type="button" data-go-tab="prediccion">Ver respuesta para una empresa</button><button type="button" data-go-tab="evaluacion">Ver cómo se medirá el resultado</button></div>
+   </article>
+
    <div class="grid">
     <article class="panel"><div class="panel-head"><div><h3>Empresas con información por año</h3><small>Cobertura anual de los estados financieros consolidados</small></div><span class="panel-tag">2019–2024</span></div><div id="coverage-chart" class="chart" aria-label="Gráfico de barras de empresas con información por año"></div><p class="summary-text">Las cifras muestran empresas con registros en cada año. La cantidad de empresas distintas del periodo completo es <b>37.231</b>, ya que una entidad puede aparecer en varios ejercicios.</p></article>
     <article class="panel"><div class="panel-head"><div><h3>Calidad de los registros</h3><small id="quality-period">Periodo 2019–2024</small></div><span class="panel-tag">Filtro descriptivo</span></div><div class="quality-row"><div class="ring" id="quality-ring" style="--pct:91.37"><div class="inside" id="quality-ring-text">91,37 %<small>aprovechable</small></div></div><div class="quality-stats"><div><strong id="quality-available">161.411</strong><span>Observaciones descriptivas</span></div><div><strong id="quality-conflicts">713</strong><span>Empresa-año con conflictos</span></div></div></div><div class="notice">⚠ <div>El filtro descriptivo <b>no define la muestra de entrenamiento</b>: podría excluir empresas en dificultades con información incompleta.</div></div></article>
    </div>
    <div class="grid">
     <article class="panel"><div class="panel-head"><div><h3>Evolución de las medianas financieras</h3><small>Endeudamiento, ROA y margen neto · muestra descriptiva filtrada</small></div><span class="panel-tag">Valores porcentuales</span></div><div id="summary-lines" class="chart" aria-label="Evolución de medianas financieras"></div><div class="legend"><span><i class="dot" style="background:#386cc9"></i>Endeudamiento</span><span><i class="dot" style="background:#16ae9e"></i>Margen neto</span><span><i class="dot" style="background:#e9a24f"></i>ROA</span></div></article>
-    <article class="panel"><div class="panel-head"><div><h3>Hallazgos preliminares</h3><small>Descriptivos, no probabilidades de insolvencia</small></div></div><ul class="list-note"><li>La mayor cobertura anual corresponde a <b>2023</b>: 31.396 empresas.</li><li>El menor porcentaje con cuatro indicadores corresponde a <b>2020</b>: 89,01 %.</li><li>El año con mayor número de registros en conflicto es <b>2022</b>: 271.</li><li>Hay <b>271</b> diferencias con razón cercana a 1:1.000 que requieren auditoría, sin corrección automática.</li></ul></article>
+    <article class="panel"><div class="panel-head"><div><h3>Hallazgos preliminares</h3><small>Descriptivos, no probabilidades de insolvencia</small></div></div><ul class="list-note"><li>La mayor cobertura anual corresponde a <b>2023</b>: 31.396 empresas.</li><li>El menor porcentaje con cuatro indicadores corresponde a <b>2020</b>: 89,01 %.</li><li>En <b>2022</b> se identificaron 271 observaciones empresa-año con candidatos contradictorios, el mayor conteo anual.</li><li>Hay <b>271 discrepancias de indicador</b> con cocientes entre candidatos cercanos a 1.000 en 2019–2024; requieren auditoría de unidades.</li></ul></article>
    </div>
   </section>
-  <section id="indicadores" class="tabcontent"><div class="metricline"><div class="metric-card"><span>Mediana · endeudamiento</span><b id="m-end">—</b></div><div class="metric-card"><span>Mediana · liquidez corriente</span><b id="m-liq">—</b></div><div class="metric-card"><span>Mediana · ROA</span><b id="m-roa">—</b></div><div class="metric-card"><span>Mediana · margen neto</span><b id="m-margin">—</b></div></div><article class="panel"><div class="panel-head"><div><h3>Indicadores financieros históricos</h3><small>Valores medianos de empresas incluidas en el filtro descriptivo estricto</small></div><div class="tabs-inline" id="metric-tabs"><button class="selected" data-metric="endeudamiento">Endeudamiento</button><button data-metric="liquidez_corriente">Liquidez</button><button data-metric="roa">ROA</button><button data-metric="margen_neto">Margen neto</button></div></div><div id="metric-chart" class="chart" aria-label="Tendencia histórica del indicador seleccionado"></div><div class="callout"><b>Interpretación:</b> se muestran medianas y no promedios para reducir la influencia de valores extremos. Las variaciones entre años no implican que un mismo grupo de empresas haya mejorado o empeorado, ya que la cobertura anual cambia.</div></article></section>
-  <section id="calidad" class="tabcontent"><div class="box-grid"><div class="info-box"><b>162.073</b><span>Registros con cuatro indicadores financieros</span></div><div class="info-box"><b>175.550</b><span>Registros que cumplen control contable del 1 %</span></div><div class="info-box"><b>6.117</b><span>Indicadores con candidatos en disputa</span></div></div><article class="panel"><div class="panel-head"><div><h3>Cobertura y validaciones por periodo</h3><small>Valores provenientes de los resultados de la etapa 5</small></div><span class="panel-tag">Auditoría preliminar</span></div><div class="table-wrap"><table class="report-table"><thead><tr><th>Año</th><th>Empresas</th><th>Cuatro indicadores</th><th>Balance al 1 %</th><th>Filtro estricto</th><th>Conflictos</th></tr></thead><tbody id="quality-table"></tbody></table></div><div class="source-row">Fuente: archivos de análisis exploratorio FINRISK Colombia · Superintendencia de Sociedades (procesamiento propio).</div></article><div class="grid" style="margin-top:18px"><article class="panel"><h3>Controles realizados</h3><ul class="list-note"><li>Consolidación preliminar por identificador de empresa y ejercicio.</li><li>Disponibilidad simultánea de cuatro indicadores financieros.</li><li>Comprobación de ecuación contable con tolerancia del 1 %.</li><li>Identificación de reportes contradictorios y posibles diferencias de escala.</li></ul></article><article class="panel"><h3>Limitaciones abiertas</h3><ul class="list-note"><li>Revisar unidad monetaria, tipo de reporte, taxonomía y periodo.</li><li>Validar el momento real de disponibilidad de cada estado financiero.</li><li>Completar la cobertura histórica de procesos de insolvencia.</li><li>No considerar ausencia en el listado como evidencia de no insolvencia.</li></ul></article></div></section>
-  <section id="prediccion" class="tabcontent"><article class="panel"><div class="panel-head"><div><h3>Evaluación predictiva de insolvencia</h3><small>Diseño funcional previsto · sin inferencias reales en esta entrega</small></div><span class="panel-tag">Próxima fase</span></div><div class="locked"><div class="lock-icon">🔒</div><h3>Módulo predictivo aún no disponible</h3><p>La clasificación de insolvencia se habilitará cuando existan etiquetas temporales verificadas, modelos entrenados, evaluación rigurosa y una API desplegada. Este prototipo <b>no genera probabilidades ficticias</b>.</p><div class="form-placeholder"><label>Endeudamiento<input type="text" value="Se ingresará al modelo" disabled></label><label>Liquidez corriente<input type="text" value="Se ingresará al modelo" disabled></label><label>ROA<input type="text" value="Se ingresará al modelo" disabled></label></div><button class="disabled" disabled>Calcular riesgo · próximamente</button></div></article><div class="controlrow"><div><h2 class="section-title">Ruta hacia el producto final</h2><div class="section-subtitle">Arquitectura prevista para las próximas entregas</div></div></div><div class="steps"><div class="step"><strong>01 · Etiqueta supervisada</strong><p>Vincular año financiero con ingreso posterior a insolvencia, sin fuga temporal.</p></div><div class="step"><strong>02 · Modelos y experimentos</strong><p>Regresión logística, Random Forest y boosting; evaluación con MLflow.</p></div><div class="step"><strong>03 · Despliegue</strong><p>Servir modelos con FastAPI, consumirlos desde Dash y contenerizar con Docker.</p></div></div></section>
+  <section id="indicadores" class="tabcontent"><p class="metric-period" id="median-period" role="status"></p><div class="metricline"><div class="metric-card"><span>Mediana · endeudamiento</span><b id="m-end">—</b></div><div class="metric-card"><span>Mediana · liquidez corriente (veces)</span><b id="m-liq">—</b></div><div class="metric-card"><span>Mediana · ROA</span><b id="m-roa">—</b></div><div class="metric-card"><span>Mediana · margen neto</span><b id="m-margin">—</b></div></div><article class="panel"><div class="panel-head"><div><h3>Indicadores financieros históricos</h3><small>Valores medianos de empresas incluidas en el filtro descriptivo estricto</small></div><div class="tabs-inline" id="metric-tabs"><button class="selected" data-metric="endeudamiento">Endeudamiento</button><button data-metric="liquidez_corriente">Liquidez</button><button data-metric="roa">ROA</button><button data-metric="margen_neto">Margen neto</button></div></div><div id="metric-chart" class="chart" aria-label="Tendencia histórica del indicador seleccionado"></div><div class="callout"><b>Interpretación:</b> se muestran medianas y no promedios para reducir la influencia de valores extremos. Las variaciones entre años no implican que un mismo grupo de empresas haya mejorado o empeorado, ya que la cobertura anual cambia.</div></article></section>
+  <section id="calidad" class="tabcontent"><p class="metric-period">Controles globales 2019–2024 · estos totales no cambian con el año destacado</p><div class="box-grid quality-global-grid"><div class="info-box"><b>162.073</b><span>Registros con cuatro indicadores financieros</span></div><div class="info-box"><b>175.550</b><span>Registros que cumplen control contable del 1 %</span></div><div class="info-box"><b>6.117</b><span>Indicadores con candidatos en disputa</span></div><div class="info-box"><b>271</b><span>Discrepancias de indicador con cocientes entre candidatos cercanos a 1.000</span></div></div><article class="panel"><div class="panel-head"><div><h3>Cobertura y validaciones por periodo</h3><small>Serie anual 2019–2024 · el ejercicio elegido se resalta en la tabla</small></div><span class="panel-tag">Auditoría preliminar</span></div><div class="table-wrap"><table class="report-table"><thead><tr><th>Año</th><th>Empresas</th><th>Cuatro indicadores</th><th>Balance al 1 %</th><th>Filtro estricto</th><th>Conflictos</th></tr></thead><tbody id="quality-table"></tbody></table></div><div class="source-row">Fuente: archivos de análisis exploratorio FINRISK Colombia · Superintendencia de Sociedades (procesamiento propio).</div></article><div class="grid" style="margin-top:18px"><article class="panel"><h3>Controles realizados</h3><ul class="list-note"><li>Consolidación preliminar por identificador de empresa y ejercicio.</li><li>Disponibilidad simultánea de cuatro indicadores financieros.</li><li>Comprobación de ecuación contable con tolerancia del 1 %.</li><li>Identificación de reportes contradictorios y posibles diferencias de escala.</li></ul></article><article class="panel"><h3>Limitaciones abiertas</h3><ul class="list-note"><li>Revisar unidad monetaria, tipo de reporte, taxonomía y periodo.</li><li>Validar el momento real de disponibilidad de cada estado financiero.</li><li>Completar la cobertura histórica de procesos de insolvencia.</li><li>No considerar ausencia en el listado como evidencia de no insolvencia.</li></ul></article></div></section>
+  <section id="prediccion" class="tabcontent">
+<section id="risk-root" class="risk-workspace" aria-labelledby="risk-title" data-state="empty">
+  <header class="risk-header">
+    <div><p class="risk-eyebrow">Respuesta individual para el analista</p><h3 id="risk-title">Priorizar la revisión de una empresa</h3><p>Prepare la consulta y revise cómo una alerta de insolvencia formal apoyaría la revisión crediticia. La predicción real y los grupos comparables siguen pendientes.</p></div>
+    <span class="risk-privacy">Los datos se procesan en esta página; no se envían a un servidor.</span>
+  </header>
+
+  <section id="business-result" class="business-decision" aria-labelledby="business-result-title">
+    <span class="design-label">DISEÑO DE SALIDA · SIN MODELO ENTRENADO</span>
+    <h4 id="business-result-title">Respuesta prevista: prioridad de revisión y seguimiento</h4>
+    <p>FINRISK estimaría la probabilidad <b>p</b> de ingreso a un proceso formal de insolvencia durante los doce meses posteriores a la evaluación, con información disponible en esa fecha. Se compararía con un umbral <b>t</b> elegido en validación para orientar la revisión humana.</p>
+    <div class="business-result-grid">
+      <div class="business-result-stat"><span>Probabilidad de insolvencia formal · 12 meses</span><strong id="risk-probability">No disponible</strong></div>
+      <div class="business-result-stat"><span>Umbral operativo t</span><strong id="risk-threshold">Pendiente de validación</strong></div>
+      <div class="business-result-stat"><span>Prioridad para la empresa consultada</span><strong id="risk-priority">Sin asignar</strong></div>
+    </div>
+    <p class="risk-readiness"><b>Estado actual:</b> revisar el formulario solo comprueba los campos. La disponibilidad temporal, la etiqueta, el modelo y el umbral deben validarse antes de asignar una prioridad real.</p>
+    <div id="business-demo" class="business-demo" aria-labelledby="business-demo-title">
+      <span class="design-label">ESCENARIO ILUSTRATIVO · NO ES UNA PREDICCIÓN</span>
+      <h4 id="business-demo-title">Así se traduciría el resultado en una acción</h4>
+      <p>Seleccione un caso simbólico del diseño. Es independiente de los indicadores ingresados; no calcula probabilidades ni usa datos de una empresa.</p>
+      <div class="business-demo-controls"><button id="demo-alert" class="business-demo-button" type="button" aria-pressed="true" data-demo="alert">Escenario con alerta: p ≥ t</button><button id="demo-no-alert" class="business-demo-button" type="button" aria-pressed="false" data-demo="noalert">Escenario sin alerta: p &lt; t</button></div>
+      <div id="business-demo-output" class="business-demo-output" role="status" aria-live="polite"><span id="demo-condition">Condición ilustrativa: p ≥ t</span><b id="demo-priority">Revisión prioritaria propuesta</b><span id="demo-action">El analista ampliaría la revisión financiera y definiría el seguimiento antes de decidir sobre el crédito.</span></div>
+      <p>Una salida sin alerta mantendría la revisión ordinaria; no demostraría solvencia. El ingreso a insolvencia formal y el incumplimiento de un préstamo son eventos distintos. La decisión crediticia permanece en la entidad.</p>
+    </div>
+    <div class="business-actions"><button type="button" data-go-tab="evaluacion">¿Qué tan confiables serían estas alertas?</button></div>
+  </section>
+
+  <div class="risk-layout">
+    <form id="risk-form" class="risk-card" autocomplete="off" novalidate>
+      <div class="risk-form-heading"><h4>Perfil de la empresa</h4><span id="risk-input-kind" class="risk-tag">Entrada del usuario</span></div>
+      <p class="risk-help">Todos los campos son obligatorios. Los porcentajes se ingresan como 55 para 55 %. Se admiten signos negativos en los indicadores.</p>
+      <p id="risk-example-note" class="risk-example" hidden>Ejemplo ilustrativo de entrada. No corresponde a una empresa real y no genera resultados predictivos ni datos de otras empresas.</p>
+      <div class="risk-utilities"><button id="risk-example" type="button" class="risk-button risk-button-secondary">Cargar ejemplo ilustrativo</button><button id="risk-clear" type="button" class="risk-button risk-button-quiet">Limpiar</button></div>
+      <div id="risk-errors" class="risk-error-summary" role="alert" hidden></div>
+      <fieldset class="risk-fieldset"><legend>Periodo y fecha de evaluación</legend>
+        <div class="risk-fields risk-fields-two">
+          <div class="risk-field"><label for="risk-year">Año financiero</label><select id="risk-year" name="risk-year" aria-describedby="risk-year-error" required><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024" selected>2024</option></select><span id="risk-year-error" class="risk-field-error"></span></div>
+          <div class="risk-field"><label for="risk-date">Fecha de evaluación</label><input id="risk-date" name="risk-date" type="date" min="2024-12-31" required aria-describedby="risk-date-help risk-date-error"><span id="risk-date-error" class="risk-field-error"></span></div>
+        </div>
+        <p id="risk-date-help" class="risk-help">Cierre de referencia: <strong id="risk-close-date">31/12/2024</strong>. La evaluación debe ser igual o posterior al cierre. Falta verificar cuándo estuvieron disponibles los estados financieros; el cierre no acredita esa disponibilidad.</p>
+      </fieldset>
+      <fieldset class="risk-fieldset"><legend>Indicadores financieros</legend>
+        <div class="risk-fields risk-fields-two">
+          <div class="risk-field risk-field-wide"><label for="risk-assets">Activo total · millones de COP</label><input id="risk-assets" name="risk-assets" type="number" step="any" inputmode="decimal" placeholder="Ej. 10000" required aria-describedby="risk-assets-help risk-assets-error"><span id="risk-assets-help" class="risk-help">10 000 significa COP 10 000 millones. Debe ser mayor que cero. Use números sin separadores de miles.</span><span id="risk-assets-error" class="risk-field-error"></span></div>
+          <div class="risk-field"><label for="risk-debt">Endeudamiento · %</label><input id="risk-debt" name="risk-debt" type="number" step="any" inputmode="decimal" required aria-describedby="risk-debt-error"><span id="risk-debt-error" class="risk-field-error"></span></div>
+          <div class="risk-field"><label for="risk-liquidity">Liquidez corriente · veces</label><input id="risk-liquidity" name="risk-liquidity" type="number" step="any" inputmode="decimal" required aria-describedby="risk-liquidity-error"><span id="risk-liquidity-error" class="risk-field-error"></span></div>
+          <div class="risk-field"><label for="risk-roa">ROA · %</label><input id="risk-roa" name="risk-roa" type="number" step="any" inputmode="decimal" required aria-describedby="risk-roa-error"><span id="risk-roa-error" class="risk-field-error"></span></div>
+          <div class="risk-field"><label for="risk-margin">Margen neto · %</label><input id="risk-margin" name="risk-margin" type="number" step="any" inputmode="decimal" required aria-describedby="risk-margin-error"><span id="risk-margin-error" class="risk-field-error"></span></div>
+        </div>
+      </fieldset>
+      <fieldset class="risk-fieldset"><legend>Tamaño de las empresas a comparar</legend>
+        <p class="risk-help">Propuesta pendiente de acuerdo del equipo: rango automático entre 0,5 y 2 veces el activo total. Puede editar ambos límites; todos los importes están en millones de COP.</p>
+        <div class="risk-fields risk-fields-two">
+          <div class="risk-field"><label for="risk-min">Activo mínimo · millones de COP</label><input id="risk-min" name="risk-min" type="number" step="any" inputmode="decimal" required aria-describedby="risk-min-error"><span id="risk-min-error" class="risk-field-error"></span></div>
+          <div class="risk-field"><label for="risk-max">Activo máximo · millones de COP</label><input id="risk-max" name="risk-max" type="number" step="any" inputmode="decimal" required aria-describedby="risk-max-error"><span id="risk-max-error" class="risk-field-error"></span></div>
+        </div>
+        <div class="risk-range-toolbar"><span id="risk-range-mode" class="risk-help">Rango automático propuesto</span><button id="risk-reset-range" type="button" class="risk-button risk-button-quiet">Restablecer rango 0,5–2×</button></div>
+      </fieldset>
+      <div class="risk-submit-row"><button type="submit" class="risk-button risk-button-primary">Revisar consulta</button><span class="risk-help">Revisa los datos y actualiza el resumen; no ejecuta una predicción.</span></div>
+    </form>
+    <aside class="risk-card risk-result" aria-labelledby="risk-result-title">
+      <div class="risk-form-heading"><h4 id="risk-result-title">Consulta preparada</h4><span id="risk-review-status" class="risk-tag">Consulta por revisar</span></div>
+      <p id="risk-stale" class="risk-stale" hidden>Consulta desactualizada: cambió el formulario o el rango. Pulse Revisar consulta para actualizar este resumen y los paneles.</p>
+      <div class="risk-pending"><strong>Sin clasificación disponible</strong><p>No hay un modelo validado para emitir una clasificación. Este flujo solo permite revisar la consulta.</p></div>
+      <p class="risk-small-title">Evento que se buscará anticipar: ingreso formal a insolvencia</p>
+      <p class="business-pending-brief">La probabilidad, el umbral y la prioridad previstos se presentan en la sección de respuesta. Aquí se resume la entrada revisada.</p>
+      <p class="risk-help">La consulta no emite una predicción. La prioridad futura apoyaría la revisión humana del crédito.</p>
+      <h5>Última consulta preparada</h5>
+      <p id="risk-summary-kind" class="risk-help">Todavía no se ha revisado una consulta.</p>
+      <dl class="risk-summary-list">
+        <div><dt>Año financiero</dt><dd id="risk-summary-year">Por revisar</dd></div>
+        <div><dt>Fecha de evaluación</dt><dd id="risk-summary-date">Por revisar</dd></div>
+        <div><dt>Horizonte propuesto</dt><dd id="risk-summary-window">12 meses desde la evaluación</dd></div>
+        <div><dt>Activo total</dt><dd id="risk-summary-assets">Por revisar</dd></div>
+        <div><dt>Endeudamiento</dt><dd id="risk-summary-debt">Por revisar</dd></div>
+        <div><dt>Liquidez corriente</dt><dd id="risk-summary-liquidity">Por revisar</dd></div>
+        <div><dt>ROA</dt><dd id="risk-summary-roa">Por revisar</dd></div>
+        <div><dt>Margen neto</dt><dd id="risk-summary-margin">Por revisar</dd></div>
+      </dl>
+      <p id="risk-range-summary" class="risk-help">El rango de comparación se mostrará al revisar la consulta.</p>
+      <p class="risk-help">El horizonte de doce meses, la fecha de disponibilidad y las reglas de comparación están pendientes de validación por el equipo.</p>
+    </aside>
+  </div>
+  <section class="risk-comparison" aria-labelledby="risk-comparison-title">
+    <div class="risk-comparison-heading"><h4 id="risk-comparison-title">Comparación con empresas de tamaño similar</h4><span id="risk-peer-status" class="risk-tag">Diseño pendiente</span></div>
+    <p class="risk-help">El perfil consultado es una entrada del usuario. Esta maqueta no dispone de registros individuales de otras empresas ni de una etiqueta y un seguimiento validados para formar los grupos. Las medianas siguen sin calcular y los espacios de gráficos representan el diseño previsto.</p>
+    <p id="risk-peer-context" class="risk-help">Revise una consulta para mostrar su perfil y el rango propuesto en ambos paneles.</p>
+    <div class="risk-peer-grid">
+      <article class="risk-card risk-peer" aria-labelledby="risk-event-title"><h5 id="risk-event-title">Con evento de insolvencia</h5><p class="risk-peer-count">n pendiente · grupo aún sin validar</p><div class="risk-chart-skeleton" role="img" aria-label="Diseño previsto de gráficos por indicador. Sin escala ni valores de otras empresas; grupo pendiente de validar."><p>Gráficos comparativos por indicador</p><div><span>Endeudamiento · %</span><i>Pendiente</i><span>Liquidez · veces</span><i>Pendiente</i><span>ROA · %</span><i>Pendiente</i><span>Margen neto · %</span><i>Pendiente</i></div><small>Diseño previsto · sin escala ni valores estimados</small></div><div class="risk-table-wrap"><table><caption>Perfil ingresado y mediana del grupo con evento</caption><thead><tr><th scope="col">Indicador</th><th scope="col">Empresa consultada</th><th scope="col">Mediana del grupo</th></tr></thead><tbody><tr><th scope="row">Activo total · millones de COP</th><td data-risk-company="assets">Por revisar</td><td>No disponible</td></tr><tr><th scope="row">Endeudamiento · %</th><td data-risk-company="debt">Por revisar</td><td>No disponible</td></tr><tr><th scope="row">Liquidez corriente · veces</th><td data-risk-company="liquidity">Por revisar</td><td>No disponible</td></tr><tr><th scope="row">ROA · %</th><td data-risk-company="roa">Por revisar</td><td>No disponible</td></tr><tr><th scope="row">Margen neto · %</th><td data-risk-company="margin">Por revisar</td><td>No disponible</td></tr></tbody></table></div></article>
+      <article class="risk-card risk-peer" aria-labelledby="risk-noevent-title"><h5 id="risk-noevent-title">Sin evento con seguimiento completo</h5><p class="risk-peer-count">n pendiente · seguimiento aún sin validar</p><div class="risk-chart-skeleton" role="img" aria-label="Diseño previsto de gráficos por indicador. Sin escala ni valores de otras empresas; grupo pendiente de validar."><p>Gráficos comparativos por indicador</p><div><span>Endeudamiento · %</span><i>Pendiente</i><span>Liquidez · veces</span><i>Pendiente</i><span>ROA · %</span><i>Pendiente</i><span>Margen neto · %</span><i>Pendiente</i></div><small>Diseño previsto · sin escala ni valores estimados</small></div><div class="risk-table-wrap"><table><caption>Perfil ingresado y mediana del grupo sin evento</caption><thead><tr><th scope="col">Indicador</th><th scope="col">Empresa consultada</th><th scope="col">Mediana del grupo</th></tr></thead><tbody><tr><th scope="row">Activo total · millones de COP</th><td data-risk-company="assets">Por revisar</td><td>No disponible</td></tr><tr><th scope="row">Endeudamiento · %</th><td data-risk-company="debt">Por revisar</td><td>No disponible</td></tr><tr><th scope="row">Liquidez corriente · veces</th><td data-risk-company="liquidity">Por revisar</td><td>No disponible</td></tr><tr><th scope="row">ROA · %</th><td data-risk-company="roa">Por revisar</td><td>No disponible</td></tr><tr><th scope="row">Margen neto · %</th><td data-risk-company="margin">Por revisar</td><td>No disponible</td></tr></tbody></table></div></article>
+    </div>
+  </section>
+  <p id="risk-live" class="risk-sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+  <noscript><p class="risk-pending">Active JavaScript para revisar los datos del formulario. No hay clasificación ni comparación disponibles.</p></noscript>
+</section>
+
+  </section>
+
+  <section id="evaluacion" class="tabcontent" aria-labelledby="eval-title">
+    <article class="panel">
+      <div class="panel-head"><div><h3 id="eval-title">¿Qué tan bien detecta FINRISK los eventos de insolvencia?</h3><small>Evaluación global sobre un conjunto temporal de prueba reservado · diseño propuesto</small></div><span class="design-label">SIN RESULTADOS DE MODELO</span></div>
+      <p class="eval-question">¿Qué proporción de las empresas que ingresan a un proceso formal de insolvencia en los doce meses posteriores a la evaluación puede detectar FINRISK con indicadores disponibles en esa fecha, y qué proporción de sus alertas es correcta, para priorizar la revisión y el seguimiento crediticio?</p>
+      <p class="evaluation-future">Esta pregunta se responderá con predicciones fuera de muestra y seguimiento completo. Las métricas de esta sección describirían el comportamiento del modelo en una población; no son la probabilidad ni la certeza de una empresa consultada.</p>
+    </article>
+    <div id="eval-metrics" class="evaluation-grid">
+      <article><h3>Resumen principal de desempeño</h3><p>Precisión promedio · average precision (AP)</p><strong>Pendiente de evaluación</strong><p>Resume la curva precisión-recall a distintos umbrales. Se comparará con una referencia basada en la prevalencia del evento en el mismo conjunto de prueba.</p><p class="formula">AP = Σ (Rₙ − Rₙ₋₁) · Pₙ</p></article>
+      <article><h3>Eventos detectados</h3><p>Sensibilidad / recall al umbral elegido</p><strong>Pendiente de evaluación</strong><p>De las empresas que presentan el evento, ¿qué proporción genera una alerta?</p><p class="formula">VP / (VP + FN)</p></article>
+      <article><h3>Alertas correctas</h3><p>Precisión de las alertas al mismo umbral</p><strong>Pendiente de evaluación</strong><p>De las empresas que reciben una alerta, ¿qué proporción presenta el evento?</p><p class="formula">VP / (VP + FP)</p></article>
+    </div>
+    <article id="eval-protocol" class="panel">
+      <div class="panel-head"><div><h3>Cómo se obtendrá una respuesta medible</h3><small>Protocolo por validar con el equipo antes de entrenar</small></div><span class="panel-tag">Datos → evaluación → acción</span></div>
+      <div class="table-wrap"><table class="report-table evaluation-table"><thead><tr><th>Elemento</th><th>Criterio propuesto</th><th>Estado</th></tr></thead><tbody>
+        <tr><td>Población y etiqueta</td><td>Empresa evaluada con estados disponibles en esa fecha; evento de primera admisión elegible a insolvencia en (evaluación, evaluación + 12 meses]. Confirmar seguimiento completo antes de asignar ausencia de evento.</td><td>Por validar con microdatos</td></tr>
+        <tr><td>Separación temporal</td><td>Entrenar con periodos anteriores, seleccionar modelo y umbral en validación posterior, y reservar la prueba más reciente. Evitar ventanas objetivo superpuestas entre particiones. Transformaciones aprendidas solo con entrenamiento.</td><td>Fechas y cortes por acordar</td></tr>
+        <tr><td>Referencia de comparación</td><td>Comparar AP con la prevalencia del evento en la prueba y con un modelo de referencia sencillo. Presentar población, fechas, número de eventos y tamaño de la prueba.</td><td>Sin etiqueta validada</td></tr>
+        <tr><td>Umbral y carga de revisión</td><td>Elegir t en validación considerando detección de eventos y capacidad de revisión. Reportar alertas, eventos detectados, falsas alertas y eventos omitidos al mismo t en prueba.</td><td>Sin umbral ni metas acordadas</td></tr>
+        <tr><td>Estimaciones de probabilidad</td><td>Revisar calibración antes de interpretar la puntuación como probabilidad. Mostrar versión y población de aplicación junto a la salida futura.</td><td>Modelo pendiente</td></tr>
+      </tbody></table></div>
+      <p class="evaluation-future">VP: alertas con evento; FN: eventos no alertados; FP: alertas sin evento, siempre con seguimiento comprobado. Pₙ y Rₙ son precisión y recall en cada punto de la curva. AP usa incrementos de recall; no es el área trapezoidal de la curva.</p>
+      <div class="notice"><div><b>Cómo se interpretará:</b> el equipo acordará una sensibilidad mínima y una carga máxima de revisión antes de consultar la prueba. La importancia de los indicadores complementará la explicación; se evaluará por separado del desempeño predictivo. No hay metas numéricas ni resultados aprobados todavía.</div></div>
+    </article>
+    <div class="business-actions"><button type="button" data-go-tab="prediccion">Volver a la respuesta para una empresa</button></div>
+  </section>
+
   <footer class="foot"><span>FINRISK Colombia · Prototipo de interfaz · Despliegue de Soluciones Analíticas</span><span>Fuentes: información financiera pública de la Superintendencia de Sociedades · Datos consolidados 2019–2024</span></footer>
  </div>
 </main></div>
@@ -66,8 +297,30 @@ const sum=k=>years.reduce((s,x)=>s+x[k],0);
 const total={empresas:37231,observaciones:176666,filas_validas_descriptivo:161411,con_discrepancia:713,pct_filas_validas_descriptivo:91.37};
 const current=()=>activeYear==='all'?total:years.find(x=>String(x.year)===activeYear);
 function sset(id,value){byId(id).textContent=value}
-function renderCards(){let x=current(),isAll=activeYear==='all';sset('kpi1-label',isAll?'Empresas distintas':'Empresas reportantes');sset('kpi1',nf.format(x.empresas));sset('kpi1-foot',isAll?'Identificadas en 2019–2024':`Periodo financiero ${activeYear}`);sset('kpi2',nf.format(x.observaciones));sset('kpi2-foot',isAll?'No equivale a empresas únicas':`Registros empresa-año de ${activeYear}`);sset('kpi3',nf.format(x.filas_validas_descriptivo));sset('kpi4',fmt(x.pct_filas_validas_descriptivo)+' %');sset('kpi4-foot',isAll?'Sobre observaciones empresa-año':`Cobertura para ${activeYear}`);sset('quality-period',isAll?'Periodo 2019–2024':`Ejercicio ${activeYear}`);byId('quality-ring').style.setProperty('--pct',x.pct_filas_validas_descriptivo);byId('quality-ring-text').innerHTML=fmt(x.pct_filas_validas_descriptivo)+' %<small>aprovechable</small>';sset('quality-available',nf.format(x.filas_validas_descriptivo));sset('quality-conflicts',nf.format(x.con_discrepancia));
-let med=x.medians || null;if(!med){med=years[years.length-1].medians;}sset('m-end',fmt(100*med.endeudamiento)+' %');sset('m-liq',fmt(med.liquidez_corriente));sset('m-roa',fmt(100*med.roa)+' %');sset('m-margin',fmt(100*med.margen_neto)+' %');}
+function renderCards(){
+ const x=current(), isAll=activeYear==='all', period=isAll?'2019–2024':String(x.year);
+ sset('kpi1-label',isAll?'Empresas distintas':'Empresas reportantes');
+ sset('kpi1',nf.format(x.empresas));
+ sset('kpi1-foot',isAll?'Identificadas en 2019–2024':`Ejercicio financiero ${period}`);
+ sset('kpi2',nf.format(x.observaciones));
+ sset('kpi2-foot',isAll?'2019–2024 · no son empresas únicas':`Registros empresa-año de ${period}`);
+ sset('kpi3',nf.format(x.filas_validas_descriptivo));
+ sset('kpi3-foot',`Filtro solo descriptivo · ${period}`);
+ sset('kpi4',fmt(x.pct_filas_validas_descriptivo)+' %');
+ sset('kpi4-foot',`Sobre observaciones empresa-año · ${period}`);
+ sset('quality-period',isAll?'Periodo 2019–2024':`Ejercicio ${period}`);
+ byId('quality-ring').style.setProperty('--pct',x.pct_filas_validas_descriptivo);
+ byId('quality-ring-text').innerHTML=fmt(x.pct_filas_validas_descriptivo)+' %<small>aprovechable</small>';
+ sset('quality-available',nf.format(x.filas_validas_descriptivo));
+ sset('quality-conflicts',nf.format(x.con_discrepancia));
+ const reference=isAll?years[years.length-1]:x;
+ const med=reference.medians;
+ sset('median-period',`${isAll?'Medianas del último ejercicio disponible:':'Medianas del ejercicio'} ${reference.year} · n = ${nf.format(reference.filas_validas_descriptivo)} · muestra descriptiva estricta`);
+ sset('m-end',fmt(100*med.endeudamiento)+' %');
+ sset('m-liq',fmt(med.liquidez_corriente)+' veces');
+ sset('m-roa',fmt(100*med.roa)+' %');
+ sset('m-margin',fmt(100*med.margen_neto)+' %');
+}
 function frame(width=620,height=250,pad={l:58,r:18,t:12,b:38}){return {w:width,h:height,p:pad,x0:pad.l,x1:width-pad.r,y0:pad.t,y1:height-pad.b,innerw:width-pad.l-pad.r,innerh:height-pad.t-pad.b}}
 function labelY(v,percent=false){return percent?fmt(v,0)+' %':nf.format(v)}
 function lineChart(holder,series,metricMode=false){let f=frame(620,256),minV=metricMode?Math.min(0,...series.flatMap(s=>s.data)):0,maxV=metricMode?Math.max(...series.flatMap(s=>s.data))*1.18:60;if(!metricMode){maxV=60}if(maxV===minV)maxV=minV+1;
@@ -78,8 +331,205 @@ function coverageChart(){let f=frame(620,256),max=35000,step=f.innerw/6,bw=49;co
 function metrics(){const defs={endeudamiento:{label:'Endeudamiento',multiply:100},liquidez_corriente:{label:'Liquidez corriente',multiply:1},roa:{label:'ROA',multiply:100},margen_neto:{label:'Margen neto',multiply:100}};let desc=defs[activeMetric];let dat=years.map(y=>y.medians[activeMetric]*desc.multiply);let f=frame(620,254);let lo=Math.min(...dat),hi=Math.max(...dat);let dy=(hi-lo)||1;lo=Math.min(0,lo-dy*.35);hi=hi+dy*.6;let iy=v=>f.y1-(v-lo)/(hi-lo)*f.innerh;let ix=i=>f.x0+i*f.innerw/5;let grid='';for(let i=0;i<5;i++){let v=lo+(hi-lo)*i/4,y=iy(v);grid+=`<line class="svg-grid" x1="${f.x0}" x2="${f.x1}" y1="${y}" y2="${y}"/><text class="svg-label" x="${f.x0-9}" y="${y+4}" text-anchor="end">${activeMetric==='liquidez_corriente'?fmt(v):fmt(v,1)+' %'}</text>`}let path=dat.map((v,i)=>`${ix(i)},${iy(v)}`).join(' L');let points=dat.map((v,i)=>`<circle class="chartpoint" r="${activeYear===String(years[i].year)?7:5}" cx="${ix(i)}" cy="${iy(v)}" fill="${color[activeMetric]}"><title>${years[i].year}: ${fmt(v)}${activeMetric==='liquidez_corriente'?'':' %'}</title></circle><text class="svg-label" x="${ix(i)}" y="${f.y1+22}" text-anchor="middle">${years[i].year}</text>`).join('');byId('metric-chart').innerHTML=`<svg viewBox="0 0 ${f.w} ${f.h}" role="img" aria-label="${desc.label} mediano 2019-2024">${grid}<path class="chartline" d="M${path}" stroke="${color[activeMetric]}"/>${points}</svg>`}
 function table(){byId('quality-table').innerHTML=years.map(x=>`<tr class="${String(x.year)===activeYear?'highlight':''}"><td>${x.year}</td><td>${nf.format(x.empresas)}</td><td>${fmt(x.pct_cuatro_indicadores)} %</td><td>${fmt(x.pct_balances_cuadrados)} %</td><td>${fmt(x.pct_filas_validas_descriptivo)} %</td><td>${nf.format(x.con_discrepancia)}</td></tr>`).join('')}
 function renderAll(){renderCards();coverageChart();lineChart(byId('summary-lines'),[{label:'Endeudamiento',color:color.endeudamiento,data:years.map(x=>x.medians.endeudamiento*100)},{label:'Margen neto',color:color.margen_neto,data:years.map(x=>x.medians.margen_neto*100)},{label:'ROA',color:color.roa,data:years.map(x=>x.medians.roa*100)}]);metrics();table()}
-function setTab(tab){const meta={resumen:['Resumen ejecutivo','Cobertura, calidad y principales señales del conjunto de datos.'],indicadores:['Indicadores financieros','Evolución de medianas de liquidez, endeudamiento y rentabilidad.'],calidad:['Calidad y cobertura','Auditoría y trazabilidad del proceso de consolidación.'],prediccion:['Modelo predictivo','Vista de referencia para futuras inferencias: todavía no hay modelo entrenado.']};document.querySelectorAll('.nav button').forEach(b=>{b.classList.toggle('active',b.dataset.tab===tab);b.dataset.tab===tab?b.setAttribute('aria-current','page'):b.removeAttribute('aria-current')});document.querySelectorAll('.tabcontent').forEach(p=>p.classList.toggle('active',p.id===tab));sset('current-title',meta[tab][0]);sset('current-desc',meta[tab][1]);byId('side').classList.remove('open');window.scrollTo({top:0,behavior:'smooth'})}
-byId('year').addEventListener('change',e=>{activeYear=e.target.value;renderAll()});document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));document.querySelectorAll('#metric-tabs button').forEach(b=>b.addEventListener('click',()=>{activeMetric=b.dataset.metric;document.querySelectorAll('#metric-tabs button').forEach(t=>t.classList.toggle('selected',t===b));metrics()}));byId('menu').addEventListener('click',()=>byId('side').classList.toggle('open'));
+function setTab(tab){
+ const meta={
+  resumen:['Resumen ejecutivo','Cobertura, calidad y principales señales del conjunto de datos.'],
+  indicadores:['Indicadores financieros','Medianas por ejercicio y evolución histórica de la muestra descriptiva.'],
+  calidad:['Calidad y cobertura','Controles globales y validaciones de los datos financieros.'],
+  prediccion:['Modelo predictivo','Respuesta prevista y escenarios ilustrativos de priorización · sin predicción real.'],
+  evaluacion:['Evaluación del modelo','Cómo se medirá la detección de eventos y la precisión de las alertas · resultados pendientes.']
+ };
+ if(!Object.prototype.hasOwnProperty.call(meta,tab))tab='resumen';
+ document.querySelectorAll('.nav button').forEach(b=>{
+  b.classList.toggle('active',b.dataset.tab===tab);
+  if(b.dataset.tab===tab)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');
+ });
+ document.querySelectorAll('.tabcontent').forEach(p=>p.classList.toggle('active',p.id===tab));
+ sset('current-title',meta[tab][0]);sset('current-desc',meta[tab][1]);
+ ['year-control','descriptive-context','descriptive-kpis'].forEach(id=>byId(id).hidden=['prediccion','evaluacion'].includes(tab));
+ byId('side').classList.remove('open');byId('menu').setAttribute('aria-expanded','false');
+ history.replaceState(null,'','#'+tab);
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+byId('year').addEventListener('change',e=>{activeYear=e.target.value;renderAll()});document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));document.querySelectorAll('#metric-tabs button').forEach(b=>b.addEventListener('click',()=>{activeMetric=b.dataset.metric;document.querySelectorAll('#metric-tabs button').forEach(t=>t.classList.toggle('selected',t===b));metrics()}));byId('menu').addEventListener('click',()=>{const opened=byId('side').classList.toggle('open');byId('menu').setAttribute('aria-expanded',String(opened));});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){byId('side').classList.remove('open');byId('menu').setAttribute('aria-expanded','false');}});
+
+document.querySelectorAll('[data-go-tab]').forEach(button=>button.addEventListener('click',()=>setTab(button.dataset.goTab)));
+document.querySelectorAll('[data-demo]').forEach(button=>button.addEventListener('click',()=>{
+ const alert=button.dataset.demo==='alert';
+ document.querySelectorAll('[data-demo]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+ sset('demo-condition',alert?'Condición ilustrativa: p ≥ t':'Condición ilustrativa: p < t');
+ sset('demo-priority',alert?'Revisión prioritaria propuesta':'Revisión ordinaria propuesta');
+ sset('demo-action',alert?'El analista ampliaría la revisión financiera y definiría el seguimiento antes de decidir sobre el crédito.':'El analista continuaría la revisión ordinaria. La ausencia de alerta no demuestra solvencia ni reemplaza la evaluación del crédito.');
+}));
+
 renderAll();
+setTab(location.hash.slice(1)||'resumen');
+</script>
+<script>
+(function () {
+  'use strict';
+  function initRiskMockup() {
+    const root = document.getElementById('risk-root');
+    if (!root || root.dataset.initialized === 'true') return;
+    root.dataset.initialized = 'true';
+    const $ = id => root.querySelector('#risk-' + id);
+    const form = $('form');
+    const names = ['year', 'date', 'assets', 'debt', 'liquidity', 'roa', 'margin', 'min', 'max'];
+    const fields = Object.fromEntries(names.map(n => [n, $(n)]));
+    const labels = {year:'Año financiero', date:'Fecha de evaluación', assets:'Activo total', debt:'Endeudamiento', liquidity:'Liquidez corriente', roa:'ROA', margin:'Margen neto', min:'Activo mínimo', max:'Activo máximo'};
+    const nf = new Intl.NumberFormat('es-CO', {maximumFractionDigits:2});
+    let automatic = true, illustrative = false, reviewed = false;
+    const tell = text => { $('live').textContent = text; };
+    const number = name => fields[name].value.trim() === '' ? NaN : fields[name].valueAsNumber;
+    const format = value => nf.format(value);
+    function dateParts(value) {
+      const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value);
+      if (!match) return null;
+      const [y, m, d] = match.slice(1).map(Number);
+      if (y < 100 || y > 9998) return null;
+      const dt = new Date(Date.UTC(y, m - 1, d));
+      return dt.getUTCFullYear() === y && dt.getUTCMonth() === m - 1 && dt.getUTCDate() === d ? {y, m, d} : null;
+    }
+    const showDate = p => String(p.d).padStart(2,'0') + '/' + String(p.m).padStart(2,'0') + '/' + p.y;
+    function afterTwelveMonths(p) {
+      const days = new Date(Date.UTC(p.y + 1, p.m, 0)).getUTCDate();
+      return {y:p.y + 1, m:p.m, d:Math.min(p.d, days)};
+    }
+    function syncClose() {
+      fields.date.min = fields.year.value + '-12-31';
+      $('close-date').textContent = '31/12/' + fields.year.value;
+    }
+    function syncRange() {
+      if (automatic) {
+        const a = number('assets');
+        fields.min.value = Number.isFinite(a) && a > 0 ? String(a * 0.5) : '';
+        fields.max.value = Number.isFinite(a) && a > 0 && Number.isFinite(a * 2) ? String(a * 2) : '';
+      }
+      $('range-mode').textContent = automatic ? 'Rango automático propuesto · 0,5–2×' : 'Rango manual · pendiente de acuerdo del equipo';
+    }
+    function markStale() {
+      if (!reviewed) return;
+      root.dataset.state = 'stale';
+      $('stale').hidden = false;
+      $('review-status').textContent = 'Revisión desactualizada';
+      $('peer-status').textContent = 'Perfil y rango desactualizados';
+      tell('La consulta cambió. El resumen y los paneles corresponden a la revisión anterior. Pulse Revisar consulta.');
+    }
+    function clearErrors() {
+      $('errors').hidden = true;
+      $('errors').replaceChildren();
+      names.forEach(n => { fields[n].removeAttribute('aria-invalid'); $(n + '-error').textContent = ''; });
+    }
+    function showErrors(errors) {
+      clearErrors();
+      if (!errors.length) return false;
+      const intro = document.createElement('p');
+      intro.textContent = 'Revise los siguientes campos:';
+      const list = document.createElement('ul');
+      errors.forEach(([name, message]) => {
+        fields[name].setAttribute('aria-invalid', 'true');
+        $(name + '-error').textContent = message;
+        const li = document.createElement('li'), link = document.createElement('a');
+        link.href = '#risk-' + name;
+        link.textContent = labels[name] + ': ' + message;
+        link.addEventListener('click', e => { e.preventDefault(); fields[name].focus(); });
+        li.append(link); list.append(li);
+      });
+      $('errors').append(intro, list);
+      $('errors').hidden = false;
+      fields[errors[0][0]].focus();
+      return true;
+    }
+    function valuesAndErrors() {
+      const v = {}, errors = [];
+      v.year = Number(fields.year.value); v.date = dateParts(fields.date.value);
+      if (!Number.isInteger(v.year) || v.year < 2019 || v.year > 2024) errors.push(['year','Seleccione un año entre 2019 y 2024.']);
+      if (!v.date) errors.push(['date','Ingrese una fecha válida.']);
+      else if (fields.date.value < String(v.year) + '-12-31') errors.push(['date','Debe ser igual o posterior al cierre del año financiero.']);
+      ['assets','debt','liquidity','roa','margin','min','max'].forEach(n => {
+        v[n] = number(n);
+        if (!Number.isFinite(v[n])) errors.push([n,'Ingrese un número válido, sin separadores de miles.']);
+        else if (['assets','min','max'].includes(n) && v[n] <= 0) errors.push([n,'Debe ser mayor que cero.']);
+      });
+      if (Number.isFinite(v.min) && Number.isFinite(v.max) && v.min >= v.max) errors.push(['max','Debe ser mayor que el activo mínimo.']);
+      return {v, errors};
+    }
+    function kindLabel() { return illustrative ? 'Entrada ilustrativa (incluidas sus modificaciones); no corresponde a una empresa real.' : 'Datos ingresados por el usuario; disponibilidad de estados por verificar.'; }
+    function render(v) {
+      reviewed = true;
+      root.dataset.state = 'reviewed';
+      $('stale').hidden = true;
+      $('review-status').textContent = 'Resumen actualizado';
+      $('peer-status').textContent = 'Sin grupos disponibles';
+      $('summary-kind').textContent = kindLabel();
+      $('summary-year').textContent = v.year;
+      $('summary-date').textContent = showDate(v.date);
+      $('summary-window').textContent = showDate(v.date) + ' a ' + showDate(afterTwelveMonths(v.date)) + ' · 12 meses propuestos';
+      const profile = {assets:format(v.assets) + ' millones de COP', debt:format(v.debt) + ' %', liquidity:format(v.liquidity) + ' veces', roa:format(v.roa) + ' %', margin:format(v.margin) + ' %'};
+      Object.keys(profile).forEach(n => { $('summary-' + n).textContent = profile[n]; });
+      const range = format(v.min) + '–' + format(v.max) + ' millones de COP';
+      const mode = automatic ? 'Automático 0,5–2×' : 'Manual';
+      $('range-summary').textContent = 'Rango revisado: ' + range + '. ' + mode + '; criterio pendiente de acuerdo del equipo.' + (v.assets < v.min || v.assets > v.max ? ' El activo de la empresa consultada queda fuera del rango elegido.' : '');
+      $('peer-context').textContent = (illustrative ? 'Perfil de ejemplo ilustrativo. ' : 'Perfil ingresado por el usuario. ') + 'Año ' + v.year + ' · Evaluación ' + showDate(v.date) + ' · Rango ' + range + '. No se han calculado grupos ni medianas.';
+      root.querySelectorAll('[data-risk-company]').forEach(cell => { cell.textContent = profile[cell.dataset.riskCompany]; });
+      tell('Consulta revisada. ' + (illustrative ? 'Datos de entrada ilustrativos. ' : '') + 'Sin clasificación disponible. Los dos grupos y sus medianas siguen pendientes.');
+    }
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      syncClose(); syncRange();
+      const {v, errors} = valuesAndErrors();
+      if (!showErrors(errors)) render(v);
+    });
+    form.addEventListener('input', event => {
+      if (!names.some(n => fields[n] === event.target)) return;
+      if (event.target === fields.min || event.target === fields.max) automatic = false;
+      if (event.target === fields.assets || event.target === fields.min || event.target === fields.max) syncRange();
+      if (event.target === fields.year) syncClose();
+      markStale();
+    });
+    form.addEventListener('change', event => {
+      if (event.target === fields.year) syncClose();
+      if (names.some(n => fields[n] === event.target)) markStale();
+    });
+    $('reset-range').addEventListener('click', () => {
+      const a = number('assets');
+      if (!Number.isFinite(a) || a <= 0 || !Number.isFinite(a * 2)) {
+        showErrors([['assets','Ingrese un activo positivo válido para calcular el rango.']]);
+        return;
+      }
+      automatic = true; syncRange(); clearErrors(); markStale();
+      tell('Se restableció el rango propuesto de 0,5 a 2 veces el activo. Pulse Revisar consulta para actualizar el resumen.');
+    });
+    $('example').addEventListener('click', () => {
+      const example = {year:'2023', date:'2024-02-29', assets:'10000', debt:'55', liquidity:'1.6', roa:'3', margin:'4'};
+      Object.entries(example).forEach(([n,value]) => { fields[n].value = value; });
+      illustrative = true; automatic = true;
+      $('example-note').hidden = false; $('input-kind').textContent = 'Ejemplo ilustrativo';
+      clearErrors(); syncClose(); syncRange(); markStale();
+      tell('Ejemplo ilustrativo cargado. No son datos reales ni resultados. Pulse Revisar consulta.');
+    });
+    $('clear').addEventListener('click', () => {
+      form.reset(); automatic = true; illustrative = false; reviewed = false;
+      ['date','assets','debt','liquidity','roa','margin','min','max'].forEach(n => { fields[n].value = ''; });
+      root.dataset.state = 'empty'; $('stale').hidden = true; $('example-note').hidden = true;
+      $('input-kind').textContent = 'Entrada del usuario'; $('review-status').textContent = 'Consulta por revisar';
+      $('peer-status').textContent = 'Diseño pendiente';
+      $('summary-kind').textContent = 'Todavía no se ha revisado una consulta.';
+      ['year','date','assets','debt','liquidity','roa','margin'].forEach(n => { $('summary-' + n).textContent = 'Por revisar'; });
+      $('summary-window').textContent = '12 meses desde la evaluación';
+      $('range-summary').textContent = 'El rango de comparación se mostrará al revisar la consulta.';
+      $('peer-context').textContent = 'Revise una consulta para mostrar su perfil y el rango propuesto en ambos paneles.';
+      root.querySelectorAll('[data-risk-company]').forEach(cell => { cell.textContent = 'Por revisar'; });
+      clearErrors(); syncClose(); syncRange(); fields.year.focus();
+      tell('Se borraron los datos de la consulta y del ejemplo.');
+    });
+    syncClose(); syncRange();
+  }
+  window.initRiskMockup = initRiskMockup;
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initRiskMockup);
+  else initRiskMockup();
+})();
+
 </script>
 </body></html>

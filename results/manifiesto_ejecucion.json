@@ -1,0 +1,85 @@
+{
+  "alcance": "Exploración de agregados recibidos; no reproducción de la consolidación original",
+  "periodo_financiero": [
+    2019,
+    2024
+  ],
+  "observaciones_empresa_anio": 176666,
+  "muestra_descriptiva_estricta": 161411,
+  "empresas_unicas_declaradas_no_recalculadas": 37231,
+  "insumos": [
+    {
+      "archivo": "cobertura_y_calidad_por_anio.csv",
+      "bytes": 703,
+      "filas_tabulares": 6.0,
+      "sha256": "9e5bf74f267e026ebbeacc232e381c87a9fff8444cb744091c389c5b61022892"
+    },
+    {
+      "archivo": "estadisticos_indicadores_por_anio.csv",
+      "bytes": 4106,
+      "filas_tabulares": 24.0,
+      "sha256": "54323e7b5f688aa742cda1ba26c66bab561ec74883d867685f1e7209eef09859"
+    },
+    {
+      "archivo": "incidencias_calidad.csv",
+      "bytes": 354,
+      "filas_tabulares": 8.0,
+      "sha256": "fb45275e42b3ac66a422160cd93114838fbedbb95dc687244eb73a2db4a59410"
+    },
+    {
+      "archivo": "resumen_analisis.txt",
+      "bytes": 1221,
+      "filas_tabulares": null,
+      "sha256": "8ef72a7041f1c55cc5d6ab28e3a1c4c30c73da8463f20e7f56788248e8a1d0c2"
+    },
+    {
+      "archivo": "resumen_cruce.csv",
+      "bytes": 1552,
+      "filas_tabulares": 21.0,
+      "sha256": "1235f3895532776a038d270f1d05482a169e796d8fda43302ad32ace93ce4f73"
+    },
+    {
+      "archivo": "RESUMEN_VALIDACION.txt",
+      "bytes": 912,
+      "filas_tabulares": null,
+      "sha256": "dd97ae26b21cd11487a759147259b932de5b4e8b897087e87fcf20ca1c03dc18"
+    }
+  ],
+  "versiones": {
+    "Python": "3.12.14",
+    "pandas": "2.3.3",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0"
+  },
+  "controles_agregados_cumplen": true,
+  "base_individual_presente": false,
+  "auditoria_individual_ejecutada": false,
+  "etiqueta_insolvencia_validada": false,
+  "modelo_entrenado": false,
+  "revision": "2026-11-05 - respuesta a retroalimentación de Entrega 1",
+  "protocolo_predictivo": "Propuesto, no ejecutado; AP, sensibilidad, precisión y carga de revisión",
+  "metricas_predictivas_calculadas": false,
+  "horizonte_meses_propuesto": 12,
+  "retencion_anual_exportada": true,
+  "tablas_generadas": [
+    "cobertura_recalculada.csv",
+    "controles_agregados.csv",
+    "cruce_preliminar_reportado.csv",
+    "estadisticos_recibidos.csv",
+    "incidencias_recalculadas.csv",
+    "indicadores_ultimo_anio_presentacion.csv",
+    "resumen_panel.csv",
+    "retencion_anual_y_composicion.csv",
+    "trazabilidad_insumos.csv"
+  ],
+  "figuras_agregadas": [
+    "01_cobertura_anual.png",
+    "02_calidad_anual.png",
+    "03_incidencias.png",
+    "04_mediana_y_percentiles.png",
+    "05_cruce_preliminar.png"
+  ]
+}
