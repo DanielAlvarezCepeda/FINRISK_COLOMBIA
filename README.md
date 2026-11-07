@@ -69,17 +69,21 @@ Resultados preliminares:
 ## 7. Estado actual
 
 Completado:
+
 - Recolección de información financiera.
 - Exploración inicial.
 - Consolidación preliminar.
 - Cálculo preliminar de indicadores.
 - Análisis descriptivo.
 - Versionamiento inicial mediante Git y DVC.
+- Recuperación y auditoría de las fuentes públicas para la segunda entrega.
+- Construcción de la etiqueta del piloto retrospectivo de presencia en inventario.
+- Comparación de tres alternativas y evaluación reservada del ganador.
+- Registro y recuperación verificados de los modelos del piloto en MLflow.
 
 Pendiente:
-- Validación de la variable objetivo de insolvencia.
-- Entrenamiento de modelos supervisados.
-- Comparación de modelos con MLflow.
+
+- Validación de primera admisión formal y disponibilidad histórica para el objetivo original.
 - Desarrollo de API.
 - Implementación del dashboard.
 - Despliegue mediante Docker.
@@ -88,11 +92,14 @@ Pendiente:
 
 Los resultados corresponden a un prototipo académico.
 
-La base financiera todavía requiere verificaciones
-adicionales antes de utilizarse para entrenamiento.
+El piloto ya se entrenó con una etiqueta de aparición observada en el inventario
+anual siguiente. Esa etiqueta no demuestra primera admisión formal ni solvencia
+de los casos sin presencia. La disponibilidad histórica de los reportes sigue
+sin verificarse; la evaluación es retrospectiva.
 
-No se ha validado ni calculado definitivamente la
-variable objetivo de insolvencia futura.
+El puntaje no está calibrado como probabilidad de insolvencia. El desempeño
+actual es débil: el ganador detecta 26 de 155 presencias observadas en prueba,
+con 847 alertas sin presencia observada. El detalle y el alcance están en la sección 12.
 
 Las predicciones no deben utilizarse como diagnósticos
 financieros definitivos.
@@ -209,19 +216,20 @@ La [publicación previa complementaria de Joaquín](https://github.com/joaquinro
 se conserva como antecedente; las instrucciones de esta revisión corresponden
 a la raíz del repositorio `DanielAlvarezCepeda/FINRISK_COLOMBIA`.
 
-Antes de modelar, quedan por acordar la elegibilidad del evento, las fechas de
-evaluación y disponibilidad, el seguimiento completo, las particiones temporales,
-el umbral de alerta y los mínimos operativos de sensibilidad, precisión y capacidad
-de revisión. La importancia de variables complementará la explicación, sin
-sustituir la evaluación predictiva.
+La sección 12 documenta una recuperación nueva y un piloto con una etiqueta
+observable. Para el objetivo original siguen pendientes la elegibilidad del
+evento, las fechas de disponibilidad y el seguimiento completo. El umbral del
+piloto es técnico; los mínimos operativos y la capacidad de revisión siguen
+por acordarse. La importancia de variables no sustituye la evaluación predictiva.
 
 ## 12. Preparación de datos y experimentos de la segunda entrega
 
-El objetivo confirmado es estimar el riesgo de admisión a un proceso formal de
-insolvencia durante los doce meses siguientes a la evaluación. El tablero previsto
-permitirá consultar la predicción por empresa, mostrar el riesgo y la alerta
-y apoyar la revisión crediticia. La etiqueta y los modelos de FINRISK continúan
-pendientes de validación.
+El objetivo original es estimar el riesgo de admisión formal durante los doce
+meses siguientes a una evaluación. Como las fuentes no permiten validarlo aún,
+el equipo adelanta un **piloto retrospectivo de aparición observada en el
+inventario anual siguiente**, entre empresas sin antecedentes en los cortes
+consultados. El cero expresa ausencia en ese inventario, no solvencia. Las ventanas
+anuales son nominales y no se ha verificado la disponibilidad histórica de datos.
 
 El avance del 7 de noviembre recuperó las fuentes públicas y reconstruyó un panel
 preliminar sin etiquetas de 176.666 empresa-año y 37.231 empresas. Se separan las
@@ -231,6 +239,7 @@ La configuración DVC anterior y el notebook técnico de Jairo se conservan.
 
 - [Notebook ejecutado de preparación](notebooks/02_Preparacion_Datos_FINRISK.ipynb).
 - [Instrucciones de descarga, auditoría y consolidación](docs/entrega2/preparacion_datos.md).
+- [Etiqueta, modelos, métricas y reproducción del piloto](docs/entrega2/piloto_retrospectivo.md).
 - [Conexión y registro en el MLflow de Jairo](docs/entrega2/mlflow.md).
 - [Evidencia agregada del avance](docs/entrega2/evidencia_20261107/).
 - [Consulta preparada para el tutor](docs/entrega2/consulta_tutor.txt).
@@ -249,12 +258,31 @@ de preparación antes de volver a correr el notebook.
 
 Para consultar el servidor informado por Jairo sin crear corridas, usar
 `python src/finrisk_comprobar_mlflow.py --tracking-uri http://54.163.35.181:8050 --experimento Proyecto-MIAD`.
-La guía de MLflow distingue esa consulta de la prueba técnica que sí escribe un
-artefacto. La lectura del servidor definitivo quedó verificada con MLflow 3.18.0.
-`Proyecto-MIAD` devolvió `RESOURCE_DOES_NOT_EXIST` y debe crearse antes de registrar
-las evaluaciones de FINRISK. Las pruebas del registrador
-se realizaron con un servidor local y datos sintéticos.
+El piloto quedó registrado en [Proyecto-MIAD, experimento 2](http://54.163.35.181:8050/#/experiments/2).
+Se verificaron cuatro corridas terminadas (`FINISHED`): validación de las tres
+alternativas y prueba reservada del ganador. Se subieron tres pipelines y se
+recuperó el ganador con la misma huella SHA-256. El [manifiesto de registro](results/piloto_retrospectivo/registro_mlflow.json)
+contiene los identificadores, enlaces y huellas reales, vinculados al commit
+fuente `4cd8f32162b5349919c911445a4caa0de67ebc8a`. No se subieron filas individuales.
 
-Se mantiene el objetivo a doce meses y se validarán con el tutor la primera
-admisión, el seguimiento de los casos sin evento y la disponibilidad histórica
-de los reportes antes de entrenar. El cruce de inventarios es descriptivo.
+Para reproducir el modelado con las fuentes recuperadas:
+
+```powershell
+.\.venv\Scripts\python.exe src/finrisk_piloto_modelos.py --raiz . --salida .cache/finrisk/piloto_retrospectivo
+```
+
+Se construyeron 112.471 observaciones con cuatro indicadores, se entrenaron una
+referencia de prevalencia, regresión logística y bosque aleatorio, y se eligió
+el bosque por AP de validación. El umbral F2 se fijó en validación antes de una
+única evaluación en prueba. En prueba: AP de 0,020718, sensibilidad de 16,77 % y
+precisión de alertas de 2,978 % (26 aciertos en 873 alertas; 129 casos omitidos).
+Son resultados débiles y no justifican aprobar o rechazar crédito.
+
+Los modelos y predicciones individuales se guardan localmente en `.cache/finrisk/`,
+excluidos de Git. La documentación del piloto contiene las reglas de etiqueta,
+la población, las huellas, la inferencia y los comandos de registro en MLflow.
+El tablero debe consultar el modelo sellado, mostrar un puntaje no calibrado y
+compararlo con su umbral para emitir una alerta de revisión. El objetivo original
+de primera admisión y la disponibilidad histórica siguen pendientes de validación.
+Queda integrar esa consulta en el tablero y preparar las capturas de evidencia
+para la entrega.

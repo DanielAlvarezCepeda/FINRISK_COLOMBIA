@@ -1,0 +1,12 @@
+{
+  "sha256_datos_modelado": "dc2c95f85c69fa53d88c1bbbf6d89bd857100c71ae0344ea0df84ff9c15114b6",
+  "sha256_protocolo_etiqueta": "ef1c98f0cd3c43f0f5bc6c6856aa1fd1a6cb4b7e81956be72bf4795d9f3777e8",
+  "sha256_configuracion": "af1ff19566d3a4b73cc0802549526b8aa83f49bb2b8bd975ad73c6f45ad12727",
+  "sha256_script_modelado": "73680870f56c653a3cb6e6059d2356987147a014255f29fca5285ca05b3a6e9f",
+  "versiones": {
+    "pandas": "2.3.3",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  }
+}
