@@ -71,7 +71,7 @@ El [borrador de consulta al tutor](consulta_tutor.txt) puede compartirse para re
 
 La carpeta [evidencia_20261107](evidencia_20261107/) conserva manifiestos y resúmenes agregados del avance original. Sus rutas describen aquella extracción y no indican que los datos estén incluidos en Git. Las nuevas ejecuciones escriben en `reports/preparacion/` y conservan separada esa evidencia. Los datos individuales y archivos grandes se recuperan mediante los programas.
 
-El [registro con MLflow](mlflow.md) utiliza el servidor informado por Jairo, `http://52.91.138.185:8050`, y el experimento `Proyecto-MIAD`. La conexión AWS quedó pendiente de comprobar. El notebook con Iris de Jairo se conserva como prueba técnica y sus métricas corresponden a ese conjunto.
+El [registro con MLflow](mlflow.md) utiliza el servidor informado por Jairo, `http://54.163.35.181:8050`, y el experimento `Proyecto-MIAD`. La lectura del servidor definitivo quedó verificada con MLflow 3.18.0. `Proyecto-MIAD` devolvió `RESOURCE_DOES_NOT_EXIST` y debe crearse antes de las evaluaciones de FINRISK. El notebook con Iris de Jairo se conserva como prueba técnica y sus métricas corresponden a ese conjunto.
 
 ## Fuentes
 

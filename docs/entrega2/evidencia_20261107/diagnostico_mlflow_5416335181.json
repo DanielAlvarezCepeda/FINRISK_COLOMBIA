@@ -1,0 +1,57 @@
+{
+  "fecha_utc": "2026-11-07T15:35:04.471918+00:00",
+  "tracking_uri": "http://54.163.35.181:8050",
+  "experimento_solicitado": "Proyecto-MIAD",
+  "solo_lectura": true,
+  "consultas": {
+    "health": {
+      "ok": true,
+      "status": 200,
+      "contenido": "OK"
+    },
+    "version": {
+      "ok": true,
+      "status": 200,
+      "contenido": "3.18.0"
+    },
+    "experimento": {
+      "ok": false,
+      "status": 404,
+      "error": "Not Found"
+    }
+  },
+  "lectura_basica_ok": false,
+  "nota_artefactos": "Ubicación de artefactos pendiente de consultar.",
+  "escritura_y_recuperacion_artefactos_verificadas": false,
+  "conexion_servidor_verificada": true,
+  "proyecto_miad_encontrado": false,
+  "detalle_experimentos": [
+    {
+      "nombre": "Proyecto-MIAD",
+      "status": 404,
+      "respuesta": {
+        "error_code": "RESOURCE_DOES_NOT_EXIST",
+        "message": "Could not find experiment with name 'Proyecto-MIAD'",
+        "sqlstate": "KAM00",
+        "error_class": "RESOURCE_NOT_FOUND"
+      }
+    },
+    {
+      "nombre": "Test-MLflow",
+      "status": 200,
+      "respuesta": {
+        "experiment": {
+          "experiment_id": "1",
+          "name": "Test-MLflow",
+          "artifact_location": "mlflow-artifacts:/1",
+          "lifecycle_stage": "active",
+          "last_update_time": 1794025239402,
+          "creation_time": 1794025239402,
+          "workspace": "default"
+        }
+      }
+    }
+  ],
+  "modificaciones_remotas": false,
+  "interpretacion": "La conexión y la versión del servidor definitivo responden. Proyecto-MIAD no existe en el servidor consultado. La prueba de escritura y recuperación de artefactos no se ejecutó."
+}
