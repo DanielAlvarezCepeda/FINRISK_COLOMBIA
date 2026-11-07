@@ -1,0 +1,30 @@
+{
+  "modelo": "bosque_aleatorio",
+  "fase": "prueba",
+  "n": 28949,
+  "positivos": 155,
+  "negativos": 28794,
+  "prevalencia": 0.005354243669902242,
+  "ap": 0.02282091999944155,
+  "umbral": 0.4586231433634672,
+  "sensibilidad": 0.4,
+  "precision_alertas": 0.02476038338658147,
+  "f1": 0.046634072959759305,
+  "f2": 0.09923175416133162,
+  "alertas": 2504,
+  "fraccion_alertas": 0.08649694289958203,
+  "lift_precision": 4.62444089456869,
+  "matriz_confusion": {
+    "vp": 62,
+    "fp": 2442,
+    "fn": 93,
+    "vn": 26352
+  },
+  "sha256_seleccion": "6887c1187eac1866dd651f9770143762d2252c5a0c22b24a6030309abb4383cd",
+  "sha256_modelo": "55fe564eaec27a1db78546895b3076db791e8ce3ee0155ce3e3ba264cb509f4f",
+  "archivo_modelo": "modelos/bosque_aleatorio.joblib",
+  "archivo_predicciones": "predicciones/ganador_prueba.csv",
+  "evaluado_utc": "2026-11-07T23:44:47.602819+00:00",
+  "numero_evaluaciones_prueba": 1,
+  "modelo_reajustado_antes_prueba": false
+}

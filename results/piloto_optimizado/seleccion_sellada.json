@@ -1,0 +1,23 @@
+{
+  "sellado_utc": "2026-11-07T23:44:47.448733+00:00",
+  "modelo": "bosque_aleatorio",
+  "umbral": 0.4586231433634672,
+  "sha256_modelo": "55fe564eaec27a1db78546895b3076db791e8ce3ee0155ce3e3ba264cb509f4f",
+  "ap_validacion": 0.021111435498129973,
+  "criterio_modelo": "Mayor AP en validación. Empates exactos por orden de menor complejidad predefinido.",
+  "criterio_umbral": "Máximo F2 en validación. Empates con tolerancia absoluta 1e-12 por menor umbral.",
+  "nota_umbral": "Criterio técnico que pondera sensibilidad. No representa costos ni capacidad de revisión de un banco.",
+  "firma": {
+    "sha256_datos_modelado": "f40957796ae597cef6e83837dee905ed6c7de6ae3ef8770f64ff7d4c9beb15f4",
+    "sha256_protocolo_etiqueta": "0de87422f6d29dba31c8534e44b33869feffd0416d8d3ca2b6b07300cabd622d",
+    "sha256_configuracion": "2ce585451984c225e0dcdd25fbcabaf5c8dcbb697d695bb99fe13d922658572a",
+    "sha256_script_modelado": "36c95edd8d5a7417cb60fedbc0f1114ee99161a81a3988ca91830ff629059c21",
+    "versiones": {
+      "pandas": "2.3.3",
+      "numpy": "2.5.4",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0"
+    }
+  },
+  "prueba_consultada_para_seleccion": false
+}

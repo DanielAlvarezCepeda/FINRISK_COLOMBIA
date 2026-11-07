@@ -1,0 +1,224 @@
+{
+  "version_protocolo": "piloto-presencia-inventario-v1",
+  "objetivo": "aparicion_observada_en_inventario_anual",
+  "regla_etiqueta": "Entre reportantes financieros del ejercicio T-1 sin presencia en los cortes consultados hasta diciembre de T: 1 si el NIT aparece en diciembre de T+1; 0 si no aparece en ese inventario. El cero no demuestra solvencia ni ausencia de eventos durante el intervalo. El uno no prueba primera admisión formal.",
+  "horizonte_meses": 12,
+  "referencia_temporal": "Cortes nominales de diciembre a diciembre. Estudio retrospectivo.",
+  "rezago_financiero_ejercicios": 1,
+  "features": [
+    "liquidez_corriente",
+    "endeudamiento",
+    "roa",
+    "margen_neto"
+  ],
+  "identificadores_solo_para_cruce": [
+    "nit"
+  ],
+  "origenes_por_particion": {
+    "entrenamiento": [
+      2021,
+      2022
+    ],
+    "validacion": [
+      2023
+    ],
+    "prueba": [
+      2024
+    ]
+  },
+  "periodos": {
+    "entrenamiento": {
+      "desde": "2021-12-31",
+      "hasta": "2022-12-31"
+    },
+    "validacion": {
+      "desde": "2023-12-31",
+      "hasta": "2023-12-31"
+    },
+    "prueba": {
+      "desde": "2024-12-31",
+      "hasta": "2024-12-31"
+    }
+  },
+  "cortes_requeridos": [
+    "2019-12",
+    "2020-09",
+    "2021-12",
+    "2022-12",
+    "2023-12",
+    "2024-12",
+    "2025-12"
+  ],
+  "cortes_en_la_fuente": [
+    "2019-12",
+    "2020-09",
+    "2021-12",
+    "2022-12",
+    "2023-12",
+    "2024-12",
+    "2025-12",
+    "2026-10"
+  ],
+  "politica_calidad": {
+    "excluir_antecedentes_observados": true,
+    "excluir_requiere_revision_coherencia": true,
+    "excluir_cuatro_indicadores_ausentes": true,
+    "conservar_ausencias_parciales_para_imputacion_en_entrenamiento": true,
+    "conservar_indicadores_negativos": true,
+    "excluir_automaticamente_ingresos_o_patrimonio_negativos": false
+  },
+  "fuentes": {
+    "panel": {
+      "archivo": "base_financiera_recuperada_sin_etiquetas.csv.gz",
+      "sha256": "9c5f4a24113aec27fd44c2d56f6b1b3a573fa7a5f31d5bfed82c170e17d20741"
+    },
+    "eventos": {
+      "archivo": "eventos_observados_insolvencia.csv",
+      "sha256": "278843e9e3e1df98f3da2392a556f9c87ec9173c916b8787619bd7325ec9badc"
+    }
+  },
+  "limitaciones": [
+    "Presencia en un inventario de cierre y primera admisión formal son eventos diferentes.",
+    "Se omiten posibles procesos que comenzaron y terminaron entre inventarios.",
+    "La ausencia solo describe el registro consultado y no certifica solvencia.",
+    "El rezago financiero no prueba disponibilidad histórica ni ausencia de revisiones.",
+    "La separación por cohortes es retrospectiva. No acredita un backtest operativo exante.",
+    "Las etiquetas pueden publicarse después de los cortes nominales. Madurez y publicación requieren verificación para uso prospectivo.",
+    "La exclusión por calidad puede cambiar la población. Se conservan conteos por clase antes y después de excluir."
+  ],
+  "disponibilidad_historica_verificada": false,
+  "primera_admision_formal_validada": false,
+  "etiqueta_exante_validada": false,
+  "uso": "Prototipo académico de apoyo a revisión. No es aprobación de crédito ni diagnóstico de quiebra.",
+  "sha256_protocolo": "98f4d204618a3dc51854d8b17443b4a3a66965b43230fe807db4dc697cc0db53",
+  "sha256_dataset": "dbc16e7614f78736280f9410dd0aac0fba1a35f81594ad629891c65cecb6b118",
+  "version_base_etiquetada": "dbc16e7614f78736280f9410dd0aac0fba1a35f81594ad629891c65cecb6b118",
+  "filas_dataset": 112471,
+  "nits_distintos_dataset": 33608,
+  "nits_por_particion": {
+    "entrenamiento": 29182,
+    "validacion": 28677,
+    "prueba": 28949
+  },
+  "intersecciones_nit_particiones": {
+    "entrenamiento_validacion": 25807,
+    "entrenamiento_prueba": 24929,
+    "validacion_prueba": 26960,
+    "las_tres": 24496
+  },
+  "repeticion_nit_interpretacion": "La misma empresa puede figurar en varios orígenes. El piloto incluye reportantes conocidos y no mide exclusivamente generalización a empresas nunca vistas. NIT no es predictor.",
+  "valores_no_finitos_convertidos_en_ausentes": {
+    "liquidez_corriente": 0,
+    "endeudamiento": 0,
+    "roa": 0,
+    "margen_neto": 0
+  },
+  "contraste_auditoria_inventarios": {
+    "disponible": true,
+    "contraste_con_auditoria": true,
+    "sha256": "5469f0848677f3d01ad79524591efdf8abf54bdb7283ba35317b62d70fdaa7f5",
+    "conteos_nit_comprobados": {
+      "2019-12": 2697,
+      "2020-09": 3321,
+      "2021-12": 3818,
+      "2022-12": 4163,
+      "2023-12": 4471,
+      "2024-12": 4959,
+      "2025-12": 5504
+    }
+  },
+  "auditoria_cohortes": [
+    {
+      "anio_origen": 2021,
+      "anio_financiero": 2020,
+      "anio_objetivo": 2022,
+      "particion": "entrenamiento",
+      "n_financieros": 29949,
+      "presencias_objetivo_sin_excluir": 1717,
+      "excluidos_antecedente_observado": 1690,
+      "presencias_en_excluidos_antecedente": 1591,
+      "elegibles_sin_antecedentes": 28259,
+      "presencias_elegibles_sin_antecedentes": 126,
+      "excluidos_coherencia": 337,
+      "presencias_excluidos_coherencia": 1,
+      "excluidos_sin_indicadores": 132,
+      "presencias_excluidos_sin_indicadores": 0,
+      "n_modelado": 27790,
+      "evento_1": 125,
+      "evento_0": 27665,
+      "prevalencia": 0.004498020870816841,
+      "con_indicadores_imputables": 2966,
+      "cuatro_indicadores": 24824,
+      "con_conflicto_contable": 0
+    },
+    {
+      "anio_origen": 2022,
+      "anio_financiero": 2021,
+      "anio_objetivo": 2023,
+      "particion": "entrenamiento",
+      "n_financieros": 29200,
+      "presencias_objetivo_sin_excluir": 1811,
+      "excluidos_antecedente_observado": 1785,
+      "presencias_en_excluidos_antecedente": 1672,
+      "elegibles_sin_antecedentes": 27415,
+      "presencias_elegibles_sin_antecedentes": 139,
+      "excluidos_coherencia": 359,
+      "presencias_excluidos_coherencia": 2,
+      "excluidos_sin_indicadores": 1,
+      "presencias_excluidos_sin_indicadores": 0,
+      "n_modelado": 27055,
+      "evento_1": 137,
+      "evento_0": 26918,
+      "prevalencia": 0.005063759009425245,
+      "con_indicadores_imputables": 2225,
+      "cuatro_indicadores": 24830,
+      "con_conflicto_contable": 0
+    },
+    {
+      "anio_origen": 2023,
+      "anio_financiero": 2022,
+      "anio_objetivo": 2024,
+      "particion": "validacion",
+      "n_financieros": 31149,
+      "presencias_objetivo_sin_excluir": 1865,
+      "excluidos_antecedente_observado": 1843,
+      "presencias_en_excluidos_antecedente": 1700,
+      "elegibles_sin_antecedentes": 29306,
+      "presencias_elegibles_sin_antecedentes": 165,
+      "excluidos_coherencia": 627,
+      "presencias_excluidos_coherencia": 1,
+      "excluidos_sin_indicadores": 2,
+      "presencias_excluidos_sin_indicadores": 0,
+      "n_modelado": 28677,
+      "evento_1": 164,
+      "evento_0": 28513,
+      "prevalencia": 0.005718868779858423,
+      "con_indicadores_imputables": 2225,
+      "cuatro_indicadores": 26452,
+      "con_conflicto_contable": 0
+    },
+    {
+      "anio_origen": 2024,
+      "anio_financiero": 2023,
+      "anio_objetivo": 2025,
+      "particion": "prueba",
+      "n_financieros": 31396,
+      "presencias_objetivo_sin_excluir": 1938,
+      "excluidos_antecedente_observado": 1952,
+      "presencias_en_excluidos_antecedente": 1779,
+      "elegibles_sin_antecedentes": 29444,
+      "presencias_elegibles_sin_antecedentes": 159,
+      "excluidos_coherencia": 493,
+      "presencias_excluidos_coherencia": 4,
+      "excluidos_sin_indicadores": 2,
+      "presencias_excluidos_sin_indicadores": 0,
+      "n_modelado": 28949,
+      "evento_1": 155,
+      "evento_0": 28794,
+      "prevalencia": 0.005354243669902242,
+      "con_indicadores_imputables": 2244,
+      "cuatro_indicadores": 26705,
+      "con_conflicto_contable": 0
+    }
+  ]
+}
