@@ -9,3 +9,14 @@ data/raw/
 data/privados/**
 !data/privados/.gitkeep
 !data/privados/README.md
+
+# Archivos regenerados de preparación y experimentos de la entrega 2
+/data/processed/recuperacion/
+/reports/preparacion/
+/.cache/finrisk/
+/salidas/
+/mlruns/
+/mlartifacts/
+/mlflow.db
+/mlflow.db-*
+/trabajo_consolidacion/

@@ -1,0 +1,48 @@
+{
+  "dataset": "pfdp-zks5",
+  "fuente": "SITUACION",
+  "url_catalogo": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=concepto%2Ccount%28%2A%29+as+filas&%24group=concepto&%24where=fecha_corte+%3E%3D+%272019-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272025-01-01T00%3A00%3A00%27&%24limit=5000&%24order=concepto",
+  "conceptos": [
+    {
+      "concepto": "Activos corrientes totales",
+      "filas": "431154",
+      "variable": "activo_corriente"
+    },
+    {
+      "concepto": "Pasivos corrientes totales",
+      "filas": "427758",
+      "variable": "pasivo_corriente"
+    },
+    {
+      "concepto": "Patrimonio total",
+      "filas": "431233",
+      "variable": "patrimonio"
+    },
+    {
+      "concepto": "Total activos corrientes distintos de los activos no corrientes o grupo de activos para su disposici�n clasificados como mantenidos para la venta o como mantenidos para distribuir a los propietarios",
+      "filas": "431152",
+      "variable": "activo_corriente"
+    },
+    {
+      "concepto": "Total de activos",
+      "filas": "431248",
+      "variable": "activo_total"
+    },
+    {
+      "concepto": "Total de pasivos corrientes distintos de los pasivos incluidos en grupos de activos para su disposici�n clasificados como mantenidos para la venta",
+      "filas": "65659",
+      "variable": "pasivo_corriente"
+    },
+    {
+      "concepto": "Total pasivos",
+      "filas": "430975",
+      "variable": "pasivo_total"
+    },
+    {
+      "concepto": "Total pasivos corrientes distintos de los pasivos incluidos en grupos de activos para su disposici�n clasificados como mantenidos para la venta",
+      "filas": "362094",
+      "variable": "pasivo_corriente"
+    }
+  ],
+  "filas": 3011273
+}

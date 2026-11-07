@@ -1,0 +1,170 @@
+{
+  "consulta_utc": "2026-11-07T13:51:25.732396+00:00",
+  "metadatos_inicio": {
+    "dataset": "pfdp-zks5",
+    "nombre": "Estados Financieros NIIF- Estado de Situación Financiera",
+    "rowsUpdatedAt": 1783371747,
+    "viewLastModified": 1779125481,
+    "columns": [
+      {
+        "fieldName": "codigo_instancia",
+        "dataTypeName": "number"
+      },
+      {
+        "fieldName": "nit",
+        "dataTypeName": "number"
+      },
+      {
+        "fieldName": "numero_radicado",
+        "dataTypeName": "text"
+      },
+      {
+        "fieldName": "id_punto_entrada",
+        "dataTypeName": "number"
+      },
+      {
+        "fieldName": "punto_entrada",
+        "dataTypeName": "text"
+      },
+      {
+        "fieldName": "id_taxonomia",
+        "dataTypeName": "number"
+      },
+      {
+        "fieldName": "taxonomia",
+        "dataTypeName": "text"
+      },
+      {
+        "fieldName": "fecha_corte",
+        "dataTypeName": "calendar_date"
+      },
+      {
+        "fieldName": "concepto",
+        "dataTypeName": "text"
+      },
+      {
+        "fieldName": "periodo",
+        "dataTypeName": "text"
+      },
+      {
+        "fieldName": "valor",
+        "dataTypeName": "text"
+      }
+    ]
+  },
+  "metadatos_sha256": "10319de17eb85f82633bc3d9d8a36155f81214cc00ad5c4640367e95e395972e",
+  "catalogo_sha256": "4d1713c9324fe91589423cdb83a4de3e193471adf0d8598bbaccd17e744a9890",
+  "conceptos": [
+    "Activos corrientes totales",
+    "Pasivos corrientes totales",
+    "Patrimonio total",
+    "Total activos corrientes distintos de los activos no corrientes o grupo de activos para su disposici�n clasificados como mantenidos para la venta o como mantenidos para distribuir a los propietarios",
+    "Total de activos",
+    "Total de pasivos corrientes distintos de los pasivos incluidos en grupos de activos para su disposici�n clasificados como mantenidos para la venta",
+    "Total pasivos",
+    "Total pasivos corrientes distintos de los pasivos incluidos en grupos de activos para su disposici�n clasificados como mantenidos para la venta"
+  ],
+  "url_catalogo_periodos": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=date_extract_y%28fecha_corte%29+as+anio%2Cperiodo%2Ccount%28%2A%29+as+filas&%24where=fecha_corte+%3E%3D+%272019-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272025-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29&%24group=date_extract_y%28fecha_corte%29%2Cperiodo&%24order=anio%2Cperiodo&%24limit=5000",
+  "catalogo_periodos": [
+    {
+      "anio": "2019",
+      "periodo": "Periodo Actual",
+      "filas": "187527"
+    },
+    {
+      "anio": "2019",
+      "periodo": "Periodo Anterior",
+      "filas": "186476"
+    },
+    {
+      "anio": "2020",
+      "periodo": "Periodo Actual",
+      "filas": "212295"
+    },
+    {
+      "anio": "2020",
+      "periodo": "Periodo Anterior",
+      "filas": "211953"
+    },
+    {
+      "anio": "2021",
+      "periodo": "Periodo Actual",
+      "filas": "214110"
+    },
+    {
+      "anio": "2021",
+      "periodo": "Periodo Anterior",
+      "filas": "213884"
+    },
+    {
+      "anio": "2022",
+      "periodo": "Periodo Actual",
+      "filas": "446090"
+    },
+    {
+      "anio": "2022",
+      "periodo": "Periodo Anterior",
+      "filas": "445382"
+    },
+    {
+      "anio": "2023",
+      "periodo": "Periodo Actual",
+      "filas": "232044"
+    },
+    {
+      "anio": "2023",
+      "periodo": "Periodo Anterior",
+      "filas": "231915"
+    },
+    {
+      "anio": "2024",
+      "periodo": "Periodo Actual",
+      "filas": "214936"
+    },
+    {
+      "anio": "2024",
+      "periodo": "Periodo Anterior",
+      "filas": "214661"
+    }
+  ],
+  "anios": {
+    "2019": {
+      "periodos_actuales_literales": [
+        "Periodo Actual"
+      ],
+      "filas_esperadas": 187527
+    },
+    "2020": {
+      "periodos_actuales_literales": [
+        "Periodo Actual"
+      ],
+      "filas_esperadas": 212295
+    },
+    "2021": {
+      "periodos_actuales_literales": [
+        "Periodo Actual"
+      ],
+      "filas_esperadas": 214110
+    },
+    "2022": {
+      "periodos_actuales_literales": [
+        "Periodo Actual"
+      ],
+      "filas_esperadas": 446090
+    },
+    "2023": {
+      "periodos_actuales_literales": [
+        "Periodo Actual"
+      ],
+      "filas_esperadas": 232044
+    },
+    "2024": {
+      "periodos_actuales_literales": [
+        "Periodo Actual"
+      ],
+      "filas_esperadas": 214936
+    }
+  },
+  "filas_actuales_esperadas": 1507002,
+  "advertencia": "No se consultan ni inventan fechas de disponibilidad historica. FECHA_CORTE no demuestra fecha de publicacion."
+}

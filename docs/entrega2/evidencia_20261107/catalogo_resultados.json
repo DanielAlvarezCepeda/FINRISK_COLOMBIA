@@ -1,0 +1,38 @@
+{
+  "dataset": "prwj-nzxa",
+  "fuente": "RESULTADOS",
+  "url_catalogo": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=concepto%2Ccount%28%2A%29+as+filas&%24group=concepto&%24where=fecha_corte+%3E%3D+%272019-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272025-01-01T00%3A00%3A00%27&%24limit=5000&%24order=concepto",
+  "conceptos": [
+    {
+      "concepto": "Costo de ventas",
+      "filas": "347634",
+      "variable": "costo_ventas"
+    },
+    {
+      "concepto": "Costos financieros",
+      "filas": "317965",
+      "variable": "costos_financieros"
+    },
+    {
+      "concepto": "Ganancia bruta",
+      "filas": "429854",
+      "variable": "ganancia_bruta"
+    },
+    {
+      "concepto": "Ganancia (p�rdida)",
+      "filas": "433385",
+      "variable": "utilidad_neta"
+    },
+    {
+      "concepto": "Ganancia (p�rdida) por actividades de operaci�n",
+      "filas": "433331",
+      "variable": "resultado_operacional"
+    },
+    {
+      "concepto": "Ingresos de actividades ordinarias",
+      "filas": "429455",
+      "variable": "ingresos"
+    }
+  ],
+  "filas": 2391624
+}
