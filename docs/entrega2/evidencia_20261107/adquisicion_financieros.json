@@ -1,0 +1,1015 @@
+{
+  "creado_utc": "2026-11-07T13:50:43.037132+00:00",
+  "fuentes": {
+    "resultados": {
+      "dataset": "prwj-nzxa",
+      "huella": {
+        "metadatos_sha256": "2b1ce00638e1712b81bbbd95fcef8dd89edbc018d9fee151f404b3947cdfb72e",
+        "catalogo_sha256": "bac16c4aa8e3ff5d28b29b662cc1156a10cf17459571cc5c4a168d50cc09cfd6",
+        "page_size": 50000,
+        "columns": [
+          "CODIGO_INSTANCIA",
+          "NIT",
+          "NUMERO_RADICADO",
+          "ID_PUNTO_ENTRADA",
+          "PUNTO_ENTRADA",
+          "ID_TAXONOMIA",
+          "TAXONOMIA",
+          "FECHA_CORTE",
+          "CONCEPTO",
+          "PERIODO",
+          "VALOR",
+          "SOCRATA_ID"
+        ]
+      },
+      "metadatos_inicio": {
+        "dataset": "prwj-nzxa",
+        "nombre": "Estados Financieros NIIF- Estado de Resultado Integral",
+        "rowsUpdatedAt": 1783444705,
+        "viewLastModified": 1779123420,
+        "columns": [
+          {
+            "fieldName": "codigo_instancia",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "nit",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "numero_radicado",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "id_punto_entrada",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "punto_entrada",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "id_taxonomia",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "taxonomia",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "fecha_corte",
+            "dataTypeName": "calendar_date"
+          },
+          {
+            "fieldName": "concepto",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "periodo",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "valor",
+            "dataTypeName": "text"
+          }
+        ]
+      },
+      "filas_esperadas": 1196115,
+      "estado": "completo",
+      "archivos": {
+        "data/raw/financieros/resultados/2019_000.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1665666,
+          "sha256": "f9394530da3f440f70f7325fc89923e19f5d27bc60b1ed12de84f8586f92a2cc",
+          "primer_socrata_id": "row-k7au-evz5-wmww",
+          "ultimo_socrata_id": "row-dayk_vi2a_347m",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272019-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272020-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=0",
+          "anio": 2019,
+          "offset": 0,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:51:24.433022+00:00"
+        },
+        "data/raw/financieros/resultados/2019_001.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1666225,
+          "sha256": "01cde005b843445c005a001898698aa6a5fc45b5005eb6e427596ac3c5e00202",
+          "primer_socrata_id": "row-9es7-3bix_g4zx",
+          "ultimo_socrata_id": "row-xj4k-rtps.dxp2",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272019-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272020-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=50000",
+          "anio": 2019,
+          "offset": 50000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:51:33.014918+00:00"
+        },
+        "data/raw/financieros/resultados/2019_002.csv.gz": {
+          "filas": 49447,
+          "bytes_gzip": 1642738,
+          "sha256": "a21be299f045ed817877306d384fd94a0163b8df2100cea56efb1f33eaa26ae2",
+          "primer_socrata_id": "row-2xq6-xfhu.56z6",
+          "ultimo_socrata_id": "row-35ft_pfet.sczz",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272019-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272020-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=100000",
+          "anio": 2019,
+          "offset": 100000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:51:40.150775+00:00"
+        },
+        "data/raw/financieros/resultados/2020_000.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1668796,
+          "sha256": "4f6bbef6e30a6d2abed95a35391930acda062522ac83d1a07921711f6e295e67",
+          "primer_socrata_id": "row-hmz3~4bis~6ndm",
+          "ultimo_socrata_id": "row-tbpz.vsd3-byxu",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272020-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272021-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=0",
+          "anio": 2020,
+          "offset": 0,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:51:44.688015+00:00"
+        },
+        "data/raw/financieros/resultados/2020_001.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1668296,
+          "sha256": "a10ab519fd9ba1b55c3e35e0caefb852341c7ceb4f3818bee0a1e0661f2238c1",
+          "primer_socrata_id": "row-gdj8.sndm_7gzp",
+          "ultimo_socrata_id": "row-re37_4atj.6m7c",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272020-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272021-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=50000",
+          "anio": 2020,
+          "offset": 50000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:51:48.020850+00:00"
+        },
+        "data/raw/financieros/resultados/2020_002.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1671333,
+          "sha256": "133b9a89ff4255c92606808f5532c590c5758e740096acf90265b7deac16c465",
+          "primer_socrata_id": "row-wn9r~j5p4_vvz9",
+          "ultimo_socrata_id": "row-jdm3_4bp4_jfmv",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272020-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272021-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=100000",
+          "anio": 2020,
+          "offset": 100000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:51:52.531477+00:00"
+        },
+        "data/raw/financieros/resultados/2020_003.csv.gz": {
+          "filas": 23082,
+          "bytes_gzip": 731579,
+          "sha256": "80e781d86132bb313537e4b44a1f5a43b7c5c0dacffcab0197bd59081459b0ff",
+          "primer_socrata_id": "row-ffwm_uj4p_6b6x",
+          "ultimo_socrata_id": "row-j362-527u.pfqf",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272020-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272021-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=150000",
+          "anio": 2020,
+          "offset": 150000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:52:17.248011+00:00"
+        },
+        "data/raw/financieros/resultados/2021_000.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1676294,
+          "sha256": "a6a3bd76fb4e3ebb3e716701392dbed9de2951256dcd002b71291623d78d5f03",
+          "primer_socrata_id": "row-5r8k-zh4c-9utv",
+          "ultimo_socrata_id": "row-dp5e-p8n3.ahmd",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272021-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272022-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=0",
+          "anio": 2021,
+          "offset": 0,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:52:30.157706+00:00"
+        },
+        "data/raw/financieros/resultados/2021_001.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1677541,
+          "sha256": "f3d253bad05f5ac89501c9f72f3cf4fcc8b6f45dbb5d82c2fc32cc1b30e9cbb9",
+          "primer_socrata_id": "row-g9nu-jue3-tkzt",
+          "ultimo_socrata_id": "row-pe2b_gz8i-am99",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272021-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272022-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=50000",
+          "anio": 2021,
+          "offset": 50000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:52:35.409862+00:00"
+        },
+        "data/raw/financieros/resultados/2021_002.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1684827,
+          "sha256": "a96f0d55a73cd6bbf2aed0fe13799ef99fc6ec0647b010894b67d9400eb5de03",
+          "primer_socrata_id": "row-v2cu_fzw2-x5jt",
+          "ultimo_socrata_id": "row-4n2s_5pxg.qcmk",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272021-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272022-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=100000",
+          "anio": 2021,
+          "offset": 100000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:52:45.765107+00:00"
+        },
+        "data/raw/financieros/resultados/2021_003.csv.gz": {
+          "filas": 19151,
+          "bytes_gzip": 627171,
+          "sha256": "93921d475d8e73b5ef7b923f650e7403f070adec39939a4773b37c7f338c3d67",
+          "primer_socrata_id": "row-i2i4-apj2~hwpa",
+          "ultimo_socrata_id": "row-5t3t.vhjj~fc34",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272021-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272022-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=150000",
+          "anio": 2021,
+          "offset": 150000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:52:47.945895+00:00"
+        },
+        "data/raw/financieros/resultados/2022_000.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1205152,
+          "sha256": "a552aa7c43115968b960a69e364d10ee26625f9c25053ee899f4557c58854e48",
+          "primer_socrata_id": "row-ky98.hwch.nw3q",
+          "ultimo_socrata_id": "row-anfi_as3v-cirb",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=0",
+          "anio": 2022,
+          "offset": 0,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:52:57.741394+00:00"
+        },
+        "data/raw/financieros/resultados/2022_001.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1205000,
+          "sha256": "5f89e869bfc9edc04c07db32b454d616ca81eaa9bf7a5640d8c76a9a686e81c9",
+          "primer_socrata_id": "row-ax5b-ryjt~h5v6",
+          "ultimo_socrata_id": "row-qhsf~3gmm-8nw2",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=50000",
+          "anio": 2022,
+          "offset": 50000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:53:01.955525+00:00"
+        },
+        "data/raw/financieros/resultados/2022_002.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1204423,
+          "sha256": "ecbbfc50e7cec267e71b2a45cbfcb4f3376a28d443d3badf4a97c0120d11f7af",
+          "primer_socrata_id": "row-6yf4-54jr.idnu",
+          "ultimo_socrata_id": "row-5225-mpu6_5ki9",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=100000",
+          "anio": 2022,
+          "offset": 100000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:53:19.145107+00:00"
+        },
+        "data/raw/financieros/resultados/2022_003.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1204921,
+          "sha256": "1cb5bcf6c65738dadb6dfb17e21f69a6c84a754bfc7d674a6efc8f69bb734c3f",
+          "primer_socrata_id": "row-3dmg_vik8_gs92",
+          "ultimo_socrata_id": "row-dx6z.3h6h-kmxu",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=150000",
+          "anio": 2022,
+          "offset": 150000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:53:29.957449+00:00"
+        },
+        "data/raw/financieros/resultados/2022_004.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1205125,
+          "sha256": "37c0a2e6e3160d6149f8c4f9d7c37c6f435906dc13571946896544072a642de2",
+          "primer_socrata_id": "row-rdje_uyrz_7xd2",
+          "ultimo_socrata_id": "row-m783_k9e3.2pfq",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=200000",
+          "anio": 2022,
+          "offset": 200000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:53:33.250868+00:00"
+        },
+        "data/raw/financieros/resultados/2022_005.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1205637,
+          "sha256": "d27d34271710194e3e374e4388aa8e1b76b7a1446ec2a476d51342859bb0c5f5",
+          "primer_socrata_id": "row-vanr.29tp.j3wb",
+          "ultimo_socrata_id": "row-gm5d~hfuu.n8ip",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=250000",
+          "anio": 2022,
+          "offset": 250000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:53:44.493192+00:00"
+        },
+        "data/raw/financieros/resultados/2022_006.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1284715,
+          "sha256": "e508f3b46858e1a0846cc3d491a9de4219f7df99fc58766c0db9e2aad425b552",
+          "primer_socrata_id": "row-ry52~ihww~qa5n",
+          "ultimo_socrata_id": "row-gmee~pcez-mhuk",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=300000",
+          "anio": 2022,
+          "offset": 300000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:53:49.034755+00:00"
+        },
+        "data/raw/financieros/resultados/2022_007.csv.gz": {
+          "filas": 1627,
+          "bytes_gzip": 46825,
+          "sha256": "a2f7435a698849392731294c0e2074e0ee9c2dcee9d42472ddcb434b2275df20",
+          "primer_socrata_id": "row-qa5c-tvbx~ubvw",
+          "ultimo_socrata_id": "row-3x4q.p7h3.vzyj",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=350000",
+          "anio": 2022,
+          "offset": 350000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:53:50.819473+00:00"
+        },
+        "data/raw/financieros/resultados/2023_000.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1716997,
+          "sha256": "2f36e5d8656ee4fde9cc5a1edf0baf730087d48ddd6c98e2765c1fafa6c03bd8",
+          "primer_socrata_id": "row-265r_8qus.s4iz",
+          "ultimo_socrata_id": "row-bk97_jsj3~8bwb",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272023-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272024-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=0",
+          "anio": 2023,
+          "offset": 0,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:11.567638+00:00"
+        },
+        "data/raw/financieros/resultados/2023_001.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1717438,
+          "sha256": "6a585974d2a97e46323341ca06891b5aac2f10de64a93fa21f915f23af629ab1",
+          "primer_socrata_id": "row-gsqc.qmf2~vwbg",
+          "ultimo_socrata_id": "row-dizq~c8ea~zkby",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272023-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272024-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=50000",
+          "anio": 2023,
+          "offset": 50000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:15.260156+00:00"
+        },
+        "data/raw/financieros/resultados/2023_002.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1717432,
+          "sha256": "627ef1ad86fa4ff2b8ca1c9ebf42b2a0e05637ac35c088165fff23dc98e8d186",
+          "primer_socrata_id": "row-ctpc~49av-k52k",
+          "ultimo_socrata_id": "row-pkhe~r7aw_6pem",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272023-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272024-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=100000",
+          "anio": 2023,
+          "offset": 100000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:20.491047+00:00"
+        },
+        "data/raw/financieros/resultados/2023_003.csv.gz": {
+          "filas": 32999,
+          "bytes_gzip": 1121936,
+          "sha256": "bb11fdb84ab38d8d980be20638788d8d0030b6e0d3940032dd99f08165c98cd2",
+          "primer_socrata_id": "row-uvjy_7zxf-ae2n",
+          "ultimo_socrata_id": "row-mmd5-qd2c-rbcb",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272023-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272024-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=150000",
+          "anio": 2023,
+          "offset": 150000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:25.955312+00:00"
+        },
+        "data/raw/financieros/resultados/2024_000.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1718783,
+          "sha256": "2c86f6935b804ab7ad4696a1fb151e4a8e7846ccae98594fe6e5a3c583baca76",
+          "primer_socrata_id": "row-8e2x-s37r-thha",
+          "ultimo_socrata_id": "row-ubdf-xtbe-3d7w",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272024-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272025-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=0",
+          "anio": 2024,
+          "offset": 0,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:31.280522+00:00"
+        },
+        "data/raw/financieros/resultados/2024_001.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1718064,
+          "sha256": "c1d13ad9c342afb1de5ca2dcd122a722ed452adbeb90c45ae90c4b9ff59f2188",
+          "primer_socrata_id": "row-4i6x_i783-deif",
+          "ultimo_socrata_id": "row-kz8n-gg2z_8cbs",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272024-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272025-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=50000",
+          "anio": 2024,
+          "offset": 50000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:41.268278+00:00"
+        },
+        "data/raw/financieros/resultados/2024_002.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1718711,
+          "sha256": "996a358108f5e27c405d9af58a121e5a0dfb655c86274300b5ede20029f03de5",
+          "primer_socrata_id": "row-swrt~gp4x.dnm5",
+          "ultimo_socrata_id": "row-ce4c-d67s_rdtq",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272024-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272025-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=100000",
+          "anio": 2024,
+          "offset": 100000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:45.455765+00:00"
+        },
+        "data/raw/financieros/resultados/2024_003.csv.gz": {
+          "filas": 19809,
+          "bytes_gzip": 668416,
+          "sha256": "df118a33c00a92c8ae4e50c2113658d7d546da60ee3d1a5a3fb8777451304a9e",
+          "primer_socrata_id": "row-d6rh~r9e9.vcsd",
+          "ultimo_socrata_id": "row-77j9.fft8.4m5m",
+          "url": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272024-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272025-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=150000",
+          "anio": 2024,
+          "offset": 150000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:53.275206+00:00"
+        }
+      },
+      "filas_descargadas": 1196115,
+      "bytes_gzip": 37040041,
+      "metadatos_fin": {
+        "dataset": "prwj-nzxa",
+        "nombre": "Estados Financieros NIIF- Estado de Resultado Integral",
+        "rowsUpdatedAt": 1783444705,
+        "viewLastModified": 1779123420,
+        "columns": [
+          {
+            "fieldName": "codigo_instancia",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "nit",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "numero_radicado",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "id_punto_entrada",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "punto_entrada",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "id_taxonomia",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "taxonomia",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "fecha_corte",
+            "dataTypeName": "calendar_date"
+          },
+          {
+            "fieldName": "concepto",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "periodo",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "valor",
+            "dataTypeName": "text"
+          }
+        ]
+      },
+      "finalizado_utc": "2026-11-07T13:54:53.833572+00:00"
+    },
+    "situacion": {
+      "dataset": "pfdp-zks5",
+      "huella": {
+        "metadatos_sha256": "10319de17eb85f82633bc3d9d8a36155f81214cc00ad5c4640367e95e395972e",
+        "catalogo_sha256": "4d1713c9324fe91589423cdb83a4de3e193471adf0d8598bbaccd17e744a9890",
+        "page_size": 50000,
+        "columns": [
+          "CODIGO_INSTANCIA",
+          "NIT",
+          "NUMERO_RADICADO",
+          "ID_PUNTO_ENTRADA",
+          "PUNTO_ENTRADA",
+          "ID_TAXONOMIA",
+          "TAXONOMIA",
+          "FECHA_CORTE",
+          "CONCEPTO",
+          "PERIODO",
+          "VALOR",
+          "SOCRATA_ID"
+        ]
+      },
+      "metadatos_inicio": {
+        "dataset": "pfdp-zks5",
+        "nombre": "Estados Financieros NIIF- Estado de Situación Financiera",
+        "rowsUpdatedAt": 1783371747,
+        "viewLastModified": 1779125481,
+        "columns": [
+          {
+            "fieldName": "codigo_instancia",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "nit",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "numero_radicado",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "id_punto_entrada",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "punto_entrada",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "id_taxonomia",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "taxonomia",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "fecha_corte",
+            "dataTypeName": "calendar_date"
+          },
+          {
+            "fieldName": "concepto",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "periodo",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "valor",
+            "dataTypeName": "text"
+          }
+        ]
+      },
+      "filas_esperadas": 1507002,
+      "estado": "completo",
+      "archivos": {
+        "data/raw/financieros/situacion/2019_000.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1698284,
+          "sha256": "7c2948032e26738ee739f4b7ef7718b9a3330c561d11204875d9166b4fae3c41",
+          "primer_socrata_id": "row-zihx~a9q2-bwfb",
+          "ultimo_socrata_id": "row-5hhc-5hja.p6f7",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272019-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272020-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=0",
+          "anio": 2019,
+          "offset": 0,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:51:35.736861+00:00"
+        },
+        "data/raw/financieros/situacion/2019_001.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1698195,
+          "sha256": "059cdcdc86cdbd63e4f38f2f09b85ec6aeb5e2fe0b05f5246226c5414ecbf97e",
+          "primer_socrata_id": "row-kp5j_dxe8.kwhr",
+          "ultimo_socrata_id": "row-sdis_ejjn_qznp",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272019-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272020-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=50000",
+          "anio": 2019,
+          "offset": 50000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:51:40.329328+00:00"
+        },
+        "data/raw/financieros/situacion/2019_002.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1724928,
+          "sha256": "3d24dbf55e489af4c03d99ab391f1905ef471fa32b8b1e89ae960164da36ba2e",
+          "primer_socrata_id": "row-c5pg_3dgp.a56t",
+          "ultimo_socrata_id": "row-u64r_my85-jy7s",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272019-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272020-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=100000",
+          "anio": 2019,
+          "offset": 100000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:51:47.768516+00:00"
+        },
+        "data/raw/financieros/situacion/2019_003.csv.gz": {
+          "filas": 37527,
+          "bytes_gzip": 1321352,
+          "sha256": "0b4b5d7937dfdf49163070a1911cbec9462974e36095bf251c12191530a193d7",
+          "primer_socrata_id": "row-9wky_teug-4fbh",
+          "ultimo_socrata_id": "row-g8sb-pmg2~ndcz",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272019-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272020-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=150000",
+          "anio": 2019,
+          "offset": 150000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:52:07.582225+00:00"
+        },
+        "data/raw/financieros/situacion/2020_000.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1692776,
+          "sha256": "cae2b11679abac5cf592f3c51f821a943824d0ebeab7227e44fbf34f411b11e1",
+          "primer_socrata_id": "row-mh2g.d76b_jfqn",
+          "ultimo_socrata_id": "row-4x4s_e2y6.zm59",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272020-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272021-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=0",
+          "anio": 2020,
+          "offset": 0,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:52:12.767787+00:00"
+        },
+        "data/raw/financieros/situacion/2020_001.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1692656,
+          "sha256": "6f79bf86fd0dd0e9c2fb336847d260254527ae60efe4dc26f180c3096be6a4ff",
+          "primer_socrata_id": "row-57ey-548m.eifk",
+          "ultimo_socrata_id": "row-bydx~ee7a~ieaw",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272020-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272021-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=50000",
+          "anio": 2020,
+          "offset": 50000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:52:26.313229+00:00"
+        },
+        "data/raw/financieros/situacion/2020_002.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1712821,
+          "sha256": "041c78f3c286512c6fb79c790676e05089134f07c8127a22c1a7a1140e7129e9",
+          "primer_socrata_id": "row-3fy8_itfe.j9ne",
+          "ultimo_socrata_id": "row-itae.2ein_cz7v",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272020-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272021-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=100000",
+          "anio": 2020,
+          "offset": 100000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:52:34.135446+00:00"
+        },
+        "data/raw/financieros/situacion/2020_003.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1756193,
+          "sha256": "af42ef83db6c5c71ed276258805fab09cdfe7351ad09d2fd3ff42be5663e09e6",
+          "primer_socrata_id": "row-8k7d.23rr~c46a",
+          "ultimo_socrata_id": "row-43zj_t6uk.pz5m",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272020-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272021-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=150000",
+          "anio": 2020,
+          "offset": 150000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:52:40.291599+00:00"
+        },
+        "data/raw/financieros/situacion/2020_004.csv.gz": {
+          "filas": 12295,
+          "bytes_gzip": 392456,
+          "sha256": "dd84b39030296c82ae354526d9c1ad3a7ce8a57f4be7dea2a8021fea30503985",
+          "primer_socrata_id": "row-se6f-235q-d3ep",
+          "ultimo_socrata_id": "row-wfbi-6phu-asqh",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272020-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272021-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=200000",
+          "anio": 2020,
+          "offset": 200000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:52:44.794372+00:00"
+        },
+        "data/raw/financieros/situacion/2021_000.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1734172,
+          "sha256": "f9afa8f5e6adc1f9473528205a903454dc7e3fe0393d237ce94552da83be21a8",
+          "primer_socrata_id": "row-nygv_yw23_awm3",
+          "ultimo_socrata_id": "row-49b8-d7qr.hgd5",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272021-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272022-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=0",
+          "anio": 2021,
+          "offset": 0,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:52:51.882910+00:00"
+        },
+        "data/raw/financieros/situacion/2021_001.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1733498,
+          "sha256": "a1957b5b7f6243b056ef39f0e4472aeb25c9ae80f943c80a5500be3fd6ddd4bc",
+          "primer_socrata_id": "row-sbqd.qyx9~qysp",
+          "ultimo_socrata_id": "row-g96z_ts8m~mp7u",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272021-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272022-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=50000",
+          "anio": 2021,
+          "offset": 50000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:53:01.858177+00:00"
+        },
+        "data/raw/financieros/situacion/2021_002.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1740192,
+          "sha256": "e8d836da4a89400bcb21040b95d9962e4b9b30c591f17ee2b0d14056ef28e61f",
+          "primer_socrata_id": "row-avij~3kt6~ghjn",
+          "ultimo_socrata_id": "row-dbnv.6gri_m4x7",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272021-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272022-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=100000",
+          "anio": 2021,
+          "offset": 100000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:53:12.907093+00:00"
+        },
+        "data/raw/financieros/situacion/2021_003.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1741068,
+          "sha256": "456797aed6d669991175957d78d62266d72f5c0d83e01f2ccab098307db15a1a",
+          "primer_socrata_id": "row-aixj.m6vx-vd9s",
+          "ultimo_socrata_id": "row-jaiv~gay6~h75u",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272021-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272022-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=150000",
+          "anio": 2021,
+          "offset": 150000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:53:26.869155+00:00"
+        },
+        "data/raw/financieros/situacion/2021_004.csv.gz": {
+          "filas": 14110,
+          "bytes_gzip": 468805,
+          "sha256": "72588919ab1960084b4bc0d2ca4f44f65dad96e3e00690b2ff9ec4ee63b3f9e6",
+          "primer_socrata_id": "row-9vbt_3kyy~9rg3",
+          "ultimo_socrata_id": "row-x96q.qprk_maa2",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272021-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272022-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=200000",
+          "anio": 2021,
+          "offset": 200000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:53:31.396638+00:00"
+        },
+        "data/raw/financieros/situacion/2022_000.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1252361,
+          "sha256": "bb59718eb72f392ac2f3fbe737fbe4c9a09fcf5288ad152843a374c7f44b6fff",
+          "primer_socrata_id": "row-mxen~j5tb-hg5n",
+          "ultimo_socrata_id": "row-ixai_76k7-h7np",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=0",
+          "anio": 2022,
+          "offset": 0,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:53:56.042006+00:00"
+        },
+        "data/raw/financieros/situacion/2022_001.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1252883,
+          "sha256": "d3b26e7cd4346fda8531bf89be19c382db6f41d85a8f5e9ae99772bd2077a201",
+          "primer_socrata_id": "row-retn~agng_iqmg",
+          "ultimo_socrata_id": "row-cpnz_tegr-gnz8",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=50000",
+          "anio": 2022,
+          "offset": 50000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:02.749383+00:00"
+        },
+        "data/raw/financieros/situacion/2022_002.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1252534,
+          "sha256": "35cf687fc90bb897f2debb29de02df8f5c3cb0b531e917869807b9b68c8c9dc6",
+          "primer_socrata_id": "row-q6h7.m8gv.bdyx",
+          "ultimo_socrata_id": "row-fh9n-25vt_dkxj",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=100000",
+          "anio": 2022,
+          "offset": 100000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:11.999409+00:00"
+        },
+        "data/raw/financieros/situacion/2022_003.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1251660,
+          "sha256": "24835e869c7964572e5b38fd1116f627ff4c41e5e5c13b990824610a3d0f03dc",
+          "primer_socrata_id": "row-ca3w_sbhv_zeah",
+          "ultimo_socrata_id": "row-t34v-ipkz-5qm7",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=150000",
+          "anio": 2022,
+          "offset": 150000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:16.690830+00:00"
+        },
+        "data/raw/financieros/situacion/2022_004.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1252715,
+          "sha256": "2ec257045973ecefcbc64126b623b0ac6d944517d00a569371d0582ea5a9bf67",
+          "primer_socrata_id": "row-ssmb-abxy.wi2u",
+          "ultimo_socrata_id": "row-ygd4_fzx3.arbn",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=200000",
+          "anio": 2022,
+          "offset": 200000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:27.174855+00:00"
+        },
+        "data/raw/financieros/situacion/2022_005.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1253466,
+          "sha256": "7cc6b12ba83f4d694a8330d837e4830e607d202fd1be970b9149dd4be7cdaacc",
+          "primer_socrata_id": "row-7fx8~xy82_p7jh",
+          "ultimo_socrata_id": "row-nt5q~bev3.vvtp",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=250000",
+          "anio": 2022,
+          "offset": 250000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:32.482681+00:00"
+        },
+        "data/raw/financieros/situacion/2022_006.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1251950,
+          "sha256": "894416d055ab3157071e55911080e6afaee858eb46e7b9c7a3369e9c4b8db553",
+          "primer_socrata_id": "row-iife_7x8f_6zhz",
+          "ultimo_socrata_id": "row-5p8c-qyjc_w8it",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=300000",
+          "anio": 2022,
+          "offset": 300000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:36.223530+00:00"
+        },
+        "data/raw/financieros/situacion/2022_007.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1252420,
+          "sha256": "2c35f5d2a0d12ecb3f406ee77418eaadf097b5daae7f953834ae2f729b68a0f1",
+          "primer_socrata_id": "row-7ygr.4yd5~qmik",
+          "ultimo_socrata_id": "row-runc_sgvj_v8dd",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=350000",
+          "anio": 2022,
+          "offset": 350000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:43.820317+00:00"
+        },
+        "data/raw/financieros/situacion/2022_008.csv.gz": {
+          "filas": 46090,
+          "bytes_gzip": 1270001,
+          "sha256": "0dd82fb47036f9ff6b4637fe0b9690903728870f89b2cdd2faacbbc53c40d5ef",
+          "primer_socrata_id": "row-j4qp-rvx2.f8hu",
+          "ultimo_socrata_id": "row-wh82~mdsp-q4n9",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272022-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272023-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=400000",
+          "anio": 2022,
+          "offset": 400000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:54:54.384160+00:00"
+        },
+        "data/raw/financieros/situacion/2023_000.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1773007,
+          "sha256": "7746b6a80f698feb1bde597adcab8c6fe44851bd077cde8989180936ef07ef8b",
+          "primer_socrata_id": "row-djy6~mz7g-cq2a",
+          "ultimo_socrata_id": "row-ug9i-whng_66x8",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272023-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272024-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=0",
+          "anio": 2023,
+          "offset": 0,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:55:07.723514+00:00"
+        },
+        "data/raw/financieros/situacion/2023_001.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1772076,
+          "sha256": "3f9f0c7ffacc621fc344013a36ea9f95c7317a9669a37181625937b7905e5f75",
+          "primer_socrata_id": "row-6u83-z8yy_eg84",
+          "ultimo_socrata_id": "row-wf7w~bcjj_c633",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272023-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272024-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=50000",
+          "anio": 2023,
+          "offset": 50000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:55:24.523842+00:00"
+        },
+        "data/raw/financieros/situacion/2023_002.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1773016,
+          "sha256": "609e849fac0b861f06b801a6253e675f6b7356f803c559f2724db3b9935824bb",
+          "primer_socrata_id": "row-p35h-wy59~fii4",
+          "ultimo_socrata_id": "row-wbnp~6ubh_uqae",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272023-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272024-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=100000",
+          "anio": 2023,
+          "offset": 100000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:55:35.354209+00:00"
+        },
+        "data/raw/financieros/situacion/2023_003.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1772914,
+          "sha256": "33069785c128411c830844857929dfd85de4e40eba2de4310f86102044916a19",
+          "primer_socrata_id": "row-xk26-wyys_j4zi",
+          "ultimo_socrata_id": "row-pku5~5r8p~gdr3",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272023-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272024-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=150000",
+          "anio": 2023,
+          "offset": 150000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:55:42.524030+00:00"
+        },
+        "data/raw/financieros/situacion/2023_004.csv.gz": {
+          "filas": 32044,
+          "bytes_gzip": 1122094,
+          "sha256": "cd2a4cb090dc6d4ffe0a5ff3428e0859dd473a8e5bdf62be657262b2585f933b",
+          "primer_socrata_id": "row-rh5z~j3ve_kkay",
+          "ultimo_socrata_id": "row-r9gs~c6af-3awm",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272023-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272024-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=200000",
+          "anio": 2023,
+          "offset": 200000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:55:49.389893+00:00"
+        },
+        "data/raw/financieros/situacion/2024_000.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1771469,
+          "sha256": "42a148aa7cb1ee0a1064a15e24766741b509e717d46456191582516640cca1a0",
+          "primer_socrata_id": "row-uriz-mp4c.wmys",
+          "ultimo_socrata_id": "row-hf7r.h6pr-4yvy",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272024-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272025-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=0",
+          "anio": 2024,
+          "offset": 0,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:55:55.898745+00:00"
+        },
+        "data/raw/financieros/situacion/2024_001.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1771276,
+          "sha256": "65c1430ebb0d3015a78ee593aa0ac638ff8ce601d7a1fb8c5b4871d8ca9fcbb7",
+          "primer_socrata_id": "row-mvzk.7wfh-6ve7",
+          "ultimo_socrata_id": "row-9kmk-cr36.dr8f",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272024-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272025-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=50000",
+          "anio": 2024,
+          "offset": 50000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:56:00.696340+00:00"
+        },
+        "data/raw/financieros/situacion/2024_002.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1771385,
+          "sha256": "232ae3c65eb81c8e58a1f07664323350db1ebe74a7b64dcd8f9aba9de960b818",
+          "primer_socrata_id": "row-gvfq_udzf~4z8q",
+          "ultimo_socrata_id": "row-7h9w_88c9-kcck",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272024-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272025-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=100000",
+          "anio": 2024,
+          "offset": 100000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:56:10.622988+00:00"
+        },
+        "data/raw/financieros/situacion/2024_003.csv.gz": {
+          "filas": 50000,
+          "bytes_gzip": 1772070,
+          "sha256": "7d6edb43105efabf150a655e1c2df6f37a0089183e71827914948a6770c9e6a9",
+          "primer_socrata_id": "row-3vih~awr6_beka",
+          "ultimo_socrata_id": "row-g395-467q.f77t",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272024-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272025-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=150000",
+          "anio": 2024,
+          "offset": 150000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:56:20.620923+00:00"
+        },
+        "data/raw/financieros/situacion/2024_004.csv.gz": {
+          "filas": 14936,
+          "bytes_gzip": 521593,
+          "sha256": "48b564262e8d21997b363edeadd9734d3d64caee4784d15c7e4dd18cf88b5285",
+          "primer_socrata_id": "row-ursq_vq2t-87eg",
+          "ultimo_socrata_id": "row-md7v.a6k3-j5pw",
+          "url": "https://www.datos.gov.co/resource/pfdp-zks5.json?%24select=codigo_instancia%2Cnit%2Cnumero_radicado%2Cid_punto_entrada%2Cpunto_entrada%2Cid_taxonomia%2Ctaxonomia%2Cfecha_corte%2Cconcepto%2Cperiodo%2Cvalor%2C%3Aid+as+socrata_id&%24where=fecha_corte+%3E%3D+%272024-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272025-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Activos+corrientes+totales%27%2C%27Pasivos+corrientes+totales%27%2C%27Patrimonio+total%27%2C%27Total+activos+corrientes+distintos+de+los+activos+no+corrientes+o+grupo+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta+o+como+mantenidos+para+distribuir+a+los+propietarios%27%2C%27Total+de+activos%27%2C%27Total+de+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%2C%27Total+pasivos%27%2C%27Total+pasivos+corrientes+distintos+de+los+pasivos+incluidos+en+grupos+de+activos+para+su+disposici%EF%BF%BDn+clasificados+como+mantenidos+para+la+venta%27%29+and+periodo+in+%28%27Periodo+Actual%27%29&%24order=%3Aid&%24limit=50000&%24offset=200000",
+          "anio": 2024,
+          "offset": 200000,
+          "limit": 50000,
+          "descargado_utc": "2026-11-07T13:56:23.615287+00:00"
+        }
+      },
+      "filas_descargadas": 1507002,
+      "bytes_gzip": 48218286,
+      "metadatos_fin": {
+        "dataset": "pfdp-zks5",
+        "nombre": "Estados Financieros NIIF- Estado de Situación Financiera",
+        "rowsUpdatedAt": 1783371747,
+        "viewLastModified": 1779125481,
+        "columns": [
+          {
+            "fieldName": "codigo_instancia",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "nit",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "numero_radicado",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "id_punto_entrada",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "punto_entrada",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "id_taxonomia",
+            "dataTypeName": "number"
+          },
+          {
+            "fieldName": "taxonomia",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "fecha_corte",
+            "dataTypeName": "calendar_date"
+          },
+          {
+            "fieldName": "concepto",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "periodo",
+            "dataTypeName": "text"
+          },
+          {
+            "fieldName": "valor",
+            "dataTypeName": "text"
+          }
+        ]
+      },
+      "finalizado_utc": "2026-11-07T13:56:24.637075+00:00"
+    }
+  },
+  "estado": "completo",
+  "columnas_csv": [
+    "CODIGO_INSTANCIA",
+    "NIT",
+    "NUMERO_RADICADO",
+    "ID_PUNTO_ENTRADA",
+    "PUNTO_ENTRADA",
+    "ID_TAXONOMIA",
+    "TAXONOMIA",
+    "FECHA_CORTE",
+    "CONCEPTO",
+    "PERIODO",
+    "VALOR",
+    "SOCRATA_ID"
+  ],
+  "periodo": [
+    2019,
+    2024
+  ],
+  "transformacion": "Seleccion de filas originales. Sin SUM/MAX de valores financieros. Encabezados mayusculas y SOCRATA_ID agregado.",
+  "limite": "Metadatos estables durante adquisicion no equivalen a instantanea historica ni validacion de etiqueta.",
+  "script_sha256": "0777e0fc02c892dd5d099bd7f9dbd3d23c5cb476fa555e741758bf2bdb56b0fb",
+  "actualizado_utc": "2026-11-07T13:56:24.648221+00:00",
+  "finalizado_utc": "2026-11-07T13:56:24.648221+00:00"
+}

@@ -1,0 +1,43 @@
+{
+  "fecha_utc": "2026-11-07T13:56:59.355797+00:00",
+  "fuentes": {
+    "resultados": {
+      "filas_verificadas": 1196115,
+      "archivos": 27,
+      "identificadores_unicos": 1196115,
+      "ids_repetidos": 0,
+      "sha256_archivos_comprobados": true,
+      "encabezados_comprobados": true,
+      "metadatos_estables": true,
+      "por_anio": {
+        "2019": 149447,
+        "2020": 173082,
+        "2021": 169151,
+        "2022": 351627,
+        "2023": 182999,
+        "2024": 169809
+      }
+    },
+    "situacion": {
+      "filas_verificadas": 1507002,
+      "archivos": 33,
+      "identificadores_unicos": 1507002,
+      "ids_repetidos": 0,
+      "sha256_archivos_comprobados": true,
+      "encabezados_comprobados": true,
+      "metadatos_estables": true,
+      "por_anio": {
+        "2019": 187527,
+        "2020": 212295,
+        "2021": 214110,
+        "2022": 446090,
+        "2023": 232044,
+        "2024": 214936
+      }
+    }
+  },
+  "resultado": "correcto",
+  "total_filas": 2703117,
+  "total_archivos": 60,
+  "bytes_gzip": 85258327
+}

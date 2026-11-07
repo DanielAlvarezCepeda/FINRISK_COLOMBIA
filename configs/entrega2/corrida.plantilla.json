@@ -1,0 +1,27 @@
+{
+  "modelo": "",
+  "fase": "validacion",
+  "commit_git": "",
+  "version_base_etiquetada": "",
+  "horizonte_meses": 12,
+  "regla_etiqueta": "",
+  "periodos": {
+    "entrenamiento": {
+      "desde": "",
+      "hasta": ""
+    },
+    "validacion": {
+      "desde": "",
+      "hasta": ""
+    },
+    "prueba": {
+      "desde": "",
+      "hasta": ""
+    }
+  },
+  "hiperparametros": {},
+  "umbral": null,
+  "run_id_validacion": null,
+  "predicciones_csv": "",
+  "artefacto_modelo": ""
+}

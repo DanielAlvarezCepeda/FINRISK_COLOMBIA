@@ -1,0 +1,413 @@
+{
+  "fecha_utc": "2026-11-07T14:01:09.527412+00:00",
+  "filas_empresa_anio": 176666,
+  "nits": 37231,
+  "con_cuatro_indicadores": 161425,
+  "empresa_anio_con_conflicto": 713,
+  "sin_fecha_disponibilidad": 176666,
+  "empresa_anio_requiere_revision_coherencia": 2490,
+  "etiquetas_creadas": false,
+  "modelos_entrenados": false,
+  "politica_conflictos": "Importe ausente cuando los candidatos de mejor prioridad discrepan. Candidatos prioritarios y procedencia exportados. No se elige por orden de descarga.",
+  "comparabilidad_entrega1": "Nueva extracción filtrada y reglas explícitas de conflictos. No es la misma versión que el puntero DVC de la entrega 1.",
+  "fuentes": [
+    {
+      "archivo": "data/raw/financieros/resultados/2019_000.csv.gz",
+      "sha256": "f9394530da3f440f70f7325fc89923e19f5d27bc60b1ed12de84f8586f92a2cc",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2019_001.csv.gz",
+      "sha256": "01cde005b843445c005a001898698aa6a5fc45b5005eb6e427596ac3c5e00202",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2019_002.csv.gz",
+      "sha256": "a21be299f045ed817877306d384fd94a0163b8df2100cea56efb1f33eaa26ae2",
+      "filas_leidas": 49447,
+      "filas_validas": 49447
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2020_000.csv.gz",
+      "sha256": "4f6bbef6e30a6d2abed95a35391930acda062522ac83d1a07921711f6e295e67",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2020_001.csv.gz",
+      "sha256": "a10ab519fd9ba1b55c3e35e0caefb852341c7ceb4f3818bee0a1e0661f2238c1",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2020_002.csv.gz",
+      "sha256": "133b9a89ff4255c92606808f5532c590c5758e740096acf90265b7deac16c465",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2020_003.csv.gz",
+      "sha256": "80e781d86132bb313537e4b44a1f5a43b7c5c0dacffcab0197bd59081459b0ff",
+      "filas_leidas": 23082,
+      "filas_validas": 23082
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2021_000.csv.gz",
+      "sha256": "a6a3bd76fb4e3ebb3e716701392dbed9de2951256dcd002b71291623d78d5f03",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2021_001.csv.gz",
+      "sha256": "f3d253bad05f5ac89501c9f72f3cf4fcc8b6f45dbb5d82c2fc32cc1b30e9cbb9",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2021_002.csv.gz",
+      "sha256": "a96f0d55a73cd6bbf2aed0fe13799ef99fc6ec0647b010894b67d9400eb5de03",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2021_003.csv.gz",
+      "sha256": "93921d475d8e73b5ef7b923f650e7403f070adec39939a4773b37c7f338c3d67",
+      "filas_leidas": 19151,
+      "filas_validas": 19151
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2022_000.csv.gz",
+      "sha256": "a552aa7c43115968b960a69e364d10ee26625f9c25053ee899f4557c58854e48",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2022_001.csv.gz",
+      "sha256": "5f89e869bfc9edc04c07db32b454d616ca81eaa9bf7a5640d8c76a9a686e81c9",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2022_002.csv.gz",
+      "sha256": "ecbbfc50e7cec267e71b2a45cbfcb4f3376a28d443d3badf4a97c0120d11f7af",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2022_003.csv.gz",
+      "sha256": "1cb5bcf6c65738dadb6dfb17e21f69a6c84a754bfc7d674a6efc8f69bb734c3f",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2022_004.csv.gz",
+      "sha256": "37c0a2e6e3160d6149f8c4f9d7c37c6f435906dc13571946896544072a642de2",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2022_005.csv.gz",
+      "sha256": "d27d34271710194e3e374e4388aa8e1b76b7a1446ec2a476d51342859bb0c5f5",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2022_006.csv.gz",
+      "sha256": "e508f3b46858e1a0846cc3d491a9de4219f7df99fc58766c0db9e2aad425b552",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2022_007.csv.gz",
+      "sha256": "a2f7435a698849392731294c0e2074e0ee9c2dcee9d42472ddcb434b2275df20",
+      "filas_leidas": 1627,
+      "filas_validas": 1627
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2023_000.csv.gz",
+      "sha256": "2f36e5d8656ee4fde9cc5a1edf0baf730087d48ddd6c98e2765c1fafa6c03bd8",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2023_001.csv.gz",
+      "sha256": "6a585974d2a97e46323341ca06891b5aac2f10de64a93fa21f915f23af629ab1",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2023_002.csv.gz",
+      "sha256": "627ef1ad86fa4ff2b8ca1c9ebf42b2a0e05637ac35c088165fff23dc98e8d186",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2023_003.csv.gz",
+      "sha256": "bb11fdb84ab38d8d980be20638788d8d0030b6e0d3940032dd99f08165c98cd2",
+      "filas_leidas": 32999,
+      "filas_validas": 32999
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2024_000.csv.gz",
+      "sha256": "2c86f6935b804ab7ad4696a1fb151e4a8e7846ccae98594fe6e5a3c583baca76",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2024_001.csv.gz",
+      "sha256": "c1d13ad9c342afb1de5ca2dcd122a722ed452adbeb90c45ae90c4b9ff59f2188",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2024_002.csv.gz",
+      "sha256": "996a358108f5e27c405d9af58a121e5a0dfb655c86274300b5ede20029f03de5",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/resultados/2024_003.csv.gz",
+      "sha256": "df118a33c00a92c8ae4e50c2113658d7d546da60ee3d1a5a3fb8777451304a9e",
+      "filas_leidas": 19809,
+      "filas_validas": 19809
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2019_000.csv.gz",
+      "sha256": "7c2948032e26738ee739f4b7ef7718b9a3330c561d11204875d9166b4fae3c41",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2019_001.csv.gz",
+      "sha256": "059cdcdc86cdbd63e4f38f2f09b85ec6aeb5e2fe0b05f5246226c5414ecbf97e",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2019_002.csv.gz",
+      "sha256": "3d24dbf55e489af4c03d99ab391f1905ef471fa32b8b1e89ae960164da36ba2e",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2019_003.csv.gz",
+      "sha256": "0b4b5d7937dfdf49163070a1911cbec9462974e36095bf251c12191530a193d7",
+      "filas_leidas": 37527,
+      "filas_validas": 37527
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2020_000.csv.gz",
+      "sha256": "cae2b11679abac5cf592f3c51f821a943824d0ebeab7227e44fbf34f411b11e1",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2020_001.csv.gz",
+      "sha256": "6f79bf86fd0dd0e9c2fb336847d260254527ae60efe4dc26f180c3096be6a4ff",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2020_002.csv.gz",
+      "sha256": "041c78f3c286512c6fb79c790676e05089134f07c8127a22c1a7a1140e7129e9",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2020_003.csv.gz",
+      "sha256": "af42ef83db6c5c71ed276258805fab09cdfe7351ad09d2fd3ff42be5663e09e6",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2020_004.csv.gz",
+      "sha256": "dd84b39030296c82ae354526d9c1ad3a7ce8a57f4be7dea2a8021fea30503985",
+      "filas_leidas": 12295,
+      "filas_validas": 12295
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2021_000.csv.gz",
+      "sha256": "f9afa8f5e6adc1f9473528205a903454dc7e3fe0393d237ce94552da83be21a8",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2021_001.csv.gz",
+      "sha256": "a1957b5b7f6243b056ef39f0e4472aeb25c9ae80f943c80a5500be3fd6ddd4bc",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2021_002.csv.gz",
+      "sha256": "e8d836da4a89400bcb21040b95d9962e4b9b30c591f17ee2b0d14056ef28e61f",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2021_003.csv.gz",
+      "sha256": "456797aed6d669991175957d78d62266d72f5c0d83e01f2ccab098307db15a1a",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2021_004.csv.gz",
+      "sha256": "72588919ab1960084b4bc0d2ca4f44f65dad96e3e00690b2ff9ec4ee63b3f9e6",
+      "filas_leidas": 14110,
+      "filas_validas": 14110
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2022_000.csv.gz",
+      "sha256": "bb59718eb72f392ac2f3fbe737fbe4c9a09fcf5288ad152843a374c7f44b6fff",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2022_001.csv.gz",
+      "sha256": "d3b26e7cd4346fda8531bf89be19c382db6f41d85a8f5e9ae99772bd2077a201",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2022_002.csv.gz",
+      "sha256": "35cf687fc90bb897f2debb29de02df8f5c3cb0b531e917869807b9b68c8c9dc6",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2022_003.csv.gz",
+      "sha256": "24835e869c7964572e5b38fd1116f627ff4c41e5e5c13b990824610a3d0f03dc",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2022_004.csv.gz",
+      "sha256": "2ec257045973ecefcbc64126b623b0ac6d944517d00a569371d0582ea5a9bf67",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2022_005.csv.gz",
+      "sha256": "7cc6b12ba83f4d694a8330d837e4830e607d202fd1be970b9149dd4be7cdaacc",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2022_006.csv.gz",
+      "sha256": "894416d055ab3157071e55911080e6afaee858eb46e7b9c7a3369e9c4b8db553",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2022_007.csv.gz",
+      "sha256": "2c35f5d2a0d12ecb3f406ee77418eaadf097b5daae7f953834ae2f729b68a0f1",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2022_008.csv.gz",
+      "sha256": "0dd82fb47036f9ff6b4637fe0b9690903728870f89b2cdd2faacbbc53c40d5ef",
+      "filas_leidas": 46090,
+      "filas_validas": 46090
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2023_000.csv.gz",
+      "sha256": "7746b6a80f698feb1bde597adcab8c6fe44851bd077cde8989180936ef07ef8b",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2023_001.csv.gz",
+      "sha256": "3f9f0c7ffacc621fc344013a36ea9f95c7317a9669a37181625937b7905e5f75",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2023_002.csv.gz",
+      "sha256": "609e849fac0b861f06b801a6253e675f6b7356f803c559f2724db3b9935824bb",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2023_003.csv.gz",
+      "sha256": "33069785c128411c830844857929dfd85de4e40eba2de4310f86102044916a19",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2023_004.csv.gz",
+      "sha256": "cd2a4cb090dc6d4ffe0a5ff3428e0859dd473a8e5bdf62be657262b2585f933b",
+      "filas_leidas": 32044,
+      "filas_validas": 32044
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2024_000.csv.gz",
+      "sha256": "42a148aa7cb1ee0a1064a15e24766741b509e717d46456191582516640cca1a0",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2024_001.csv.gz",
+      "sha256": "65c1430ebb0d3015a78ee593aa0ac638ff8ce601d7a1fb8c5b4871d8ca9fcbb7",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2024_002.csv.gz",
+      "sha256": "232ae3c65eb81c8e58a1f07664323350db1ebe74a7b64dcd8f9aba9de960b818",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2024_003.csv.gz",
+      "sha256": "7d6edb43105efabf150a655e1c2df6f37a0089183e71827914948a6770c9e6a9",
+      "filas_leidas": 50000,
+      "filas_validas": 50000
+    },
+    {
+      "archivo": "data/raw/financieros/situacion/2024_004.csv.gz",
+      "sha256": "48b564262e8d21997b363edeadd9734d3d64caee4784d15c7e4dd18cf88b5285",
+      "filas_leidas": 14936,
+      "filas_validas": 14936
+    }
+  ],
+  "cobertura_anual": [
+    {
+      "anio": 2019,
+      "filas": 25610,
+      "nits": 25610,
+      "cuatro_indicadores": 23622
+    },
+    {
+      "anio": 2020,
+      "filas": 29949,
+      "nits": 29949,
+      "cuatro_indicadores": 26586
+    },
+    {
+      "anio": 2021,
+      "filas": 29200,
+      "nits": 29200,
+      "cuatro_indicadores": 26705
+    },
+    {
+      "anio": 2022,
+      "filas": 31149,
+      "nits": 31149,
+      "cuatro_indicadores": 28442
+    },
+    {
+      "anio": 2023,
+      "filas": 31396,
+      "nits": 31396,
+      "cuatro_indicadores": 28791
+    },
+    {
+      "anio": 2024,
+      "filas": 29362,
+      "nits": 29362,
+      "cuatro_indicadores": 27279
+    }
+  ]
+}

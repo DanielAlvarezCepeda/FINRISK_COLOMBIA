@@ -1,0 +1,600 @@
+{
+  "fuente_indice": "https://www.supersociedades.gov.co/web/procedimientos-de-insolvencia/informes",
+  "cortes": {
+    "2019-12": {
+      "archivo": "insolvencia_2019-12.xlsx",
+      "bytes": 341815,
+      "sha256": "b221da054c02c0670082e45dcb54cdaad1a15a1cd95648d32eb1d7f43844de03",
+      "hojas": [
+        {
+          "nombre": "Procesos en Curso",
+          "filas_con_nit": 2700,
+          "nits_distintos": 2697,
+          "cabeceras": [
+            "Nro ",
+            "NIT",
+            "NOMBRE",
+            "REGIONAL",
+            "DEPARTAMENTO",
+            "CIUDAD",
+            "CIIU",
+            "MACROSECTOR",
+            "PROCESO",
+            "CATEGORÍA SS",
+            "CATEGORÍA LEY 905",
+            "ACTIVOS",
+            "PASIVOS",
+            "EMPLEOS",
+            "AUTO_ADMISIÓN",
+            "AÑO_DE_APERTURA/CELEBRACIÓN"
+          ],
+          "columna_fecha_auto_admision": false,
+          "fechas_admision_validas": 0,
+          "fecha_admision_min": null,
+          "fecha_admision_max": null,
+          "fechas_admision_posteriores_fin_mes_corte": 0,
+          "anio_apertura_distinto_anio_admision": 0,
+          "anios_apertura_celebracion": {
+            "1999": 1,
+            "2001": 1,
+            "2002": 1,
+            "2004": 2,
+            "2005": 1,
+            "2006": 1,
+            "2008": 4,
+            "2009": 18,
+            "2010": 29,
+            "2011": 50,
+            "2012": 67,
+            "2013": 104,
+            "2014": 113,
+            "2015": 125,
+            "2016": 211,
+            "2017": 345,
+            "2018": 680,
+            "2019": 947
+          },
+          "procesos": {
+            "REORGANIZACIÓN": 953,
+            "VALIDACIÓN": 22,
+            "REORGANIZACIÓN EN EJECUCIÓN": 1190,
+            "LIQUIDACIÓN JUDICIAL": 373,
+            "LIQUIDACIÓN POR ADJUDICACIÓN": 162
+          },
+          "valores_proceso_para_revision_manual": {}
+        }
+      ]
+    },
+    "2020-09": {
+      "archivo": "insolvencia_2020-09.xlsx",
+      "bytes": 382296,
+      "sha256": "a1016739615e1fc91dab6c53b04b8dfffd9d1fc632506db4f9591c238c49ba11",
+      "hojas": [
+        {
+          "nombre": "Procesos en Curso",
+          "filas_con_nit": 3322,
+          "nits_distintos": 3321,
+          "cabeceras": [
+            "Nro ",
+            "NIT",
+            "NOMBRE",
+            "REGIONAL",
+            "DEPARTAMENTO",
+            "CIUDAD",
+            "CIIU",
+            "MACROSECTOR",
+            "PROCESO",
+            "CATEGORÍA SS",
+            "ACTIVOS",
+            "PASIVOS",
+            "EMPLEOS",
+            "AÑO_DE_APERTURA/CELEBRACIÓN"
+          ],
+          "columna_fecha_auto_admision": false,
+          "fechas_admision_validas": 0,
+          "fecha_admision_min": null,
+          "fecha_admision_max": null,
+          "fechas_admision_posteriores_fin_mes_corte": 0,
+          "anio_apertura_distinto_anio_admision": 0,
+          "anios_apertura_celebracion": {
+            "2001": 1,
+            "2004": 1,
+            "2006": 1,
+            "2008": 3,
+            "2009": 17,
+            "2010": 27,
+            "2011": 48,
+            "2012": 61,
+            "2013": 92,
+            "2014": 109,
+            "2015": 113,
+            "2016": 189,
+            "2017": 273,
+            "2018": 541,
+            "2019": 869,
+            "2020": 977
+          },
+          "procesos": {
+            "Reorganización en Trámite": 1144,
+            "Validación": 21,
+            "Reorganización Abreviada": 178,
+            "Negociación de Emergencia": 69,
+            "Reorganización en Ejecución": 1282,
+            "Liquidación Judicial": 405,
+            "Liquidación Simplificada": 55,
+            "Liquidación por Adjudicación": 168
+          },
+          "valores_proceso_para_revision_manual": {}
+        }
+      ]
+    },
+    "2021-12": {
+      "archivo": "insolvencia_2021-12.xlsx",
+      "bytes": 419101,
+      "sha256": "e77be3b2c598132676765ba49d5cf4aba2cf9fb1c21e89d5a5000dba30ac9e0a",
+      "hojas": [
+        {
+          "nombre": "Procesos en Curso",
+          "filas_con_nit": 3818,
+          "nits_distintos": 3818,
+          "cabeceras": [
+            "Nro ",
+            "NIT",
+            "NOMBRE",
+            "REGIONAL",
+            "DEPARTAMENTO",
+            "CIUDAD",
+            "CIIU",
+            "MACROSECTOR",
+            "PROCESO",
+            "CATEGORÍA SS",
+            "ACTIVOS",
+            "PASIVOS",
+            "EMPLEOS",
+            "AÑO_DE_APERTURA/CELEBRACIÓN"
+          ],
+          "columna_fecha_auto_admision": false,
+          "fechas_admision_validas": 0,
+          "fecha_admision_min": null,
+          "fecha_admision_max": null,
+          "fechas_admision_posteriores_fin_mes_corte": 0,
+          "anio_apertura_distinto_anio_admision": 0,
+          "anios_apertura_celebracion": {
+            "2001": 1,
+            "2004": 1,
+            "2006": 1,
+            "2008": 1,
+            "2009": 16,
+            "2010": 27,
+            "2011": 46,
+            "2012": 57,
+            "2013": 84,
+            "2014": 100,
+            "2015": 93,
+            "2016": 155,
+            "2017": 168,
+            "2018": 294,
+            "2019": 559,
+            "2020": 809,
+            "2021": 1406
+          },
+          "procesos": {
+            "Reorganización en Trámite": 714,
+            "Validación PRE": 3,
+            "Reorganización Abreviada": 182,
+            "Negociación de Emergencia": 74,
+            "Reorganización en Ejecución": 2004,
+            "Liquidación Judicial": 333,
+            "Liquidación Simplificada": 409,
+            "Liquidación por Adjudicación": 89,
+            "Validación": 10
+          },
+          "valores_proceso_para_revision_manual": {}
+        }
+      ]
+    },
+    "2022-12": {
+      "archivo": "insolvencia_2022-12.xlsx",
+      "bytes": 452811,
+      "sha256": "7a3407b1f57555cb52deef54f069d1369bc2b42ec2e2bc7da76ac35ccda1e545",
+      "hojas": [
+        {
+          "nombre": "Procesos en Curso",
+          "filas_con_nit": 4166,
+          "nits_distintos": 4163,
+          "cabeceras": [
+            "Nro ",
+            "NIT",
+            "NOMBRE",
+            "REGIONAL",
+            "DEPARTAMENTO",
+            "CIUDAD",
+            "CIIU",
+            "MACROSECTOR",
+            "PROCESO",
+            "CATEGORÍA SS",
+            "ACTIVOS",
+            "PASIVOS",
+            "EMPLEOS",
+            "AÑO_DE_APERTURA/CELEBRACIÓN"
+          ],
+          "columna_fecha_auto_admision": false,
+          "fechas_admision_validas": 0,
+          "fecha_admision_min": null,
+          "fecha_admision_max": null,
+          "fechas_admision_posteriores_fin_mes_corte": 0,
+          "anio_apertura_distinto_anio_admision": 0,
+          "anios_apertura_celebracion": {
+            "2001": 2,
+            "2004": 1,
+            "2008": 1,
+            "2009": 12,
+            "2010": 20,
+            "2011": 41,
+            "2012": 56,
+            "2013": 77,
+            "2014": 92,
+            "2015": 89,
+            "2016": 136,
+            "2017": 144,
+            "2018": 197,
+            "2019": 343,
+            "2020": 544,
+            "2021": 1063,
+            "2022": 1348
+          },
+          "procesos": {
+            "Reorganización en Trámite": 435,
+            "Validación PRE": 2,
+            "Reorganización Abreviada": 176,
+            "Negociación de Emergencia": 50,
+            "Reorganización en Ejecución": 2511,
+            "Liquidación Judicial": 356,
+            "Liquidación Simplificada": 580,
+            "Liquidación por Adjudicación": 50,
+            "Validación": 6
+          },
+          "valores_proceso_para_revision_manual": {}
+        }
+      ]
+    },
+    "2023-12": {
+      "archivo": "insolvencia_2023-12.xlsx",
+      "bytes": 485254,
+      "sha256": "c05e6c334e8e6045f156a7f56011fe57c7fb07bc2bd6d68cd0b94ac092a1c70c",
+      "hojas": [
+        {
+          "nombre": "Procesos en Curso",
+          "filas_con_nit": 4471,
+          "nits_distintos": 4471,
+          "cabeceras": [
+            "Nro ",
+            "NIT",
+            "NOMBRE",
+            "REGIONAL",
+            "DEPARTAMENTO",
+            "CIUDAD",
+            "CIIU",
+            "MACROSECTOR",
+            "PROCESO",
+            "CATEGORÍA SS",
+            "ACTIVOS",
+            "PASIVOS",
+            "EMPLEOS",
+            "AÑO_DE_APERTURA/CELEBRACIÓN"
+          ],
+          "columna_fecha_auto_admision": false,
+          "fechas_admision_validas": 0,
+          "fecha_admision_min": null,
+          "fecha_admision_max": null,
+          "fechas_admision_posteriores_fin_mes_corte": 0,
+          "anio_apertura_distinto_anio_admision": 0,
+          "anios_apertura_celebracion": {
+            "2004": 1,
+            "2009": 11,
+            "2010": 17,
+            "2011": 31,
+            "2012": 48,
+            "2013": 64,
+            "2014": 83,
+            "2015": 82,
+            "2016": 120,
+            "2017": 131,
+            "2018": 152,
+            "2019": 252,
+            "2020": 350,
+            "2021": 883,
+            "2022": 1010,
+            "2023": 1236
+          },
+          "procesos": {
+            "Reorganización en Trámite": 380,
+            "Validación PRE": 7,
+            "Reorganización Abreviada": 139,
+            "Negociación de Emergencia": 62,
+            "Reorganización en Ejecución": 2780,
+            "Liquidación Judicial": 435,
+            "Liquidación Simplificada": 626,
+            "Liquidación por Adjudicación": 31,
+            "Validación": 11
+          },
+          "valores_proceso_para_revision_manual": {}
+        }
+      ]
+    },
+    "2024-12": {
+      "archivo": "insolvencia_2024-12.xlsx",
+      "bytes": 515144,
+      "sha256": "a7e458531bb3e4f6d9edbb8052f3ae03c711e07aae91dfcdbb5b9e5e6bbcc45a",
+      "hojas": [
+        {
+          "nombre": "BaseSoporteDiciembre31122024",
+          "filas_con_nit": 4960,
+          "nits_distintos": 4959,
+          "cabeceras": [
+            "Nro",
+            "NIT",
+            "NOMBRE",
+            "REGIONAL",
+            "DEPARTAMENTO",
+            "CIUDAD",
+            "CIIU",
+            "PROCESO",
+            "CATEGORIA",
+            "ACTIVO",
+            "PASIVO",
+            "EMPLEOS",
+            "AÑO_DE_APERTURA_CELEBRACION",
+            "MACROSECTOR",
+            "Fecha de Generación",
+            null
+          ],
+          "columna_fecha_auto_admision": false,
+          "fechas_admision_validas": 0,
+          "fecha_admision_min": null,
+          "fecha_admision_max": null,
+          "fechas_admision_posteriores_fin_mes_corte": 0,
+          "anio_apertura_distinto_anio_admision": 0,
+          "anios_apertura_celebracion": {
+            "5": 1,
+            "2009": 10,
+            "2010": 19,
+            "2011": 23,
+            "2012": 40,
+            "2013": 53,
+            "2014": 70,
+            "2015": 82,
+            "2016": 115,
+            "2017": 105,
+            "2018": 139,
+            "2019": 221,
+            "2020": 260,
+            "2021": 767,
+            "2022": 816,
+            "2023": 957,
+            "2024": 1282
+          },
+          "procesos": {
+            "LIQUIDACIÓN JUDICIAL EN TRAMITE": 1201,
+            "REORGANIZACIÓN EJECUCION": 2792,
+            "REORGANIZACIÓN EN TRAMITE": 966,
+            "G5221": 1
+          },
+          "valores_proceso_para_revision_manual": {
+            "G5221": 1
+          }
+        }
+      ]
+    },
+    "2025-12": {
+      "archivo": "insolvencia_2025-12.xlsx",
+      "bytes": 555855,
+      "sha256": "f25af51f8aa9103881e2c2695601d65e05568c7a2da0f2ddea316d987658af56",
+      "hojas": [
+        {
+          "nombre": "InsolvenciaMensual",
+          "filas_con_nit": 5506,
+          "nits_distintos": 5504,
+          "cabeceras": [
+            "Nro",
+            "NIT",
+            "NOMBRE",
+            "REGIONAL",
+            "DEPARTAMENTO",
+            "CIUDAD",
+            "CIIU",
+            "MACROSECTOR",
+            "PROCESO",
+            "CATEGORIA",
+            "ACTIVO",
+            "PASIVO",
+            "EMPLEOS",
+            "AÑO_DE_APERTURA_CELEBRACION",
+            "Fecha de Generación",
+            null
+          ],
+          "columna_fecha_auto_admision": false,
+          "fechas_admision_validas": 0,
+          "fecha_admision_min": null,
+          "fecha_admision_max": null,
+          "fechas_admision_posteriores_fin_mes_corte": 0,
+          "anio_apertura_distinto_anio_admision": 0,
+          "anios_apertura_celebracion": {
+            "5": 1,
+            "2009": 7,
+            "2010": 17,
+            "2011": 21,
+            "2012": 36,
+            "2013": 49,
+            "2014": 63,
+            "2015": 75,
+            "2016": 111,
+            "2017": 106,
+            "2018": 129,
+            "2019": 199,
+            "2020": 226,
+            "2021": 663,
+            "2022": 687,
+            "2023": 721,
+            "2024": 1104,
+            "2025": 1202
+          },
+          "procesos": {
+            "LIQUIDACIÓN JUDICIAL EN TRAMITE": 1247,
+            "REORGANIZACIÓN EJECUCION": 2956,
+            "REORGANIZACIÓN EN TRAMITE": 1213,
+            "G5221": 1,
+            "": 89
+          },
+          "valores_proceso_para_revision_manual": {
+            "G5221": 1,
+            "": 89
+          }
+        }
+      ]
+    },
+    "2026-10": {
+      "archivo": "insolvencia_2026-10.xlsx",
+      "bytes": 784022,
+      "sha256": "0bf6b063d0479a5bb097d72dc44f592610127bbde93eeb4679de862cb7366209",
+      "hojas": [
+        {
+          "nombre": "BaseSoporteOCTUBRE06102026",
+          "filas_con_nit": 5699,
+          "nits_distintos": 5697,
+          "cabeceras": [
+            "Nro",
+            "NIT",
+            "NOMBRE",
+            "REGIONAL",
+            "DEPARTAMENTO",
+            "CIUDAD",
+            "CIIU",
+            "MACROSECTOR",
+            "PROCESO",
+            "CATEGORIA",
+            "ACTIVO",
+            "PASIVO",
+            "EMPLEOS",
+            "AÑO_DE_APERTURA_CELEBRACION",
+            "FECHA AUTO ADMISION",
+            "FECHA_REORGANIZACION_EN_EJECUCION",
+            "DOCUMENTO FIRMA ACUERDO",
+            "NÚMERO AUTO DE ADMISION",
+            "FECHA DE GENERACIÓN"
+          ],
+          "columna_fecha_auto_admision": true,
+          "fechas_admision_validas": 5699,
+          "fecha_admision_min": "2008-06-06",
+          "fecha_admision_max": "2026-09-30",
+          "fechas_admision_posteriores_fin_mes_corte": 0,
+          "anio_apertura_distinto_anio_admision": 2635,
+          "anios_apertura_celebracion": {
+            "5": 1,
+            "2009": 7,
+            "2010": 15,
+            "2011": 19,
+            "2012": 36,
+            "2013": 44,
+            "2014": 66,
+            "2015": 74,
+            "2016": 112,
+            "2017": 88,
+            "2018": 135,
+            "2019": 210,
+            "2020": 208,
+            "2021": 629,
+            "2022": 606,
+            "2023": 589,
+            "2024": 833,
+            "2025": 977,
+            "2026": 1050
+          },
+          "procesos": {
+            "LIQUIDACIÓN JUDICIAL EN TRAMITE": 1403,
+            "REORGANIZACIÓN EJECUCION": 3201,
+            "REORGANIZACIÓN EN TRAMITE": 1089,
+            "COMERCIO": 1,
+            "LIQUIDACIÓN JUDICIAL EJECUCION": 5
+          },
+          "valores_proceso_para_revision_manual": {
+            "COMERCIO": 1
+          }
+        }
+      ]
+    }
+  },
+  "nits_distintos_union_cortes": 8075,
+  "nits_union_ausentes_ultimo_corte": 2378,
+  "nits_con_fecha_auto_observada": 5697,
+  "nits_con_fecha_auto_posterior_a_un_corte_de_presencia_anterior": 863,
+  "comparaciones_con_ultimo_corte": [
+    {
+      "corte_anterior": "2019-12",
+      "corte_actual": "2026-10",
+      "nits_anterior": 2697,
+      "nits_anterior_ausentes_actual": 1106,
+      "nits_actual_no_observados_anterior": 4106
+    },
+    {
+      "corte_anterior": "2020-09",
+      "corte_actual": "2026-10",
+      "nits_anterior": 3321,
+      "nits_anterior_ausentes_actual": 1260,
+      "nits_actual_no_observados_anterior": 3636
+    },
+    {
+      "corte_anterior": "2021-12",
+      "corte_actual": "2026-10",
+      "nits_anterior": 3818,
+      "nits_anterior_ausentes_actual": 1190,
+      "nits_actual_no_observados_anterior": 3069
+    },
+    {
+      "corte_anterior": "2022-12",
+      "corte_actual": "2026-10",
+      "nits_anterior": 4163,
+      "nits_anterior_ausentes_actual": 1103,
+      "nits_actual_no_observados_anterior": 2637
+    },
+    {
+      "corte_anterior": "2023-12",
+      "corte_actual": "2026-10",
+      "nits_anterior": 4471,
+      "nits_anterior_ausentes_actual": 931,
+      "nits_actual_no_observados_anterior": 2157
+    },
+    {
+      "corte_anterior": "2024-12",
+      "corte_actual": "2026-10",
+      "nits_anterior": 4959,
+      "nits_anterior_ausentes_actual": 703,
+      "nits_actual_no_observados_anterior": 1441
+    },
+    {
+      "corte_anterior": "2025-12",
+      "corte_actual": "2026-10",
+      "nits_anterior": 5504,
+      "nits_anterior_ausentes_actual": 433,
+      "nits_actual_no_observados_anterior": 626
+    },
+    {
+      "corte_anterior": "2026-10",
+      "corte_actual": "2026-10",
+      "nits_anterior": 5697,
+      "nits_anterior_ausentes_actual": 0,
+      "nits_actual_no_observados_anterior": 0
+    }
+  ],
+  "archivo_eventos_observados": "eventos_observados_insolvencia.csv",
+  "interpretacion": [
+    "Los cortes históricos identifican sus hojas como Procesos en Curso y contienen estados de trámite o ejecución.",
+    "La ausencia de una empresa del inventario actual no demuestra que nunca ingresó en insolvencia.",
+    "La primera fecha auto observada es la mínima entre las fechas disponibles, no una primera admisión histórica validada.",
+    "El año de apertura o celebración puede diferir de la fecha de auto de admisión y no debe sustituirla automáticamente.",
+    "Unir cortes amplía los eventos observados, pero no prueba cobertura exhaustiva de admisiones ni permite asegurar negativos históricos.",
+    "El corte disponible de 2020 es septiembre. El índice consultado no ofrece base de soporte de diciembre de 2020.",
+    "No se generaron etiquetas ni se entrenaron modelos."
+  ],
+  "habilita_etiquetas_definitivas": false
+}

@@ -1,0 +1,5 @@
+Profe, queremos mantener el objetivo de FINRISK de predecir la admisión a un proceso formal de insolvencia durante los doce meses siguientes a la evaluación.
+
+Recuperamos los estados financieros de 2019–2024 y ocho cortes de procesos de Supersociedades. Encontramos empresas que aparecen en cortes antiguos y desaparecen del actual, y algunas fechas de admisión actuales son posteriores a una presencia anterior. Además, las fuentes financieras no incluyen la fecha de disponibilidad pública de cada reporte.
+
+¿Nos podría orientar sobre una fuente histórica para validar la primera admisión y el seguimiento de los casos sin evento, y sobre cómo fijar la fecha de evaluación cuando falta la disponibilidad histórica? Queremos resolverlo antes de construir la etiqueta y evaluar los modelos.

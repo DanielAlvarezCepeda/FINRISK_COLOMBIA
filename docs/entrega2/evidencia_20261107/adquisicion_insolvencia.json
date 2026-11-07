@@ -1,0 +1,90 @@
+[
+  {
+    "corte": "2019-12",
+    "url": "https://www.supersociedades.gov.co/documents/58444/6516407/BASE_SOPORTE_INSOLVENCIA_DIC_2019.xlsx/4b4c0c48-4f23-3cc6-35df-df2b329679fb?version=1.0&t=1694034011022",
+    "fecha_descarga_utc": "2026-11-07T13:48:37.322301+00:00",
+    "url_final": "https://www.supersociedades.gov.co/documents/58444/6516407/BASE_SOPORTE_INSOLVENCIA_DIC_2019.xlsx/4b4c0c48-4f23-3cc6-35df-df2b329679fb?version=1.0&t=1694034011022",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "archivo": "insolvencia_2019-12.xlsx",
+    "bytes": 341815,
+    "sha256": "b221da054c02c0670082e45dcb54cdaad1a15a1cd95648d32eb1d7f43844de03",
+    "ok": true
+  },
+  {
+    "corte": "2020-09",
+    "url": "https://www.supersociedades.gov.co/documents/58444/6516168/BASE_SOPORTE_INSOLVENCIA_SEP_2020.xlsx/ffeb2f14-5607-73c6-8591-ef2ee9f1fc94?version=1.0&t=1694033963280",
+    "fecha_descarga_utc": "2026-11-07T13:48:37.323300+00:00",
+    "url_final": "https://www.supersociedades.gov.co/documents/58444/6516168/BASE_SOPORTE_INSOLVENCIA_SEP_2020.xlsx/ffeb2f14-5607-73c6-8591-ef2ee9f1fc94?version=1.0&t=1694033963280",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "archivo": "insolvencia_2020-09.xlsx",
+    "bytes": 382296,
+    "sha256": "a1016739615e1fc91dab6c53b04b8dfffd9d1fc632506db4f9591c238c49ba11",
+    "ok": true
+  },
+  {
+    "corte": "2021-12",
+    "url": "https://www.supersociedades.gov.co/documents/58444/6516010/Base-datos-insolvencia-diciembre-2021.xlsx/ffbd0733-6430-c60e-d454-6a47367b6ecd?version=1.0&t=1694028376290",
+    "fecha_descarga_utc": "2026-11-07T13:48:37.323300+00:00",
+    "url_final": "https://www.supersociedades.gov.co/documents/58444/6516010/Base-datos-insolvencia-diciembre-2021.xlsx/ffbd0733-6430-c60e-d454-6a47367b6ecd?version=1.0&t=1694028376290",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "archivo": "insolvencia_2021-12.xlsx",
+    "bytes": 419101,
+    "sha256": "e77be3b2c598132676765ba49d5cf4aba2cf9fb1c21e89d5a5000dba30ac9e0a",
+    "ok": true
+  },
+  {
+    "corte": "2022-12",
+    "url": "https://www.supersociedades.gov.co/documents/58444/6515849/BASE-SOPORTE-INSOLVENCIA-2022-CORTE-DICIEMBRE.xlsx/193a9c81-3986-ed94-af98-cdc8ac6c68a9?version=1.0&t=1694026647657",
+    "fecha_descarga_utc": "2026-11-07T13:48:37.578234+00:00",
+    "url_final": "https://www.supersociedades.gov.co/documents/58444/6515849/BASE-SOPORTE-INSOLVENCIA-2022-CORTE-DICIEMBRE.xlsx/193a9c81-3986-ed94-af98-cdc8ac6c68a9?version=1.0&t=1694026647657",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "archivo": "insolvencia_2022-12.xlsx",
+    "bytes": 452811,
+    "sha256": "7a3407b1f57555cb52deef54f069d1369bc2b42ec2e2bc7da76ac35ccda1e545",
+    "ok": true
+  },
+  {
+    "corte": "2023-12",
+    "url": "https://www.supersociedades.gov.co/documents/58444/6515839/BASE-SOPORTE-INSOLVENCIA-2023-CORTE-DICIEMBRE.xlsx/4e32b9f3-5c45-b1a8-8606-a431fb3f21a3?version=1.1&t=1724249141759",
+    "fecha_descarga_utc": "2026-11-07T13:48:37.598549+00:00",
+    "url_final": "https://www.supersociedades.gov.co/documents/58444/6515839/BASE-SOPORTE-INSOLVENCIA-2023-CORTE-DICIEMBRE.xlsx/4e32b9f3-5c45-b1a8-8606-a431fb3f21a3?version=1.1&t=1724249141759",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "archivo": "insolvencia_2023-12.xlsx",
+    "bytes": 485254,
+    "sha256": "c05e6c334e8e6045f156a7f56011fe57c7fb07bc2bd6d68cd0b94ac092a1c70c",
+    "ok": true
+  },
+  {
+    "corte": "2026-10",
+    "url": "https://www.supersociedades.gov.co/documents/58444/9506465/Base-Soporte-Insolvencia-2026-CORTE-OCTUBRE.xlsx/3505ebea-c49e-c42f-00ea-48b443a1bc39?t=1791380389241&version=1.0",
+    "fecha_descarga_utc": "2026-11-07T13:48:37.611500+00:00",
+    "url_final": "https://www.supersociedades.gov.co/documents/58444/9506465/Base-Soporte-Insolvencia-2026-CORTE-OCTUBRE.xlsx/3505ebea-c49e-c42f-00ea-48b443a1bc39?t=1791380389241&version=1.0",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "archivo": "insolvencia_2026-10.xlsx",
+    "bytes": 784022,
+    "sha256": "0bf6b063d0479a5bb097d72dc44f592610127bbde93eeb4679de862cb7366209",
+    "ok": true
+  },
+  {
+    "corte": "2025-12",
+    "url": "https://www.supersociedades.gov.co/documents/58444/8332056/Base-Soporte-Insolvencia-2025-CORTE-DICIEMBRE.xlsx/b3b136e2-234a-d640-c79e-5ab0af1fd4c9?t=1767619414849&version=1.0",
+    "fecha_descarga_utc": "2026-11-07T13:48:37.767453+00:00",
+    "url_final": "https://www.supersociedades.gov.co/documents/58444/8332056/Base-Soporte-Insolvencia-2025-CORTE-DICIEMBRE.xlsx/b3b136e2-234a-d640-c79e-5ab0af1fd4c9?t=1767619414849&version=1.0",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "archivo": "insolvencia_2025-12.xlsx",
+    "bytes": 555855,
+    "sha256": "f25af51f8aa9103881e2c2695601d65e05568c7a2da0f2ddea316d987658af56",
+    "ok": true
+  },
+  {
+    "corte": "2024-12",
+    "url": "https://www.supersociedades.gov.co/documents/58444/7803983/Base-Soporte-Insolvencia-2024-CORTE-DICIEMBRE.xlsx/a5476d0a-46fe-c53f-ea36-417c206c1838?t=1735911388000&version=1.1",
+    "fecha_descarga_utc": "2026-11-07T13:48:37.906078+00:00",
+    "url_final": "https://www.supersociedades.gov.co/documents/58444/7803983/Base-Soporte-Insolvencia-2024-CORTE-DICIEMBRE.xlsx/a5476d0a-46fe-c53f-ea36-417c206c1838?t=1735911388000&version=1.1",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "archivo": "insolvencia_2024-12.xlsx",
+    "bytes": 515144,
+    "sha256": "a7e458531bb3e4f6d9edbb8052f3ae03c711e07aae91dfcdbb5b9e5e6bbcc45a",
+    "ok": true
+  }
+]

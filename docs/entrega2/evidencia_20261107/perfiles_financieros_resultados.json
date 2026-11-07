@@ -1,0 +1,168 @@
+{
+  "consulta_utc": "2026-11-07T13:51:21.221799+00:00",
+  "metadatos_inicio": {
+    "dataset": "prwj-nzxa",
+    "nombre": "Estados Financieros NIIF- Estado de Resultado Integral",
+    "rowsUpdatedAt": 1783444705,
+    "viewLastModified": 1779123420,
+    "columns": [
+      {
+        "fieldName": "codigo_instancia",
+        "dataTypeName": "number"
+      },
+      {
+        "fieldName": "nit",
+        "dataTypeName": "number"
+      },
+      {
+        "fieldName": "numero_radicado",
+        "dataTypeName": "text"
+      },
+      {
+        "fieldName": "id_punto_entrada",
+        "dataTypeName": "number"
+      },
+      {
+        "fieldName": "punto_entrada",
+        "dataTypeName": "text"
+      },
+      {
+        "fieldName": "id_taxonomia",
+        "dataTypeName": "number"
+      },
+      {
+        "fieldName": "taxonomia",
+        "dataTypeName": "text"
+      },
+      {
+        "fieldName": "fecha_corte",
+        "dataTypeName": "calendar_date"
+      },
+      {
+        "fieldName": "concepto",
+        "dataTypeName": "text"
+      },
+      {
+        "fieldName": "periodo",
+        "dataTypeName": "text"
+      },
+      {
+        "fieldName": "valor",
+        "dataTypeName": "text"
+      }
+    ]
+  },
+  "metadatos_sha256": "2b1ce00638e1712b81bbbd95fcef8dd89edbc018d9fee151f404b3947cdfb72e",
+  "catalogo_sha256": "bac16c4aa8e3ff5d28b29b662cc1156a10cf17459571cc5c4a168d50cc09cfd6",
+  "conceptos": [
+    "Costo de ventas",
+    "Costos financieros",
+    "Ganancia bruta",
+    "Ganancia (p�rdida)",
+    "Ganancia (p�rdida) por actividades de operaci�n",
+    "Ingresos de actividades ordinarias"
+  ],
+  "url_catalogo_periodos": "https://www.datos.gov.co/resource/prwj-nzxa.json?%24select=date_extract_y%28fecha_corte%29+as+anio%2Cperiodo%2Ccount%28%2A%29+as+filas&%24where=fecha_corte+%3E%3D+%272019-01-01T00%3A00%3A00%27+and+fecha_corte+%3C+%272025-01-01T00%3A00%3A00%27+and+concepto+in+%28%27Costo+de+ventas%27%2C%27Costos+financieros%27%2C%27Ganancia+bruta%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29%27%2C%27Ganancia+%28p%EF%BF%BDrdida%29+por+actividades+de+operaci%EF%BF%BDn%27%2C%27Ingresos+de+actividades+ordinarias%27%29&%24group=date_extract_y%28fecha_corte%29%2Cperiodo&%24order=anio%2Cperiodo&%24limit=5000",
+  "catalogo_periodos": [
+    {
+      "anio": "2019",
+      "periodo": "Periodo Actual",
+      "filas": "149447"
+    },
+    {
+      "anio": "2019",
+      "periodo": "Periodo Anterior",
+      "filas": "148948"
+    },
+    {
+      "anio": "2020",
+      "periodo": "Periodo Actual",
+      "filas": "173082"
+    },
+    {
+      "anio": "2020",
+      "periodo": "Periodo Anterior",
+      "filas": "172974"
+    },
+    {
+      "anio": "2021",
+      "periodo": "Periodo Actual",
+      "filas": "169151"
+    },
+    {
+      "anio": "2021",
+      "periodo": "Periodo Anterior",
+      "filas": "169086"
+    },
+    {
+      "anio": "2022",
+      "periodo": "Periodo Actual",
+      "filas": "351627"
+    },
+    {
+      "anio": "2022",
+      "periodo": "Periodo Anterior",
+      "filas": "351636"
+    },
+    {
+      "anio": "2023",
+      "periodo": "Periodo Actual",
+      "filas": "182999"
+    },
+    {
+      "anio": "2023",
+      "periodo": "Periodo Anterior",
+      "filas": "183065"
+    },
+    {
+      "anio": "2024",
+      "periodo": "Periodo Actual",
+      "filas": "169809"
+    },
+    {
+      "anio": "2024",
+      "periodo": "Periodo Anterior",
+      "filas": "169800"
+    }
+  ],
+  "anios": {
+    "2019": {
+      "periodos_actuales_literales": [
+        "Periodo Actual"
+      ],
+      "filas_esperadas": 149447
+    },
+    "2020": {
+      "periodos_actuales_literales": [
+        "Periodo Actual"
+      ],
+      "filas_esperadas": 173082
+    },
+    "2021": {
+      "periodos_actuales_literales": [
+        "Periodo Actual"
+      ],
+      "filas_esperadas": 169151
+    },
+    "2022": {
+      "periodos_actuales_literales": [
+        "Periodo Actual"
+      ],
+      "filas_esperadas": 351627
+    },
+    "2023": {
+      "periodos_actuales_literales": [
+        "Periodo Actual"
+      ],
+      "filas_esperadas": 182999
+    },
+    "2024": {
+      "periodos_actuales_literales": [
+        "Periodo Actual"
+      ],
+      "filas_esperadas": 169809
+    }
+  },
+  "filas_actuales_esperadas": 1196115,
+  "advertencia": "No se consultan ni inventan fechas de disponibilidad historica. FECHA_CORTE no demuestra fecha de publicacion."
+}

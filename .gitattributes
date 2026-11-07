@@ -9,3 +9,15 @@
 /results/manifiesto_ejecucion.json text eol=lf
 /src/auditoria_microdatos.py text eol=lf
 /src/__init__.py text eol=lf
+
+# Preparación de la segunda entrega
+/requirements-entrega2.txt text eol=lf
+/src/descargar_financieros.py text eol=lf
+/src/descargar_insolvencia.py text eol=lf
+/src/auditar_insolvencia.py text eol=lf
+/src/consolidar_recuperacion.py text eol=lf
+/src/finrisk_registrar_corrida.py text eol=lf
+/src/finrisk_comprobar_mlflow.py text eol=lf
+/docs/entrega2/*.md text eol=lf
+/configs/entrega2/*.json -text -whitespace
+/docs/entrega2/evidencia_20261107/*.json -text -whitespace
