@@ -248,9 +248,11 @@ de preparación antes de volver a correr el notebook.
 ```
 
 Para consultar el servidor informado por Jairo sin crear corridas, usar
-`python src/finrisk_comprobar_mlflow.py --tracking-uri http://52.91.138.185:8050 --experimento Proyecto-MIAD`.
+`python src/finrisk_comprobar_mlflow.py --tracking-uri http://54.163.35.181:8050 --experimento Proyecto-MIAD`.
 La guía de MLflow distingue esa consulta de la prueba técnica que sí escribe un
-artefacto. El acceso AWS quedó pendiente de comprobar. Las pruebas del registrador
+artefacto. La lectura del servidor definitivo quedó verificada con MLflow 3.18.0.
+`Proyecto-MIAD` devolvió `RESOURCE_DOES_NOT_EXIST` y debe crearse antes de registrar
+las evaluaciones de FINRISK. Las pruebas del registrador
 se realizaron con un servidor local y datos sintéticos.
 
 Se mantiene el objetivo a doce meses y se validarán con el tutor la primera
