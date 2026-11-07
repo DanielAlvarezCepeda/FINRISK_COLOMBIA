@@ -1,0 +1,123 @@
+{
+  "creado_utc": "2026-11-07T23:15:13.717863+00:00",
+  "sha256_dataset": "dbc16e7614f78736280f9410dd0aac0fba1a35f81594ad629891c65cecb6b118",
+  "sha256_script_modelado": "73680870f56c653a3cb6e6059d2356987147a014255f29fca5285ca05b3a6e9f",
+  "sha256_script_optimizacion": "9975485f4724b2b18678c844b564e4c3ae96ab31ba10d2dca0d89fa2381f9202",
+  "versiones": {
+    "pandas": "2.3.3",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "espacios": {
+    "regresion_logistica": {
+      "modelo__C": [
+        0.0001,
+        0.001,
+        0.003,
+        0.01,
+        0.03,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ]
+    },
+    "bosque_aleatorio": [
+      {
+        "modelo__max_depth": [
+          4,
+          8,
+          12
+        ],
+        "modelo__min_samples_leaf": [
+          10,
+          20,
+          40
+        ],
+        "modelo__max_features": [
+          "sqrt",
+          null
+        ]
+      },
+      {
+        "modelo__max_depth": [
+          12,
+          16,
+          24,
+          null
+        ],
+        "modelo__min_samples_leaf": [
+          20,
+          40,
+          80
+        ],
+        "modelo__max_features": [
+          "sqrt",
+          0.5,
+          null
+        ]
+      },
+      {
+        "modelo__max_depth": [
+          12,
+          16
+        ],
+        "modelo__min_samples_leaf": [
+          40
+        ],
+        "modelo__max_features": [
+          "sqrt"
+        ],
+        "modelo__n_estimators": [
+          150,
+          600
+        ]
+      }
+    ]
+  },
+  "criterio": "Mayor AP en validación; empate exacto prefiere referencia y luego orden de búsqueda.",
+  "entrenamiento": [
+    2021,
+    2022
+  ],
+  "validacion": [
+    2023
+  ],
+  "prueba_evaluada": false,
+  "nota": "Validación utilizada para selección de hiperparámetros; no es evaluación independiente.",
+  "configuraciones_evaluadas": 63,
+  "mejores": {
+    "regresion_logistica": {
+      "parametros_referencia": {
+        "modelo__C": 1.0
+      },
+      "ap_referencia": 0.012902783629340732,
+      "parametros_elegidos": {
+        "modelo__C": 0.0001
+      },
+      "ap_elegida": 0.013148408428584033,
+      "mejora_ap": 0.0002456247992433016,
+      "mejora_estricta": true
+    },
+    "bosque_aleatorio": {
+      "parametros_referencia": {
+        "modelo__max_depth": 8,
+        "modelo__max_features": "sqrt",
+        "modelo__min_samples_leaf": 20,
+        "modelo__n_estimators": 300
+      },
+      "ap_referencia": 0.017314588810574717,
+      "parametros_elegidos": {
+        "modelo__max_depth": 16,
+        "modelo__max_features": "sqrt",
+        "modelo__min_samples_leaf": 20,
+        "modelo__n_estimators": 300
+      },
+      "ap_elegida": 0.021111435498129973,
+      "mejora_ap": 0.0037968466875552553,
+      "mejora_estricta": true
+    }
+  },
+  "sha256_resultados_validacion_csv": "4865c052a018f50393052c67b2b4d91d9ac9a2a454d26aea2f31de66156b7c16"
+}
