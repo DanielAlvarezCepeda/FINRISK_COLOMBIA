@@ -1,0 +1,105 @@
+[
+  {
+    "modelo": "referencia_prevalencia",
+    "fase": "validacion",
+    "n": 28677,
+    "positivos": 164,
+    "negativos": 28513,
+    "prevalencia": 0.005718868779858423,
+    "ap": 0.005718868779858423,
+    "umbral": 0.004777099097456468,
+    "sensibilidad": 1.0,
+    "precision_alertas": 0.005718868779858423,
+    "f1": 0.011372698588814534,
+    "f2": 0.027954863123444584,
+    "alertas": 28677,
+    "fraccion_alertas": 1.0,
+    "lift_precision": 1.0,
+    "matriz_confusion": {
+      "vp": 164,
+      "fp": 28513,
+      "fn": 0,
+      "vn": 0
+    },
+    "segundos_ajuste": 0.125,
+    "archivo_modelo": "modelos/referencia_prevalencia.joblib",
+    "sha256_modelo": "2d102b90f7139c845eea5c563bf7ee030793c37189677909a7f1757f62eed217",
+    "archivo_predicciones": "predicciones/referencia_prevalencia_validacion.csv",
+    "hiperparametros": {
+      "strategy": "prior"
+    }
+  },
+  {
+    "modelo": "regresion_logistica",
+    "fase": "validacion",
+    "n": 28677,
+    "positivos": 164,
+    "negativos": 28513,
+    "prevalencia": 0.005718868779858423,
+    "ap": 0.01290278362934073,
+    "umbral": 0.6828230984952316,
+    "sensibilidad": 0.24390243902439024,
+    "precision_alertas": 0.015163002274450341,
+    "f1": 0.028551034975017844,
+    "f2": 0.06071645415907711,
+    "alertas": 2638,
+    "fraccion_alertas": 0.09199009659308854,
+    "lift_precision": 2.6513988794171492,
+    "matriz_confusion": {
+      "vp": 40,
+      "fp": 2598,
+      "fn": 124,
+      "vn": 25915
+    },
+    "segundos_ajuste": 0.078,
+    "archivo_modelo": "modelos/regresion_logistica.joblib",
+    "sha256_modelo": "b1b6ea0b0458b2f153986197462e7af514338eb5303d26bbf0644784c405601a",
+    "archivo_predicciones": "predicciones/regresion_logistica_validacion.csv",
+    "hiperparametros": {
+      "imputacion": "mediana de entrenamiento con indicadores de faltantes",
+      "keep_empty_features": true,
+      "transformacion": "arcsinh, seguida de StandardScaler ajustado con entrenamiento",
+      "C": 1.0,
+      "class_weight": "balanced",
+      "max_iter": 2000,
+      "random_state": 42
+    }
+  },
+  {
+    "modelo": "bosque_aleatorio",
+    "fase": "validacion",
+    "n": 28677,
+    "positivos": 164,
+    "negativos": 28513,
+    "prevalencia": 0.005718868779858423,
+    "ap": 0.01731463284284369,
+    "umbral": 0.7448425229939636,
+    "sensibilidad": 0.16463414634146342,
+    "precision_alertas": 0.029768467475192944,
+    "f1": 0.05042016806722689,
+    "f2": 0.08637236084452975,
+    "alertas": 907,
+    "fraccion_alertas": 0.03162813404470482,
+    "lift_precision": 5.2053069621104155,
+    "matriz_confusion": {
+      "vp": 27,
+      "fp": 880,
+      "fn": 137,
+      "vn": 27633
+    },
+    "segundos_ajuste": 7.656,
+    "archivo_modelo": "modelos/bosque_aleatorio.joblib",
+    "sha256_modelo": "946f7c40b079ec62a10b0b950d79d4c21f647c1e29869c8dcb631cd17c240cc1",
+    "archivo_predicciones": "predicciones/bosque_aleatorio_validacion.csv",
+    "hiperparametros": {
+      "imputacion": "mediana de entrenamiento con indicadores de faltantes",
+      "keep_empty_features": true,
+      "n_estimators": 300,
+      "max_depth": 8,
+      "min_samples_leaf": 20,
+      "class_weight": "balanced_subsample",
+      "n_jobs": 2,
+      "random_state": 42
+    }
+  }
+]

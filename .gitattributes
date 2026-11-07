@@ -21,3 +21,8 @@
 /docs/entrega2/*.md text eol=lf
 /configs/entrega2/*.json -text -whitespace
 /docs/entrega2/evidencia_20261107/*.json -text -whitespace
+
+# Texto reproducible del piloto retrospectivo
+/src/finrisk_piloto_*.py text eol=lf
+/results/piloto_retrospectivo/*.json text eol=lf
+/results/piloto_retrospectivo/*.csv text eol=lf

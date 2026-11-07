@@ -1,0 +1,49 @@
+{
+  "fecha_utc": "2026-11-07T17:24:28.253251+00:00",
+  "tracking_uri": "http://54.163.35.181:8050",
+  "experiment_id": "2",
+  "corridas": [
+    {
+      "run_id": "88f119e414c2476dbecb67e8f394f36a",
+      "fase": "validacion",
+      "modelo": "referencia_prevalencia",
+      "estado": "FINISHED",
+      "parametros_y_metricas_coinciden": true
+    },
+    {
+      "run_id": "0c70c9e248844e0b9889810ea97abbf0",
+      "fase": "validacion",
+      "modelo": "regresion_logistica",
+      "estado": "FINISHED",
+      "parametros_y_metricas_coinciden": true
+    },
+    {
+      "run_id": "93c4cd9117da48debbdabf1422454c09",
+      "fase": "validacion",
+      "modelo": "bosque_aleatorio",
+      "estado": "FINISHED",
+      "parametros_y_metricas_coinciden": true
+    },
+    {
+      "run_id": "b4940092f90648d8a7714fcce8b37d1a",
+      "fase": "prueba",
+      "modelo": "bosque_aleatorio",
+      "estado": "FINISHED",
+      "parametros_y_metricas_coinciden": true
+    }
+  ],
+  "model_uri_ganador": "models:/m-cb9f849d89a446ada0a5c076b10d81ab",
+  "modelo_mlflow_cargado": true,
+  "entrada_sintetica": true,
+  "filas_ejemplo": 2,
+  "salida_predict_proba_clases": [
+    0,
+    1
+  ],
+  "predicciones_coinciden": true,
+  "tolerancia_absoluta": 1e-12,
+  "diferencia_maxima": 0.0,
+  "pipeline_joblib_recuperado_identico": true,
+  "nuevas_corridas_creadas": false,
+  "nuevas_predicciones_prueba": false
+}

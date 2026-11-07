@@ -268,6 +268,7 @@ def registrar_piloto(resumen_path, commit_git, tracking_uri="http://54.163.35.18
                 pipeline = joblib.load(base / registro["archivo_modelo"])
                 model_info = mlflow.sklearn.log_model(
                     pipeline, name="pipeline_" + registro["modelo"],
+                    serialization_format="cloudpickle",
                     signature=infer_signature(ejemplo, pipeline.predict_proba(ejemplo)),
                     input_example=ejemplo, pyfunc_predict_fn="predict_proba", pip_requirements=requisitos,
                     metadata={"objetivo": "presencia_inventario_anual", "puntaje_calibrado": False,
