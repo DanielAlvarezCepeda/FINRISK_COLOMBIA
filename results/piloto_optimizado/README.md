@@ -12,14 +12,15 @@ de un mayor volumen de alertas; los puntajes no son probabilidades calibradas.
 Los modelos y puntajes individuales permanecen en `.cache/finrisk/piloto_optimizado/`.
 Esta carpeta contiene únicamente resultados agregados y trazabilidad.
 
-## MLflow pendiente
+## MLflow registrado
 
-Se intentó conectar con `http://54.163.35.181:8050/`, pero la conexión agotó
-el tiempo de espera antes de crear corridas. No se dispone de manifiesto remoto.
-Cuando el servidor esté disponible, activar `FINRISK_REGISTRAR_MLFLOW=1` en el
-entorno del kernel y ejecutar el notebook. El código debe estar incluido en
-el commit local; las salidas del notebook pueden cambiar sin alterar su código.
-El prefijo de las nuevas corridas será `Piloto optimizado`.
+Las tres corridas de validación y la prueba del ganador quedaron registradas
+con el prefijo `Piloto optimizado` en el experimento
+[Proyecto-MIAD](http://54.163.35.181:8050/#/experiments/2).
+Los identificadores y enlaces están en `registro_mlflow.json`.
+La descarga del ganador se verificó con SHA-256 idéntico al archivo entrenado.
+No se subieron filas individuales.
 
-La ejecución completa en caché se reutiliza sin volver a evaluar prueba.
+El commit fuente del registro es `60923892c70dfbd20bbdb17565863546f1099312`.
+Los modelos y métricas se reutilizaron de caché sin reevaluar prueba.
 No se ha realizado push al repositorio remoto.
