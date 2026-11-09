@@ -1,0 +1,180 @@
+{
+  "creado_utc": "2026-11-07T23:44:47.630392+00:00",
+  "alcance": "piloto_retrospectivo",
+  "objetivo": "presencia_inventario_anual",
+  "validacion_exante": false,
+  "puntaje_calibrado": false,
+  "interpretacion": "El uno es presencia en el siguiente inventario anual. El cero es ausencia en ese inventario. No son primeras admisiones verificadas ni diagnósticos de solvencia.",
+  "limitaciones": [
+    "La disponibilidad histórica de reportes y de etiquetas no está verificada.",
+    "La separación cronológica es un benchmark retrospectivo, no una simulación operativa libre de información posterior.",
+    "Los inventarios pueden omitir procesos ocurridos y cerrados entre cortes.",
+    "El umbral F2 es técnico y requiere revisar costos y volumen de alertas antes de un uso operativo."
+  ],
+  "firma": {
+    "sha256_datos_modelado": "f40957796ae597cef6e83837dee905ed6c7de6ae3ef8770f64ff7d4c9beb15f4",
+    "sha256_protocolo_etiqueta": "0de87422f6d29dba31c8534e44b33869feffd0416d8d3ca2b6b07300cabd622d",
+    "sha256_configuracion": "2ce585451984c225e0dcdd25fbcabaf5c8dcbb697d695bb99fe13d922658572a",
+    "sha256_script_modelado": "36c95edd8d5a7417cb60fedbc0f1114ee99161a81a3988ca91830ff629059c21",
+    "versiones": {
+      "pandas": "2.3.3",
+      "numpy": "2.5.4",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0"
+    }
+  },
+  "particiones": {
+    "entrenamiento": {
+      "n": 54845,
+      "positivos": 262
+    },
+    "validacion": {
+      "n": 28677,
+      "positivos": 164
+    },
+    "prueba": {
+      "n": 28949,
+      "positivos": 155
+    }
+  },
+  "modelos": [
+    {
+      "modelo": "referencia_prevalencia",
+      "fase": "validacion",
+      "n": 28677,
+      "positivos": 164,
+      "negativos": 28513,
+      "prevalencia": 0.005718868779858423,
+      "ap": 0.005718868779858423,
+      "umbral": 0.004777099097456468,
+      "sensibilidad": 1.0,
+      "precision_alertas": 0.005718868779858423,
+      "f1": 0.011372698588814534,
+      "f2": 0.027954863123444584,
+      "alertas": 28677,
+      "fraccion_alertas": 1.0,
+      "lift_precision": 1.0,
+      "matriz_confusion": {
+        "vp": 164,
+        "fp": 28513,
+        "fn": 0,
+        "vn": 0
+      },
+      "segundos_ajuste": 0.025478,
+      "archivo_modelo": "modelos/referencia_prevalencia.joblib",
+      "sha256_modelo": "2d102b90f7139c845eea5c563bf7ee030793c37189677909a7f1757f62eed217",
+      "archivo_predicciones": "predicciones/referencia_prevalencia_validacion.csv",
+      "hiperparametros": {
+        "strategy": "prior"
+      }
+    },
+    {
+      "modelo": "regresion_logistica",
+      "fase": "validacion",
+      "n": 28677,
+      "positivos": 164,
+      "negativos": 28513,
+      "prevalencia": 0.005718868779858423,
+      "ap": 0.013148408428584033,
+      "umbral": 0.5895042949594776,
+      "sensibilidad": 0.22560975609756098,
+      "precision_alertas": 0.01653261840929401,
+      "f1": 0.030807660283097418,
+      "f2": 0.06392536281962681,
+      "alertas": 2238,
+      "fraccion_alertas": 0.07804163615440946,
+      "lift_precision": 2.8908896227031975,
+      "matriz_confusion": {
+        "vp": 37,
+        "fp": 2201,
+        "fn": 127,
+        "vn": 26312
+      },
+      "segundos_ajuste": 0.027833,
+      "archivo_modelo": "modelos/regresion_logistica.joblib",
+      "sha256_modelo": "a4ca7eef764496e7fe9d95120fe65ac7eba6019aab59b18e22e9928630ee339e",
+      "archivo_predicciones": "predicciones/regresion_logistica_validacion.csv",
+      "hiperparametros": {
+        "imputacion": "mediana de entrenamiento con indicadores de faltantes",
+        "keep_empty_features": true,
+        "transformacion": "arcsinh, seguida de StandardScaler ajustado con entrenamiento",
+        "C": 0.0001,
+        "class_weight": "balanced",
+        "max_iter": 2000,
+        "random_state": 42
+      }
+    },
+    {
+      "modelo": "bosque_aleatorio",
+      "fase": "validacion",
+      "n": 28677,
+      "positivos": 164,
+      "negativos": 28513,
+      "prevalencia": 0.005718868779858423,
+      "ap": 0.021111435498129973,
+      "umbral": 0.4586231433634672,
+      "sensibilidad": 0.29878048780487804,
+      "precision_alertas": 0.020024519820187985,
+      "f1": 0.03753351206434316,
+      "f2": 0.07895584917821463,
+      "alertas": 2447,
+      "fraccion_alertas": 0.08532970673361928,
+      "lift_precision": 3.5014826517288467,
+      "matriz_confusion": {
+        "vp": 49,
+        "fp": 2398,
+        "fn": 115,
+        "vn": 26115
+      },
+      "segundos_ajuste": 3.139084,
+      "archivo_modelo": "modelos/bosque_aleatorio.joblib",
+      "sha256_modelo": "55fe564eaec27a1db78546895b3076db791e8ce3ee0155ce3e3ba264cb509f4f",
+      "archivo_predicciones": "predicciones/bosque_aleatorio_validacion.csv",
+      "hiperparametros": {
+        "imputacion": "mediana de entrenamiento con indicadores de faltantes",
+        "keep_empty_features": true,
+        "n_estimators": 300,
+        "max_depth": 16,
+        "min_samples_leaf": 20,
+        "class_weight": "balanced_subsample",
+        "n_jobs": 2,
+        "random_state": 42
+      }
+    }
+  ],
+  "ganador": "bosque_aleatorio",
+  "umbral": 0.4586231433634672,
+  "seleccion_sellada": "seleccion_sellada.json",
+  "sha256_seleccion": "6887c1187eac1866dd651f9770143762d2252c5a0c22b24a6030309abb4383cd",
+  "prueba": {
+    "modelo": "bosque_aleatorio",
+    "fase": "prueba",
+    "n": 28949,
+    "positivos": 155,
+    "negativos": 28794,
+    "prevalencia": 0.005354243669902242,
+    "ap": 0.02282091999944155,
+    "umbral": 0.4586231433634672,
+    "sensibilidad": 0.4,
+    "precision_alertas": 0.02476038338658147,
+    "f1": 0.046634072959759305,
+    "f2": 0.09923175416133162,
+    "alertas": 2504,
+    "fraccion_alertas": 0.08649694289958203,
+    "lift_precision": 4.62444089456869,
+    "matriz_confusion": {
+      "vp": 62,
+      "fp": 2442,
+      "fn": 93,
+      "vn": 26352
+    },
+    "sha256_seleccion": "6887c1187eac1866dd651f9770143762d2252c5a0c22b24a6030309abb4383cd",
+    "sha256_modelo": "55fe564eaec27a1db78546895b3076db791e8ce3ee0155ce3e3ba264cb509f4f",
+    "archivo_modelo": "modelos/bosque_aleatorio.joblib",
+    "archivo_predicciones": "predicciones/ganador_prueba.csv",
+    "evaluado_utc": "2026-11-07T23:44:47.602819+00:00",
+    "numero_evaluaciones_prueba": 1,
+    "modelo_reajustado_antes_prueba": false
+  },
+  "resultado_en_cache": false
+}

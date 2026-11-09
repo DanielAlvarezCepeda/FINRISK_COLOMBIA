@@ -38,12 +38,15 @@ CONFIGURACION = {
         "imputacion": "mediana de entrenamiento con indicadores de faltantes",
         "keep_empty_features": True,
         "transformacion": "arcsinh, seguida de StandardScaler ajustado con entrenamiento",
-        "C": 1.0, "class_weight": "balanced", "max_iter": 2000, "random_state": 42,
+        "C": 0.0001,  # Antes: 1.0
+        "class_weight": "balanced", "max_iter": 2000, "random_state": 42,
     },
     "bosque_aleatorio": {
         "imputacion": "mediana de entrenamiento con indicadores de faltantes",
         "keep_empty_features": True,
-        "n_estimators": 300, "max_depth": 8, "min_samples_leaf": 20,
+        "n_estimators": 300,
+        "max_depth": 16,  # Antes: 8
+        "min_samples_leaf": 20,
         "class_weight": "balanced_subsample", "n_jobs": 2, "random_state": 42,
     },
     "criterio_modelo": "Mayor AP en validación. Empates exactos por orden de menor complejidad predefinido.",
@@ -117,12 +120,17 @@ def _modelos():
             ("imputacion", imputer()),
             ("arcsinh", FunctionTransformer(np.arcsinh, feature_names_out="one-to-one")),
             ("escala", StandardScaler()),
-            ("modelo", LogisticRegression(C=1.0, class_weight="balanced", max_iter=2000, random_state=42)),
+            ("modelo", LogisticRegression(
+                C=0.0001,  # Antes: 1.0
+                class_weight="balanced", max_iter=2000, random_state=42,
+            )),
         ]),
         "bosque_aleatorio": Pipeline([
             ("imputacion", imputer()),
             ("modelo", RandomForestClassifier(
-                n_estimators=300, max_depth=8, min_samples_leaf=20,
+                n_estimators=300,
+                max_depth=16,  # Antes: 8
+                min_samples_leaf=20,
                 class_weight="balanced_subsample", n_jobs=2, random_state=42,
             )),
         ]),

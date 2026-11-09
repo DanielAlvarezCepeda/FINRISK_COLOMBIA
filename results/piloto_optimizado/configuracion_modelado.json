@@ -1,0 +1,44 @@
+{
+  "semilla": 42,
+  "features": [
+    "liquidez_corriente",
+    "endeudamiento",
+    "roa",
+    "margen_neto"
+  ],
+  "particiones_por_anio_origen": {
+    "2021": "entrenamiento",
+    "2022": "entrenamiento",
+    "2023": "validacion",
+    "2024": "prueba"
+  },
+  "referencia_prevalencia": {
+    "strategy": "prior"
+  },
+  "regresion_logistica": {
+    "imputacion": "mediana de entrenamiento con indicadores de faltantes",
+    "keep_empty_features": true,
+    "transformacion": "arcsinh, seguida de StandardScaler ajustado con entrenamiento",
+    "C": 0.0001,
+    "class_weight": "balanced",
+    "max_iter": 2000,
+    "random_state": 42
+  },
+  "bosque_aleatorio": {
+    "imputacion": "mediana de entrenamiento con indicadores de faltantes",
+    "keep_empty_features": true,
+    "n_estimators": 300,
+    "max_depth": 16,
+    "min_samples_leaf": 20,
+    "class_weight": "balanced_subsample",
+    "n_jobs": 2,
+    "random_state": 42
+  },
+  "criterio_modelo": "Mayor AP en validación. Empates exactos por orden de menor complejidad predefinido.",
+  "criterio_umbral": "Máximo F2 en validación. Empates con tolerancia absoluta 1e-12 por menor umbral.",
+  "nota_umbral": "Criterio técnico que pondera sensibilidad. No representa costos ni capacidad de revisión de un banco.",
+  "alcance": "piloto_retrospectivo",
+  "objetivo": "presencia_inventario_anual",
+  "validacion_exante": false,
+  "puntaje_calibrado": false
+}

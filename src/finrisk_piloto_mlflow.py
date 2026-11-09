@@ -186,7 +186,8 @@ def _validar_corrida_remota(corrida, experimento_id, parametros, tags, completa)
 
 
 def registrar_piloto(resumen_path, commit_git, tracking_uri="http://54.163.35.181:8050",
-                     experimento="Proyecto-MIAD", salida=None, autor=None):
+                     experimento="Proyecto-MIAD", salida=None, autor=None,
+                     prefijo_run="Piloto inventario"):
     """Tres validaciones y una prueba del ganador; reutiliza las corridas ya completadas."""
     auditoria = preflight_piloto(resumen_path, commit_git)
     base, resumen, protocolo = auditoria["base"], auditoria["resumen"], auditoria["protocolo"]
@@ -251,7 +252,7 @@ def registrar_piloto(resumen_path, commit_git, tracking_uri="http://54.163.35.18
                 return previo
         with mlflow.start_run(
             run_id=previo["run_id"] if previo else None, experiment_id=exp.experiment_id,
-            run_name=f"Piloto inventario - {registro['modelo']} - {fase}", tags=tags
+            run_name=f"{prefijo_run} - {registro['modelo']} - {fase}", tags=tags
         ) as run:
             estado["corridas"][clave] = {**(previo or {}), "run_id": run.info.run_id, "completo": False}
             _guardar(estado_path, estado)

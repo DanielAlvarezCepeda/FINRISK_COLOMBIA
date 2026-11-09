@@ -1,0 +1,83 @@
+{
+  "creado_utc": "2026-11-07T23:49:26.601850+00:00",
+  "tracking_uri": "http://54.163.35.181:8050",
+  "experimento": "Proyecto-MIAD",
+  "experiment_id": "2",
+  "commit_fuente": "60923892c70dfbd20bbdb17565863546f1099312",
+  "objetivo": "presencia_inventario_anual",
+  "alcance": "piloto_retrospectivo",
+  "validacion_exante": false,
+  "puntaje_calibrado": false,
+  "version_base_etiquetada": "dbc16e7614f78736280f9410dd0aac0fba1a35f81594ad629891c65cecb6b118",
+  "corridas_validacion": [
+    {
+      "run_id": "493ce7ea0ca2420cb8f8fb10c926690c",
+      "modelo": "referencia_prevalencia",
+      "fase": "validacion",
+      "model_uri": "models:/m-59e3480be7654434833e6331ef95a905",
+      "sha256_modelo": "2d102b90f7139c845eea5c563bf7ee030793c37189677909a7f1757f62eed217",
+      "umbral": 0.004777099097456468,
+      "url": "http://54.163.35.181:8050/#/experiments/2/runs/493ce7ea0ca2420cb8f8fb10c926690c",
+      "completo": true
+    },
+    {
+      "run_id": "86f9a23ccdcf4f2daa4d8c8bd5592dde",
+      "modelo": "regresion_logistica",
+      "fase": "validacion",
+      "model_uri": "models:/m-2e25d20eb9444081831f05ca86c1a5a9",
+      "sha256_modelo": "a4ca7eef764496e7fe9d95120fe65ac7eba6019aab59b18e22e9928630ee339e",
+      "umbral": 0.5895042949594776,
+      "url": "http://54.163.35.181:8050/#/experiments/2/runs/86f9a23ccdcf4f2daa4d8c8bd5592dde",
+      "completo": true
+    },
+    {
+      "run_id": "e2a43491e3e9495ca38960daba236660",
+      "modelo": "bosque_aleatorio",
+      "fase": "validacion",
+      "model_uri": "models:/m-e8b2756622954727af6504a0b6e99119",
+      "sha256_modelo": "55fe564eaec27a1db78546895b3076db791e8ce3ee0155ce3e3ba264cb509f4f",
+      "umbral": 0.4586231433634672,
+      "url": "http://54.163.35.181:8050/#/experiments/2/runs/e2a43491e3e9495ca38960daba236660",
+      "completo": true
+    }
+  ],
+  "corrida_prueba": {
+    "run_id": "ea770e24821f47048e86155a2d0eb09b",
+    "modelo": "bosque_aleatorio",
+    "fase": "prueba",
+    "model_uri": "models:/m-e8b2756622954727af6504a0b6e99119",
+    "sha256_modelo": "55fe564eaec27a1db78546895b3076db791e8ce3ee0155ce3e3ba264cb509f4f",
+    "umbral": 0.4586231433634672,
+    "url": "http://54.163.35.181:8050/#/experiments/2/runs/ea770e24821f47048e86155a2d0eb09b",
+    "completo": true
+  },
+  "pipeline_recuperado_sha256": "55fe564eaec27a1db78546895b3076db791e8ce3ee0155ce3e3ba264cb509f4f",
+  "pipeline_recuperado_identico": true,
+  "verificacion_local": {
+    "preflight_local_superado": true,
+    "sha256_seleccion": "6887c1187eac1866dd651f9770143762d2252c5a0c22b24a6030309abb4383cd",
+    "sha256_protocolo_completo": "0de87422f6d29dba31c8534e44b33869feffd0416d8d3ca2b6b07300cabd622d",
+    "metricas_recalculadas_desde_puntajes": true,
+    "nuevas_predicciones_prueba": false,
+    "evaluaciones": {
+      "referencia_prevalencia:validacion": {
+        "sha256_predicciones": "5b4867b780edf2d4c8f70f66a9d276ec5a6b6a6ed71b06b374bb6674c1756867",
+        "n": 28677
+      },
+      "regresion_logistica:validacion": {
+        "sha256_predicciones": "7f8177033af1dd13be5070d182d9c004e7692cd2478c07c0fccb87f5d6d954cd",
+        "n": 28677
+      },
+      "bosque_aleatorio:validacion": {
+        "sha256_predicciones": "9ff69c051a577a7db5e6466c12c73fcc170d3d334cb0938ee685501cd2a64349",
+        "n": 28677
+      },
+      "bosque_aleatorio:prueba": {
+        "sha256_predicciones": "588d2156b14204dd9f4fa4c7902206536eee51c450e8489ea815cbac6850f368",
+        "n": 28949
+      }
+    },
+    "filas_individuales_subidas": false
+  },
+  "filas_individuales_subidas": false
+}

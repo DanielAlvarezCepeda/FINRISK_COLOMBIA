@@ -1,0 +1,5 @@
+anio_origen,anio_financiero,anio_objetivo,particion,n_financieros,presencias_objetivo_sin_excluir,excluidos_antecedente_observado,presencias_en_excluidos_antecedente,elegibles_sin_antecedentes,presencias_elegibles_sin_antecedentes,excluidos_coherencia,presencias_excluidos_coherencia,excluidos_sin_indicadores,presencias_excluidos_sin_indicadores,n_modelado,evento_1,evento_0,prevalencia,con_indicadores_imputables,cuatro_indicadores,con_conflicto_contable
+2021,2020,2022,entrenamiento,29949,1717,1690,1591,28259,126,337,1,132,0,27790,125,27665,0.004498020870816841,2966,24824,0
+2022,2021,2023,entrenamiento,29200,1811,1785,1672,27415,139,359,2,1,0,27055,137,26918,0.005063759009425245,2225,24830,0
+2023,2022,2024,validacion,31149,1865,1843,1700,29306,165,627,1,2,0,28677,164,28513,0.005718868779858423,2225,26452,0
+2024,2023,2025,prueba,31396,1938,1952,1779,29444,159,493,4,2,0,28949,155,28794,0.005354243669902242,2244,26705,0
