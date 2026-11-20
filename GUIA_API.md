@@ -1,13 +1,12 @@
 # FINRISK Colombia | Etapa 6: API de inferencia
 
-El ZIP contiene archivos nuevos para la raíz del repositorio existente, no es un repositorio completo. No reemplaza `README.md`, `requirements.txt`, el dashboard ni los scripts de entrenamiento. El modelo aportado coincide por SHA-256 con la selección sellada en la segunda entrega.
+La API forma parte de la entrega final del repositorio. No sustituye `requirements.txt` ni los scripts de entrenamiento. El modelo aportado coincide por SHA-256 con la selección sellada en la segunda entrega.
 
 ## 1. Preparación en Windows
 
-Descomprimir el contenido dentro de `C:\Users\User\Desktop\FINRISK_COLOMBIA`. No subir el ZIP ni el joblib a GitHub público. La regla de `models/.gitignore` protege el archivo. Conservar el original también en un almacenamiento autorizado.
+Desde la raíz del repositorio actualizado, obtener el modelo optimizado de MLflow por un canal autorizado y guardarlo en `models/bosque_aleatorio.joblib`. No subir el joblib a GitHub público. La regla de `models/.gitignore` protege el archivo. Conservar el original también en un almacenamiento autorizado.
 
 ```powershell
-cd "C:\Users\User\Desktop\FINRISK_COLOMBIA"
 py -0p
 py -3.12 -m venv .venv-api
 .\.venv-api\Scripts\python.exe -m pip install -r requirements-api-test.txt
@@ -38,9 +37,9 @@ Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/predict -ContentType '
 
 Los endpoints /model/info y /metrics presentan la trazabilidad y métricas archivadas, no resultados recalculados. Guardar capturas de las pruebas y Swagger. La prueba de 2024 ya fue consultada en el piloto inicial: no es una evaluación independiente del modelo optimizado.
 
-## 3. Docker (opcional, todavía por validar)
+## 3. Docker (opcional, validado localmente y en EC2)
 
-Desde la raíz: `docker build -f Dockerfile.api -t finrisk-api:1.0 .` y `docker run --rm -p 127.0.0.1:8000:8000 finrisk-api:1.0`. No ejecutar si ya hay otro servicio usando el puerto 8000. No subir la imagen con el modelo a un registro público sin autorización. Añadir al contexto de Docker un `.dockerignore` que excluya todos los datos, cachés, entornos virtuales, credenciales y archivos ajenos a esta API; se incluye `Dockerfile.api.dockerignore` específico para este Dockerfile. La integración con el dashboard y el despliegue en AWS requieren un paso posterior. Preferir proxy de mismo origen y HTTPS; no abrir MLflow a Internet sin autenticación.
+Desde la raíz: `docker build -f Dockerfile.api -t finrisk-api:1.0 .` y `docker run --rm -p 127.0.0.1:8000:8000 finrisk-api:1.0`. No ejecutar si ya hay otro servicio usando el puerto 8000. No subir la imagen con el modelo a un registro público sin autorización. Añadir al contexto de Docker un `.dockerignore` que excluya todos los datos, cachés, entornos virtuales, credenciales y archivos ajenos a esta API; se incluye `Dockerfile.api.dockerignore` específico para este Dockerfile. Para ejecutar la integración completa y el despliegue ver `GUIA_DOCKER.md`. Preferir proxy de mismo origen y HTTPS; no abrir MLflow a Internet sin autenticación.
 
 ## 4. Git
 

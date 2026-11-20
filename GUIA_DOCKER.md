@@ -6,12 +6,11 @@ Se conserva el modelo sellado, la API validada y el HTML integrado. El Dockerfil
 
 ## Requisitos
 
-Windows con Docker Desktop en ejecución, motor Linux de contenedores (WSL 2 si corresponde), y los dos paquetes previos de FINRISK (API e integración). En Linux, Docker Engine y el plugin Compose. El archivo models/bosque_aleatorio.joblib debe permanecer local, con SHA-256 55fe564eaec27a1db78546895b3076db791e8ce3ee0155ce3e3ba264cb509f4f. No subir el modelo, imágenes que lo contienen, datos individuales ni credenciales a registros públicos.
+Windows con Docker Desktop en ejecución, motor Linux de contenedores (WSL 2 si corresponde), y repositorio actualizado con API e integración. En Linux, Docker Engine y el plugin Compose. El archivo models/bosque_aleatorio.joblib debe permanecer local, con SHA-256 55fe564eaec27a1db78546895b3076db791e8ce3ee0155ce3e3ba264cb509f4f. No subir el modelo, imágenes que lo contienen, datos individuales ni credenciales a registros públicos.
 
 ## Comandos desde la raíz del proyecto (PowerShell)
 
 ```powershell
-cd "C:\Users\User\Desktop\FINRISK_COLOMBIA"
 docker --version
 docker compose version
 docker info --format '{{.OSType}}'
@@ -19,7 +18,7 @@ docker info --format '{{.OSType}}'
 
 El último comando debe indicar linux. Si no responde el motor, iniciar Docker Desktop. Si no está instalado, seguir las instrucciones oficiales para Windows y reiniciar si el instalador lo solicita. No hace falta activar .venv-api para Docker.
 
-Descomprimir este paquete en la raíz, conservando los archivos anteriores. Si aún está ejecutándose Uvicorn local, se puede detener con Ctrl+C. Es independiente del puerto 8080 de Docker.
+Ejecutar desde la raíz del repositorio actualizado. Si aún está ejecutándose Uvicorn local, se puede detener con Ctrl+C. Es independiente del puerto 8080 de Docker.
 
 ```powershell
 Test-Path .\Dockerfile.api
@@ -30,7 +29,7 @@ docker compose up -d --build
 docker compose ps
 ```
 
-Esperar a que ambos servicios estén healthy. El tablero está en http://127.0.0.1:8080/dashboard/ y Swagger en http://127.0.0.1:8080/docs. Si 8080 está ocupado, establecer `$env:FINRISK_PORT = '8081'` antes de ejecutar `docker compose up -d` y cambiar la URL de prueba.
+Esperar a que ambos servicios estén healthy. El tablero está en http://127.0.0.1:8080/dashboard/ y Swagger en http://127.0.0.1:8080/docs. Si 8080 está ocupado, detener primero la instalación anterior o usar otro puerto y etiquetas de imagen independientes en un override; cambiar la URL de prueba al puerto elegido.
 
 ## Verificación de extremo a extremo
 
@@ -55,4 +54,28 @@ Para detener conservando contenedores: `docker compose stop`. Para reiniciar: `d
 
 ## Git y AWS
 
-No usar `git add .` indiscriminadamente. Agregar únicamente rutas de código, documentos y configuración, comprobar `git status` y que el modelo siga excluido con `git check-ignore models/bosque_aleatorio.joblib`. Añadir `.venv-api/` al .gitignore si falta. Si el repositorio local no contiene el último trabajo del grupo, reconciliar antes de publicar. Los comandos de publicación y despliegue se deben coordinar con el equipo. Para AWS, se puede reutilizar esta composición, pero la publicación debe configurarse con acceso restringido y/o HTTPS, sin exponer MLflow ni puertos privados a Internet. No hay despliegue en la nube ni build real de Docker verificado aún.
+No usar `git add .` indiscriminadamente. Agregar únicamente rutas de código, documentos y configuración, comprobar `git status` y que el modelo siga excluido con `git check-ignore models/bosque_aleatorio.joblib`. Añadir `.venv-api/` al .gitignore si falta. Si el repositorio local no contiene el último trabajo del grupo, reconciliar antes de publicar. Los comandos de publicación y despliegue se deben coordinar con el equipo. Para AWS, se puede reutilizar esta composición, pero la publicación debe configurarse con acceso restringido y/o HTTPS, sin exponer MLflow ni puertos privados a Internet. La construcción de imágenes, el estado healthy y el ejemplo B desde el navegador fueron verificados en AWS EC2; el acceso de terceros y HTTPS siguen pendientes.
+
+
+## Despliegue en EC2 (Ubuntu, AMD64)
+
+Se utilizó una t3.small, volumen gp3 de 20 GiB y 2 GiB de swap. Docker Engine y el plugin Compose se instalan desde el repositorio oficial de Docker para Ubuntu. La instancia tiene IP pública y SSH limitado a la IP autorizada; la llave PEM se conserva fuera de Git.
+
+Transferir el código del commit elegido con `git archive` o clonar la rama autorizada. Transferir el joblib por SCP desde un origen autorizado a `models/bosque_aleatorio.joblib`; comprobar su SHA-256 antes de construir. No copiar entornos virtuales ni microdatos. Desde la raíz del proyecto en Ubuntu:
+
+```bash
+sha256sum models/bosque_aleatorio.joblib
+sudo docker compose config --quiet
+sudo docker compose up -d --build
+sudo docker compose ps
+curl -fsS http://127.0.0.1:8080/health
+```
+
+Después de validar localmente, configurar en el grupo de seguridad una regla TCP 8080 solo para las IP autorizadas. Para conservar el enlace externo en posteriores ejecuciones de Compose, establecer `FINRISK_BIND=0.0.0.0` y `FINRISK_PORT=8080` en el archivo `.env` de la raíz del servidor (si ya existe, conservar sus demás variables). El archivo no debe versionarse. Ejecutar:
+
+```bash
+sudo docker compose up -d --no-deps dashboard
+sudo docker compose ps
+```
+
+Verificar el puerto publicado y abrir `http://IP_PUBLICA:8080/dashboard/` desde una IP permitida. `IP_PUBLICA` es un marcador que se reemplaza con la dirección actual de EC2. Probar ambos ejemplos y Swagger. No abrir directamente 8000 ni 8050. Mientras el acceso sea HTTP, utilizar únicamente datos sintéticos. El laboratorio puede detener la instancia y cambiar la IP; confirmar presupuesto, reglas de acceso y disponibilidad antes de la sustentación. Al finalizar, detener según las instrucciones del curso, sin eliminar recursos requeridos para revisión.
