@@ -1,0 +1,2 @@
+# El pipeline se recupera de MLflow o se distribuye por un canal autorizado.
+*.joblib

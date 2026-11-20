@@ -22,3 +22,5 @@ data/privados/**
 /mlflow.db
 /mlflow.db-*
 /trabajo_consolidacion/
+
+.venv-api/

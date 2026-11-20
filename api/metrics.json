@@ -1,0 +1,7 @@
+{
+  "version": "piloto_optimizado_20261107",
+  "objetivo": "presencia_inventario_anual",
+  "validacion": {"origen": 2023, "n": 28677, "positivos": 164, "ap_referencia_prevalencia": 0.005718868779858423, "ap_regresion_logistica": 0.013148408428584033, "ap_bosque_aleatorio": 0.021111435498129973},
+  "prueba_retrospectiva": {"origen": 2024, "n": 28949, "positivos": 155, "negativos": 28794, "prevalencia": 0.005354243669902242, "ap": 0.02282091999944155, "umbral": 0.4586231433634672, "sensibilidad": 0.4, "precision_alertas": 0.02476038338658147, "f1": 0.046634072959759305, "f2": 0.09923175416133162, "alertas": 2504, "fraccion_alertas": 0.08649694289958203, "lift_precision": 4.62444089456869, "matriz_confusion": {"vp": 62, "fp": 2442, "fn": 93, "vn": 26352}},
+  "limitacion": "El periodo de prueba 2024 ya había sido consultado en el piloto original. No es una confirmación independiente ni prospectiva. Las métricas describen presencia observada en inventarios, no insolvencia formal futura."
+}
