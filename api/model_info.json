@@ -1,0 +1,16 @@
+{
+  "modelo": "bosque_aleatorio",
+  "version": "piloto_optimizado_20261107",
+  "objetivo": "presencia_inventario_anual",
+  "alcance": "piloto_retrospectivo",
+  "umbral": 0.4586231433634672,
+  "puntaje_calibrado": false,
+  "validacion_exante": false,
+  "variables": ["liquidez_corriente", "endeudamiento", "roa", "margen_neto"],
+  "unidades": {"liquidez_corriente": "veces", "endeudamiento": "razon", "roa": "razon", "margen_neto": "razon"},
+  "sha256_modelo": "55fe564eaec27a1db78546895b3076db791e8ce3ee0155ce3e3ba264cb509f4f",
+  "versiones_entrenamiento": {"pandas": "2.3.3", "numpy": "2.5.4", "scikit-learn": "1.9.1", "joblib": "1.6.0"},
+  "hiperparametros": {"n_estimators": 300, "max_depth": 16, "min_samples_leaf": 20, "random_state": 42},
+  "mlflow": {"experimento": "Proyecto-MIAD", "run_id_validacion": "e2a43491e3e9495ca38960daba236660", "run_id_prueba": "ea770e24821f47048e86155a2d0eb09b", "model_uri": "models:/m-e8b2756622954727af6504a0b6e99119", "artifact_path": "modelo_joblib/bosque_aleatorio.joblib", "commit_fuente": "60923892c70dfbd20bbdb17565863546f1099312"},
+  "advertencia": "Puntaje no calibrado de presencia en el siguiente inventario anual observado. No predice primera admisión formal a insolvencia en doce meses ni equivale a probabilidad de quiebra. Solo para revisión humana en un piloto académico. Una ausencia de alerta no certifica solvencia."
+}

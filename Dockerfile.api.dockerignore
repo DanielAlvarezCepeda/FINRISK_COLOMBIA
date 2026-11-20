@@ -1,0 +1,7 @@
+**
+!api/
+!api/**
+!models/
+!models/bosque_aleatorio.joblib
+!requirements-api.txt
+**/__pycache__/

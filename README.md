@@ -286,3 +286,110 @@ compararlo con su umbral para emitir una alerta de revisión. El objetivo origin
 de primera admisión y la disponibilidad histórica siguen pendientes de validación.
 Queda integrar esa consulta en el tablero y preparar las capturas de evidencia
 para la entrega.
+
+## 13. Entrega final: servicio de inferencia y despliegue
+
+Esta entrega integra la API y el tablero sobre la versión de la segunda entrega
+(`fe7a05973bbf3a6ff3895923377fc8aca0ba47ed`). Los notebooks, scripts de
+preparación y entrenamiento, resultados de experimentos y documentación de las
+entregas anteriores se conservan. Las instrucciones de esta sección y sus guías
+actualizadas corresponden al prototipo funcional; las secciones anteriores
+documentan el desarrollo histórico.
+
+### Modelo utilizado y alcance
+
+Se reutiliza el bosque aleatorio optimizado `piloto_optimizado_20261107`, sin
+reentrenar (300 árboles, profundidad 16, mínimo 20 observaciones por hoja y
+semilla 42). El umbral técnico F2 es `0.4586231433634672`; la variable objetivo
+es presencia observada en el inventario anual siguiente, no primera admisión
+formal en doce meses. El puntaje no está calibrado ni sirve para aprobar o
+rechazar créditos automáticamente.
+
+En validación (origen 2023), AP = 0.021111; en prueba retrospectiva (origen 2024,
+ejercicio financiero 2023), AP = 0.022821, sensibilidad = 40.00 %, precisión de
+alertas = 2.48 % y 2.504 alertas entre 28.949 observaciones (62 VP, 2.442 FP,
+93 FN, 26.352 VN). El conjunto de prueba ya se había consultado en el piloto
+original; no es una validación independiente del optimizado ni prospectiva.
+
+Fuentes de trazabilidad: [selección sellada](results/piloto_optimizado/seleccion_sellada.json),
+[prueba](results/piloto_optimizado/resultado_prueba.json),
+[registro MLflow](results/piloto_optimizado/registro_mlflow.json),
+[validación](results/piloto_optimizado/metricas_validacion.csv).
+
+### Instalación y ejecución
+
+1. Clonar el repositorio y seleccionar la rama/commit de esta entrega.
+2. Obtener por un canal autorizado el pipeline `bosque_aleatorio.joblib` de la
+   corrida optimizada (MLflow, experimento `Proyecto-MIAD`, corrida de validación
+   `e2a43491e3e9495ca38960daba236660`, artefacto `modelo_joblib/bosque_aleatorio.joblib`).
+   Guardarlo en `models/bosque_aleatorio.joblib`. El archivo no está en Git;
+   no es necesario descargar los microdatos ni repetir el entrenamiento para servirlo.
+3. Confirmar la huella SHA-256:
+   `55fe564eaec27a1db78546895b3076db791e8ce3ee0155ce3e3ba264cb509f4f`.
+   La API verifica la huella, el esquema y las versiones de entrenamiento antes
+   de cargar el artefacto. No cargar archivos joblib de origen desconocido.
+4. Con Docker Engine/Desktop (contenedores Linux) y Docker Compose, desde la raíz:
+
+```sh
+docker compose config --quiet
+docker compose up -d --build
+docker compose ps
+```
+
+Abrir `http://127.0.0.1:8080/dashboard/`. La API se ejecuta en la red interna de
+Compose y Nginx sirve el tablero y el proxy. Swagger: `http://127.0.0.1:8080/docs`.
+Para ejecución sin Docker y pruebas automáticas, ver [guía API](GUIA_API.md).
+Para la instalación local y AWS, ver [guía Docker](GUIA_DOCKER.md) y
+[guía de integración](GUIA_INTEGRACION.md).
+
+### Contrato de la API y tablero
+
+| Método y ruta | Función |
+| --- | --- |
+| GET `/health` | Estado, versión y huella del modelo cargado |
+| GET `/model/info` | Variables, umbral, versiones y trazabilidad |
+| GET `/metrics` | Métricas agregadas archivadas de la evaluación |
+| POST `/predict` | Inferencia individual y alerta frente al umbral |
+
+Ejemplo de cuerpo JSON para `/predict`:
+
+```json
+{"liquidez_corriente":0.6,"endeudamiento":0.95,"roa":-0.12,"margen_neto":-0.10}
+```
+
+Resultado esperado en este ejemplo sintético: puntaje cercano a 0.6066,
+`alerta: true`. Liquidez se expresa en veces; los demás indicadores, en razones
+(95 % = 0.95). El tablero permite ingresarlos en porcentajes y los convierte.
+El ejemplo A devuelve aproximadamente 0.2820, sin alerta. Se ejecutaron cinco
+pruebas automáticas satisfactorias en el entorno Python de desarrollo y se
+verificó la integración en Docker local y AWS EC2 con datos sintéticos.
+
+Se mantienen los filtros descriptivos, año, fecha de evaluación, activo total y
+rangos automático/manual del diseño anterior. Estos campos contextualizan el
+análisis y no son entradas del modelo. La mediana histórica general no depende
+del rango de activos. Las cohortes etiquetadas corresponden a ejercicios
+2020–2023; los datos descriptivos de 2024 no aportan una nueva evaluación
+etiquetada. Los comparadores por tamaño y presencia/ausencia observada quedan
+como diseño pendiente por falta de microdatos homologados; una ausencia
+observada no demuestra solvencia.
+
+### Arquitectura, acceso y reproducibilidad
+
+```text
+Navegador -> Nginx (dashboard, proxy) -> FastAPI -> Random Forest sellado
+               Docker Compose en AWS EC2 (Ubuntu 24.04, AMD64)
+GitHub: código; DVC: datos; MLflow: experimentos y artefacto del modelo
+```
+
+La instancia de inferencia es independiente del servidor MLflow. El despliegue
+se comprobó en una EC2 t3.small con acceso por puerto 8080 restringido a IP
+autorizada. La dirección pública vigente se comunica al equipo y al evaluador;
+puede cambiar al reiniciar el laboratorio. La configuración local por defecto
+escucha solo en loopback. El acceso de demostración usa HTTP: únicamente datos
+sintéticos, sin NIT, nombres ni información confidencial. No exponer los puertos
+8000 o 8050 directamente. Se requiere HTTPS, autenticación y controles adicionales
+antes de un uso operativo. El servicio de inferencia no utiliza DVC ni MLflow
+en tiempo de ejecución; para reproducir el entrenamiento se requieren las fuentes
+y el protocolo de la segunda entrega. El almacenamiento DVC compartido sigue
+pendiente. No publicar llaves privadas, credenciales, microdatos ni imágenes que
+contengan el modelo sin autorización.

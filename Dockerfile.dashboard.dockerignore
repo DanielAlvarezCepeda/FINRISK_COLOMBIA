@@ -1,0 +1,6 @@
+**
+!deploy/
+!deploy/nginx/
+!deploy/nginx/default.conf
+!dashboard/
+!dashboard/index.html

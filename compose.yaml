@@ -1,0 +1,31 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    image: finrisk-api:local
+    expose:
+      - "8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import json, urllib.request; assert json.load(urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=5))['status'] == 'ok'"]
+      interval: 15s
+      timeout: 8s
+      retries: 5
+      start_period: 40s
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    image: finrisk-dashboard:local
+    ports:
+      - "${FINRISK_BIND:-127.0.0.1}:${FINRISK_PORT:-8080}:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/dashboard/"]
+      interval: 15s
+      timeout: 5s
+      retries: 3

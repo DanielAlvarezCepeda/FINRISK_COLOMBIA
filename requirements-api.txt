@@ -1,0 +1,8 @@
+# Versiones exactas del entrenamiento publicado en el manifiesto del piloto.
+pandas==2.3.3
+numpy==2.5.4
+scikit-learn==1.9.1
+joblib==1.6.0
+# Dependencias del servicio.
+fastapi==0.128.2
+uvicorn==0.48.0
