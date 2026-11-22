@@ -22,3 +22,11 @@ data/privados/**
 /mlflow.db
 /mlflow.db-*
 /trabajo_consolidacion/
+
+.venv-api/
+
+# Llaves y configuraciones locales de despliegue
+*.pem
+*.key
+*.pfx
+.env.*
