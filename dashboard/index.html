@@ -111,6 +111,19 @@ input{font:inherit}
 @media(max-width:600px){.business-result-grid{grid-template-columns:1fr}.business-answer,.business-decision{padding:18px 16px}.business-demo-controls{flex-direction:column}.business-demo-button{text-align:left}}
 
  .risk-score-track{height:12px;background:#e3ebf3;border-radius:8px;position:relative;margin:12px 0}.risk-score-track div{height:100%;width:0;border-radius:8px;background:#16a89e}.risk-score-track i{position:absolute;top:-3px;height:18px;border-left:3px solid #183b59} .risk-score-track i[hidden]{display:none}
+
+/* Ajustes UX del documento Comentarios.pdf: sin cambiar el modelo ni la API. */
+#risk-root #risk-summary-banner.is-alert { background:#fff0f1;border-color:#d4747c;color:#8e1e2c; }
+#risk-root #risk-summary-banner.is-alert strong, #risk-root #risk-summary-banner.is-alert b { color:#981e30; }
+#risk-root #risk-summary-banner.is-clear { background:#f1f3f5;border-color:#b8c0c9;color:#394653; }
+#risk-root #risk-summary-banner.is-clear strong, #risk-root #risk-summary-banner.is-clear b { color:#394653; }
+#risk-root .risk-quick-score {margin:9px 0 0;font-weight:700;}
+#risk-root .risk-future-controls {margin-top:20px;border:1px dashed #bccbdb;border-radius:12px;padding:12px 16px;background:#f9fbfd;}
+#risk-root .risk-future-controls summary {cursor:pointer;font-weight:750;color:#526680;font-size:12px;}
+#risk-root .risk-future-controls .risk-fieldset {margin-top:12px;}
+.evaluation-last-query {border:1px solid #cfdeea;border-radius:12px;padding:14px 18px;margin:0 0 20px;background:#f7fbfe;}
+.evaluation-last-query > summary {cursor:pointer;font-weight:750;color:#264565;}
+.evaluation-last-query .business-decision {margin:17px 0 0;}
 </style>
 </head>
 <body>
@@ -125,7 +138,7 @@ input{font:inherit}
    <button data-tab="prediccion"><span class="nav-icon">◎</span>Modelo predictivo</button>
    <button data-tab="evaluacion"><span class="nav-icon">✓</span>Evaluación del modelo</button>
  </nav>
- <div class="side-bottom"><div class="side-note"><span></span><b>Prototipo académico · Entrega final</b><br>Datos descriptivos históricos e inferencia del piloto optimizado.<br><br>Puntaje no calibrado; revisión humana.</div></div>
+ <div class="side-bottom"><div class="side-note"><span></span><b>Prototipo académico · Entrega final</b><br>Datos descriptivos históricos e inferencia del piloto optimizado.</div></div>
 </aside>
 <main class="main">
  <header class="topbar"><button class="sidebar-toggle" id="menu" aria-label="Abrir menú" aria-controls="side" aria-expanded="false">☰</button><div class="breadcrumbs">Maestría · Despliegue de soluciones analíticas &nbsp;›&nbsp; <strong>FINRISK</strong></div><div class="top-actions"><span class="pill">Análisis exploratorio</span><span class="pill sub-pill">Integración · Noviembre 2026</span><button class="print" onclick="window.print()">⎙ &nbsp;Imprimir vista</button></div></header>
@@ -165,26 +178,7 @@ input{font:inherit}
     <span class="risk-privacy">Solo se envían los cuatro indicadores a la API; no se envían activo, año, fecha, NIT ni nombre.</span>
   </header>
 
-  <section id="business-result" class="business-decision" aria-labelledby="business-result-title">
-    <span class="design-label">INFERENCIA REAL · RANDOM FOREST OPTIMIZADO</span>
-    <h4 id="business-result-title">Resultado: prioridad de revisión y seguimiento</h4>
-    <p>FINRISK calcula un puntaje no calibrado de presencia observada y lo compara con el umbral F2 sellado en validación. No predice primera admisión formal en doce meses ni equivale a una probabilidad de quiebra.</p>
-    <div class="business-result-grid">
-      <div class="business-result-stat"><span>Puntaje del piloto (0–1)</span><strong id="risk-probability">No disponible</strong></div>
-      <div class="business-result-stat"><span>Umbral técnico F2</span><strong id="risk-threshold">—</strong></div>
-      <div class="business-result-stat"><span>Prioridad para la empresa consultada</span><strong id="risk-priority">Sin asignar</strong></div>
-    </div>
-    <p id="risk-api-status" class="risk-readiness" role="status">Verificando API…</p><div class="risk-score-track" aria-hidden="true"><div id="risk-score-fill"></div><i id="risk-score-mark" hidden></i></div><p id="risk-api-warning" class="notice">Sin alerta no equivale a solvencia. Uso académico, no decisión crediticia.</p><p id="risk-api-action" class="risk-help">Complete el formulario para consultar el pipeline.</p>
-    <details id="business-demo" class="business-demo" aria-labelledby="business-demo-title"><summary>Escenarios ilustrativos de la segunda entrega (no son inferencias)</summary>
-      <span class="design-label">ESCENARIO ILUSTRATIVO · NO ES UNA PREDICCIÓN</span>
-      <h4 id="business-demo-title">Así se traduciría el resultado en una acción</h4>
-      <p>Seleccione un caso simbólico del diseño. Es independiente de los indicadores ingresados; no calcula probabilidades ni usa datos de una empresa.</p>
-      <div class="business-demo-controls"><button id="demo-alert" class="business-demo-button" type="button" aria-pressed="true" data-demo="alert">Escenario con alerta: puntaje ≥ t</button><button id="demo-no-alert" class="business-demo-button" type="button" aria-pressed="false" data-demo="noalert">Escenario sin alerta: puntaje &lt; t</button></div>
-      <div id="business-demo-output" class="business-demo-output" role="status" aria-live="polite"><span id="demo-condition">Condición ilustrativa: puntaje ≥ t</span><b id="demo-priority">Revisión prioritaria propuesta</b><span id="demo-action">El analista ampliaría la revisión financiera y definiría el seguimiento antes de decidir sobre el crédito.</span></div>
-      <p>Una salida sin alerta mantendría la revisión ordinaria; no demostraría solvencia. El ingreso a insolvencia formal y el incumplimiento de un préstamo son eventos distintos. La decisión crediticia permanece en la entidad.</p>
-    </details>
-    <div class="business-actions"><button type="button" data-go-tab="evaluacion">Consultar desempeño y limitaciones</button></div>
-  </section>
+
 
   <div class="risk-layout">
     <form id="risk-form" class="risk-card" autocomplete="off" novalidate>
@@ -209,22 +203,25 @@ input{font:inherit}
           <div class="risk-field"><label for="risk-margin">Margen neto · %</label><input id="risk-margin" name="risk-margin" type="number" step="any" inputmode="decimal" required aria-describedby="risk-margin-error"><span id="risk-margin-error" class="risk-field-error"></span></div>
         </div>
       </fieldset>
+      <details class="risk-future-controls"><summary>Comparación por tamaño · configuración futura (no activa)</summary>
       <fieldset class="risk-fieldset"><legend>Tamaño de las empresas a comparar</legend>
-        <p class="risk-help">Propuesta pendiente de acuerdo del equipo: rango automático entre 0,5 y 2 veces el activo total. Puede editar ambos límites; todos los importes están en millones de COP.</p>
+        <p class="risk-help">La comparación por tamaño aún no está disponible. Este rango se conserva para una futura mejora y no influye en el puntaje ni en las medianas históricas. Todos los importes están en millones de COP.</p>
         <div class="risk-fields risk-fields-two">
           <div class="risk-field"><label for="risk-min">Activo mínimo · millones de COP</label><input id="risk-min" name="risk-min" type="number" step="any" inputmode="decimal" required aria-describedby="risk-min-error"><span id="risk-min-error" class="risk-field-error"></span></div>
           <div class="risk-field"><label for="risk-max">Activo máximo · millones de COP</label><input id="risk-max" name="risk-max" type="number" step="any" inputmode="decimal" required aria-describedby="risk-max-error"><span id="risk-max-error" class="risk-field-error"></span></div>
         </div>
         <div class="risk-range-toolbar"><span id="risk-range-mode" class="risk-help">Rango automático propuesto</span><button id="risk-reset-range" type="button" class="risk-button risk-button-quiet">Restablecer rango 0,5–2×</button></div>
       </fieldset>
+      </details>
       <div class="risk-submit-row"><button type="submit" class="risk-button risk-button-primary">Calcular puntaje</button><span class="risk-help">Valida el perfil, actualiza el resumen y consulta el modelo con los cuatro indicadores.</span></div>
     </form>
     <aside class="risk-card risk-result" aria-labelledby="risk-result-title">
       <div class="risk-form-heading"><h4 id="risk-result-title">Consulta preparada</h4><span id="risk-review-status" class="risk-tag">Consulta por revisar</span></div>
       <p id="risk-stale" class="risk-stale" hidden>Consulta desactualizada: cambió el formulario o el rango. Pulse Calcular puntaje para actualizar este resumen y los paneles.</p>
-      <div class="risk-pending"><strong id="risk-summary-class">Sin consulta</strong><p id="risk-summary-action">El resultado del piloto se muestra arriba.</p></div>
+      <div class="risk-pending" id="risk-summary-banner" role="status" aria-live="polite"><strong id="risk-summary-class">Sin consulta</strong><p id="risk-summary-action">Complete el formulario para consultar la API.</p><p class="risk-quick-score">Puntaje del piloto: <b id="risk-quick-score">—</b></p></div>
+      <div class="risk-utilities"><button type="button" class="risk-button risk-button-secondary" data-go-tab="evaluacion" data-open-eval-detail="true">Consultar puntaje, umbral y explicación</button></div>
       <p class="risk-small-title">Objetivo del piloto: presencia en el siguiente inventario anual observado</p>
-      <p class="business-pending-brief">El puntaje, umbral y prioridad se presentan en la sección de respuesta. Aquí se resume la entrada revisada.</p>
+      <p class="business-pending-brief">Los detalles técnicos se presentan en Evaluación del modelo. Esta tarjeta resume la consulta realizada.</p>
       <p class="risk-help">La fecha, el año y el rango no modifican el puntaje del modelo.</p>
       <h5>Última consulta preparada</h5>
       <p id="risk-summary-kind" class="risk-help">Todavía no se ha revisado una consulta.</p>
@@ -242,7 +239,7 @@ input{font:inherit}
       <p class="risk-help">El horizonte original de doce meses, la disponibilidad histórica y las reglas de comparación requieren validaciones adicionales.</p>
     </aside>
   </div>
-  <section class="risk-comparison" aria-labelledby="risk-comparison-title">
+  <section class="risk-comparison" hidden aria-labelledby="risk-comparison-title">
     <div class="risk-comparison-heading"><h4 id="risk-comparison-title">Comparación con empresas de tamaño similar</h4><span id="risk-peer-status" class="risk-tag">Diseño pendiente</span></div>
     <p class="risk-help">Se conserva el diseño de comparación por tamaño de la segunda entrega. Los grupos y las medianas por rango aún no están disponibles: requieren microdatos homologados y una etiqueta con seguimiento adecuado. La referencia general por año se presenta aparte y no usa el rango de activos.</p>
     <p id="risk-peer-context" class="risk-help">Revise una consulta para mostrar su perfil y el rango propuesto en ambos paneles.</p>
@@ -259,6 +256,28 @@ input{font:inherit}
   </section>
 
   <section id="evaluacion" class="tabcontent">
+    <details id="eval-last-query" class="evaluation-last-query"><summary>Detalle técnico de la última consulta: puntaje, umbral y escenarios</summary>
+  <section id="business-result" class="business-decision" aria-labelledby="business-result-title">
+    <span class="design-label">INFERENCIA REAL · RANDOM FOREST OPTIMIZADO</span>
+    <h4 id="business-result-title">Resultado: prioridad de revisión y seguimiento</h4>
+    <p>FINRISK calcula un puntaje no calibrado de presencia observada y lo compara con el umbral F2 sellado en validación. No predice primera admisión formal en doce meses ni equivale a una probabilidad de quiebra.</p>
+    <div class="business-result-grid">
+      <div class="business-result-stat"><span>Puntaje del piloto (0–1)</span><strong id="risk-probability">No disponible</strong></div>
+      <div class="business-result-stat"><span>Umbral técnico F2</span><strong id="risk-threshold">—</strong></div>
+      <div class="business-result-stat"><span>Prioridad para la empresa consultada</span><strong id="risk-priority">Sin asignar</strong></div>
+    </div>
+    <p id="risk-api-status" class="risk-readiness" role="status">Verificando API…</p><div class="risk-score-track" aria-hidden="true"><div id="risk-score-fill"></div><i id="risk-score-mark" hidden></i></div><p id="risk-api-warning" class="notice">Sin alerta no equivale a solvencia. Uso académico, no decisión crediticia.</p><p id="risk-api-action" class="risk-help">Complete el formulario para consultar el pipeline.</p>
+    <details id="business-demo" class="business-demo" aria-labelledby="business-demo-title"><summary>Escenarios ilustrativos de la segunda entrega (no son inferencias)</summary>
+      <span class="design-label">ESCENARIO ILUSTRATIVO · NO ES UNA PREDICCIÓN</span>
+      <h4 id="business-demo-title">Así se traduciría el resultado en una acción</h4>
+      <p>Seleccione un caso simbólico del diseño. Es independiente de los indicadores ingresados; no calcula probabilidades ni usa datos de una empresa.</p>
+      <div class="business-demo-controls"><button id="demo-alert" class="business-demo-button" type="button" aria-pressed="true" data-demo="alert">Escenario con alerta: puntaje ≥ t</button><button id="demo-no-alert" class="business-demo-button" type="button" aria-pressed="false" data-demo="noalert">Escenario sin alerta: puntaje &lt; t</button></div>
+      <div id="business-demo-output" class="business-demo-output" role="status" aria-live="polite"><span id="demo-condition">Condición ilustrativa: puntaje ≥ t</span><b id="demo-priority">Revisión prioritaria propuesta</b><span id="demo-action">El analista ampliaría la revisión financiera y definiría el seguimiento antes de decidir sobre el crédito.</span></div>
+      <p>Una salida sin alerta mantendría la revisión ordinaria; no demostraría solvencia. El ingreso a insolvencia formal y el incumplimiento de un préstamo son eventos distintos. La decisión crediticia permanece en la entidad.</p>
+    </details>
+    <div class="business-actions"><button type="button" data-go-tab="evaluacion">Consultar desempeño y limitaciones</button></div>
+  </section>
+    </details>
     <article class="business-answer"><div class="business-eyebrow">Evaluación retrospectiva · origen 2024</div><h3>¿Cuántas presencias observadas detecta el piloto?</h3><p>Se seleccionó Random Forest por AP en validación 2023 y el umbral por F2. El periodo de prueba 2024 ya se había consultado en el piloto original; por tanto, no es una prueba independiente del optimizado ni una validación prospectiva.</p><p id="metrics-status" role="status">Consultando métricas de la API…</p></article>
     <div class="evaluation-grid"><article><h3>Precisión promedio (AP)</h3><strong id="eval-ap">—</strong><p>Referencia: prevalencia <b id="eval-prev">—</b>.</p></article><article><h3>Sensibilidad</h3><strong id="eval-recall">—</strong><p>Fracción de presencias observadas detectadas.</p></article><article><h3>Precisión de alertas</h3><strong id="eval-precision">—</strong><p>Fracción de alertas con presencia observada.</p></article></div>
     <div class="grid"><article class="panel"><h3>Matriz de confusión · prueba retrospectiva</h3><div class="table-wrap" style="margin-top:15px"><table class="report-table"><thead><tr><th>Observado / Predicho</th><th>Alerta</th><th>Sin alerta</th></tr></thead><tbody><tr><th>Con presencia</th><td id="eval-vp">—</td><td id="eval-fn">—</td></tr><tr><th>Sin presencia observada</th><td id="eval-fp">—</td><td id="eval-vn">—</td></tr></tbody></table></div><p class="summary-text" id="eval-volume">—</p></article><article class="panel"><h3>Comparación AP · validación 2023</h3><div class="table-wrap" style="margin-top:15px"><table class="report-table"><thead><tr><th>Modelo</th><th>AP</th></tr></thead><tbody><tr><td>Referencia de prevalencia</td><td id="ap-base">—</td></tr><tr><td>Regresión logística</td><td id="ap-log">—</td></tr><tr class="highlight"><td>Random Forest</td><td id="ap-rf">—</td></tr></tbody></table></div><p class="summary-text" id="eval-threshold">—</p></article></div>
@@ -348,7 +367,7 @@ function setTab(tab){
 byId('year').addEventListener('change',e=>{activeYear=e.target.value;renderAll()});document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));document.querySelectorAll('#metric-tabs button').forEach(b=>b.addEventListener('click',()=>{activeMetric=b.dataset.metric;document.querySelectorAll('#metric-tabs button').forEach(t=>t.classList.toggle('selected',t===b));metrics()}));byId('menu').addEventListener('click',()=>{const opened=byId('side').classList.toggle('open');byId('menu').setAttribute('aria-expanded',String(opened));});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){byId('side').classList.remove('open');byId('menu').setAttribute('aria-expanded','false');}});
 
-document.querySelectorAll('[data-go-tab]').forEach(button=>button.addEventListener('click',()=>setTab(button.dataset.goTab)));
+document.querySelectorAll('[data-go-tab]').forEach(button=>button.addEventListener('click',()=>{if(button.dataset.openEvalDetail==='true')byId('eval-last-query').open=true;setTab(button.dataset.goTab);}));
 document.querySelectorAll('[data-demo]').forEach(button=>button.addEventListener('click',()=>{
  const alert=button.dataset.demo==='alert';
  document.querySelectorAll('[data-demo]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
@@ -367,7 +386,7 @@ setTab(location.hash.slice(1)||'resumen');
     const root = document.getElementById('risk-root');
     if (!root || root.dataset.initialized === 'true') return;
     root.dataset.initialized = 'true';
-    const $ = id => root.querySelector('#risk-' + id);
+    const $ = id => document.getElementById('risk-' + id);
     const form = $('form');
     const names = ['year', 'date', 'assets', 'debt', 'liquidity', 'roa', 'margin', 'min', 'max'];
     const fields = Object.fromEntries(names.map(n => [n, $(n)]));
@@ -381,6 +400,7 @@ setTab(location.hash.slice(1)||'resumen');
       $('summary-class').textContent='Sin consulta'; $('summary-action').textContent=text; $('api-action').textContent=text;
       $('api-warning').textContent='Sin alerta no equivale a solvencia. Uso académico, no decisión crediticia.';
       $('score-fill').style.width='0%'; $('score-mark').hidden=true;
+      $('quick-score').textContent='—'; $('summary-banner').classList.remove('is-alert','is-clear');
     }
     async function call(path, options={}) {
       const c=new AbortController(), external=options.signal, abort=()=>c.abort();
@@ -403,6 +423,7 @@ setTab(location.hash.slice(1)||'resumen');
         if(!Number.isFinite(r.puntaje)||r.puntaje<0||r.puntaje>1||!Number.isFinite(r.umbral)||r.umbral<0||r.umbral>1||typeof r.alerta!=='boolean'||r.alerta!==(r.puntaje>=r.umbral)||r.objetivo!=='presencia_inventario_anual'||r.puntaje_calibrado!==false)throw Error('Respuesta incompatible con el piloto');
         $('probability').textContent=fmt(r.puntaje,4);$('threshold').textContent=fmt(r.umbral,6);$('priority').textContent=r.clasificacion;
         $('summary-class').textContent=r.clasificacion;$('api-warning').textContent=r.advertencia;
+        $('quick-score').textContent=fmt(r.puntaje,4);$('summary-banner').classList.toggle('is-alert',r.alerta);$('summary-banner').classList.toggle('is-clear',!r.alerta);
         const action=r.alerta?'Priorizar revisión humana demostrativa.':'Revisión ordinaria; la ausencia de alerta no demuestra solvencia.';
         $('summary-action').textContent=action;$('api-action').textContent=action;
         $('score-fill').style.width=(r.puntaje*100)+'%';$('score-fill').style.background=r.alerta?'#be6b29':'#16a89e';$('score-mark').style.left=(r.umbral*100)+'%';$('score-mark').hidden=false;
