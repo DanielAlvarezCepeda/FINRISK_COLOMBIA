@@ -1,0 +1,44 @@
+{
+  "corridas": [
+    {
+      "umbral": 0.3,
+      "run_id": "245fb7a6bec54f25849dba54bae169be",
+      "url": "http://54.163.35.181:8050/#/experiments/2/runs/245fb7a6bec54f25849dba54bae169be"
+    },
+    {
+      "umbral": 0.4,
+      "run_id": "0379749718c64b2883d8df377719f803",
+      "url": "http://54.163.35.181:8050/#/experiments/2/runs/0379749718c64b2883d8df377719f803"
+    },
+    {
+      "umbral": 0.4586231433634672,
+      "run_id": "1137799236014399824d6a95185dd869",
+      "url": "http://54.163.35.181:8050/#/experiments/2/runs/1137799236014399824d6a95185dd869"
+    },
+    {
+      "umbral": 0.5,
+      "run_id": "73ad7e6ebbb24bae84f78b004a1c5496",
+      "url": "http://54.163.35.181:8050/#/experiments/2/runs/73ad7e6ebbb24bae84f78b004a1c5496"
+    },
+    {
+      "umbral": 0.6,
+      "run_id": "32ed5a092b4545d7a5cc841d3a042d14",
+      "url": "http://54.163.35.181:8050/#/experiments/2/runs/32ed5a092b4545d7a5cc841d3a042d14"
+    },
+    {
+      "umbral": 0.7,
+      "run_id": "f4b24f2b945b47b7afaa668f7847993a",
+      "url": "http://54.163.35.181:8050/#/experiments/2/runs/f4b24f2b945b47b7afaa668f7847993a"
+    },
+    {
+      "umbral": 0.8,
+      "run_id": "f204c2d161f14d5a856bd40e0d38989e",
+      "url": "http://54.163.35.181:8050/#/experiments/2/runs/f204c2d161f14d5a856bd40e0d38989e"
+    },
+    {
+      "umbral": 0.9,
+      "run_id": "315b89f1b6264062ab40b10f3ea4c3fa",
+      "url": "http://54.163.35.181:8050/#/experiments/2/runs/315b89f1b6264062ab40b10f3ea4c3fa"
+    }
+  ]
+}
